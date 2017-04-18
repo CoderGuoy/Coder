@@ -47,10 +47,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         bindingView = DataBindingUtil.setContentView(this, R.layout.activity_main);
-
         initView();
         initNetData();
-
     }
 
     /**
