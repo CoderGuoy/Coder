@@ -118,7 +118,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
             vh.textView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(mContext, position + "", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, "positon:"+position + "被点击", Toast.LENGTH_SHORT).show();
                 }
             });
         } else {

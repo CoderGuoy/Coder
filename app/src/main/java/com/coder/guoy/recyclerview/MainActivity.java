@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     }
 
     private void initView() {
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < 30; i++) {
             mList.add("RecyclerView条目" + i);
         }
         animation = (AnimationDrawable) bindingView.imageview.getDrawable();
