@@ -4,6 +4,8 @@
 
 ## Screenshots
 
+![](https://github.com/CoderGuoy/RecyclerView/blob/master/screenshots/recyclerview.gif)
+
 ### Version
 
 #### V1.0.0（4-17）
