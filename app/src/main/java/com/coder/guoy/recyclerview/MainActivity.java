@@ -16,7 +16,15 @@ import com.coder.guoy.recyclerview.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * @Version:v1.0
+ * @Author:Guoy
+ * @CreateTime:2017年4月14日
+ * @Descrpiton:RecycleView下拉刷新，上拉加载更多
+ * @UpDateAuthor:
+ * @UpDateTime:
+ * @UpDataWhat:
+ */
 public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private ActivityMainBinding bindingView;
