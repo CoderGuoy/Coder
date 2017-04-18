@@ -14,8 +14,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.coder.guoy.recyclerview.api.bean.GankIoDataBean;
 import com.coder.guoy.recyclerview.databinding.ItemRecyclerTestBinding;
 import com.coder.guoy.recyclerview.databinding.ItemRecyclerTestFooterBinding;
+import com.coder.guoy.recyclerview.utils.GlideUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +32,7 @@ import java.util.List;
  * @UpDataWhat:
  */
 public class RecyclerViewAdapter extends RecyclerView.Adapter {
-    private List<String> mList;
+    private List<GankIoDataBean.ResultsBean> mList;
     private LayoutInflater mInflater;
     private Context mContext;
     private ItemRecyclerTestBinding normalBinding;
@@ -76,11 +78,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
 
     // 正常item的ViewHolder
     private class NormalViewHolder extends RecyclerView.ViewHolder {
-        public TextView textView;
+        public ImageView imageView;
 
         public NormalViewHolder(View itemView) {
             super(itemView);
-            textView = normalBinding.itemTextview;
+            imageView = normalBinding.itemImage;
         }
     }
 
@@ -114,13 +116,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
         // 如果是正常的imte，直接设置TextView的值
         if (holder instanceof NormalViewHolder) {
             NormalViewHolder vh = (NormalViewHolder) holder;
-            vh.textView.setText(mList.get(position));
-            vh.textView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(mContext, "positon:"+position + "被点击", Toast.LENGTH_SHORT).show();
-                }
-            });
+            GlideUtils.setImage(mContext, mList.get(position).getUrl(), vh.imageView);
         } else {
             final FootViewHolder vh = (FootViewHolder) holder;
             // 只有获取数据为空时，hasMore为false，所以当我们拉到底部时基本都会首先显示“正在加载更多...”
@@ -172,7 +168,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
     }
 
     // 暴露接口，更新数据源，并修改hasMore的值，如果有增加数据，hasMore为true，否则为false
-    public void updateList(List<String> list, boolean hasMore) {
+    public void updateList(List<GankIoDataBean.ResultsBean> list, boolean hasMore) {
         // 在原有的数据之上增加新数据
         if (list != null) {
             mList.addAll(list);

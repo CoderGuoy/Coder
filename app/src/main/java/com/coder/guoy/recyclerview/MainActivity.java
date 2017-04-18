@@ -12,10 +12,15 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
+import com.coder.guoy.recyclerview.api.ApiHelper;
+import com.coder.guoy.recyclerview.api.bean.GankIoDataBean;
 import com.coder.guoy.recyclerview.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import rx.Subscriber;
+
 /**
  * @Version:v1.0
  * @Author:Guoy
@@ -25,7 +30,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private ActivityMainBinding bindingView;
-    private List<String> mList = new ArrayList<String>();
+    private List<GankIoDataBean.ResultsBean> mList = new ArrayList<GankIoDataBean.ResultsBean>();
     private LinearLayoutManager mLayoutManager;
     private RecyclerViewAdapter adapter;
     //页面可见的最后一个条目
@@ -33,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     private Handler mHandler = new Handler(Looper.getMainLooper());
     //每次加载条目的数量
     private static int PAGE_COUNT = 10;
+    private String page_count = "10";
+    //请求起始页
+    private String PAGE = "1";
     private AnimationDrawable animation;
 
     @Override
@@ -41,14 +49,43 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         bindingView = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         initView();
-        initRefreshLayout();
-        initRecyclerView();
+        initNetData();
+
+    }
+
+    /**
+     * 获取网络数据
+     */
+    private void initNetData() {
+        ApiHelper.getInstance(Constants.GANK_URL).getGankIoDataBean(Constants.FULI, page_count, PAGE)
+                .subscribe(new Subscriber<GankIoDataBean>() {
+                    @Override
+                    public void onStart() {
+                        super.onStart();
+                    }
+
+                    @Override
+                    public void onNext(GankIoDataBean bean) {
+                        bindingView.setGankIoDataBean(bean);
+                        mList = bean.getResults();
+                        Log.i("bean", mList.get(0).getUrl() + "");
+                    }
+
+                    @Override
+                    public void onCompleted() {
+                        initRefreshLayout();
+                        initRecyclerView();
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                });
     }
 
     private void initView() {
-        for (int i = 0; i < 30; i++) {
-            mList.add("RecyclerView条目" + i);
-        }
         animation = (AnimationDrawable) bindingView.imageview.getDrawable();
         if (!animation.isRunning()) {
             animation.start();
@@ -109,8 +146,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     }
 
     //获取指定范围内集合中的数据
-    private List<String> getDatas(final int firstIndex, final int lastIndex) {
-        List<String> resList = new ArrayList<>();
+    private List<GankIoDataBean.ResultsBean> getDatas(final int firstIndex, final int lastIndex) {
+        List<GankIoDataBean.ResultsBean> resList = new ArrayList<>();
         for (int i = firstIndex; i < lastIndex; i++) {
             if (i < mList.size()) {
                 resList.add(mList.get(i));
@@ -122,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     // 上拉加载时调用的更新RecyclerView的方法
     private void updateRecyclerView(int fromIndex, int toIndex) {
         // 获取从fromIndex到toIndex的数据
-        List<String> list = getDatas(fromIndex, toIndex);
+        List<GankIoDataBean.ResultsBean> list = getDatas(fromIndex, toIndex);
         if (list.size() > 0) {
             // 然后传给Adapter，并设置hasMore为true
             adapter.updateList(list, true);
