@@ -3,7 +3,8 @@
 > MVVM开发模式中RecyclerView使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
 
 ## Screenshots
-![](https://github.com/CoderGuoy/RecyclerView/tree/master/screenshots/recyclerview.gif)
+
+![](https://github.com/CoderGuoy/RecyclerView/blob/master/screenshots/recyclerview.gif)
 
 ### Version
 
