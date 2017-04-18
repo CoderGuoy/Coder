@@ -21,9 +21,6 @@ import java.util.List;
  * @Author:Guoy
  * @CreateTime:2017年4月14日
  * @Descrpiton:RecycleView下拉刷新，上拉加载更多
- * @UpDateAuthor:
- * @UpDateTime:
- * @UpDataWhat:
  */
 public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
