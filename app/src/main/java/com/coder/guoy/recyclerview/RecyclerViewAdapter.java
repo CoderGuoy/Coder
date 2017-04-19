@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.coder.guoy.recyclerview.api.bean.GankIoDataBean;
 import com.coder.guoy.recyclerview.databinding.ItemRecyclerTestBinding;
 import com.coder.guoy.recyclerview.databinding.ItemRecyclerTestFooterBinding;
+import com.coder.guoy.recyclerview.utils.DensityUtil;
 import com.coder.guoy.recyclerview.utils.GlideUtils;
 
 import java.util.ArrayList;
@@ -116,6 +117,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
         // 如果是正常的imte，直接设置TextView的值
         if (holder instanceof NormalViewHolder) {
             NormalViewHolder vh = (NormalViewHolder) holder;
+            if (position % 2 == 0) {
+                DensityUtil.setViewMargin(vh.imageView, false, 12, 6, 12, 0);
+            } else {
+                DensityUtil.setViewMargin(vh.imageView, false, 6, 12, 12, 0);
+            }
             GlideUtils.setImage(mContext, mList.get(position).getUrl(), vh.imageView);
         } else {
             final FootViewHolder vh = (FootViewHolder) holder;

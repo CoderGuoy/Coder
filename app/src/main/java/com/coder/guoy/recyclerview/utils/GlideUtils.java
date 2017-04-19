@@ -19,11 +19,11 @@ public class GlideUtils {
 
     public static void setImage(Context context, String url, ImageView imageview) {
         Glide.with(context).load(url)
-                .placeholder(R.drawable.app_loading0)   //加载中显示的图片
-                .error(R.drawable.app_loading0)         //加载失败显示的图片
-                .fallback(R.drawable.app_loading0)             //默认图片
-                .crossFade()                            //渐显动画
-                .fitCenter()
+                .placeholder(R.drawable.loading)    //加载中显示的图片
+                .fallback(R.drawable.loading)       //默认图片
+                .error(R.drawable.loadingfaile)     //加载失败显示的图片
+                .crossFade()                        //渐显动画
+                .centerCrop()
                 .into(imageview);
 
 

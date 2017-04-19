@@ -22,7 +22,7 @@ public interface ApiServices {
      */
     @GET("data/{type}/{pre_page}/{page}")
     Observable<GankIoDataBean> getGankIoData(@Path("type") String type,
-                                             @Path("pre_page") String pre_page,
-                                             @Path("page") String page);
+                                             @Path("pre_page") int pre_page,
+                                             @Path("page") int page);
 
 }

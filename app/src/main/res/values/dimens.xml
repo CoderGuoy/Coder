@@ -1,0 +1,58 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="content_padding">8dp</dimen>
+
+
+    <dimen name="px_0.3">0.1dp</dimen>
+    <dimen name="px_0.6">0.2dp</dimen>
+    <dimen name="px_2">0.67dp</dimen>
+    <dimen name="px_5">1.67dp</dimen>
+    <dimen name="px_9">3dp</dimen>
+    <dimen name="px_10">3.34dp</dimen>
+    <dimen name="px_15">5dp</dimen>
+    <dimen name="px_18">6dp</dimen>
+    <dimen name="px_22">7.33dp</dimen>
+    <dimen name="px_25">8.33dp</dimen>
+    <dimen name="px_26">8.67dp</dimen>
+    <dimen name="px_28">9.33dp</dimen>
+    <dimen name="px_30">10dp</dimen>
+    <dimen name="px_34">11.33dp</dimen>
+    <dimen name="px_36">12dp</dimen>
+    <dimen name="px_40">13.33dp</dimen>
+    <dimen name="px_42">14dp</dimen>
+    <dimen name="px_44">14.67dp</dimen>
+    <dimen name="px_46">15.33dp</dimen>
+    <dimen name="px_48">16dp</dimen>
+    <dimen name="px_50">16.67dp</dimen>
+    <dimen name="px_52">17.33dp</dimen>
+    <dimen name="px_56">18.66dp</dimen>
+    <dimen name="px_60">20dp</dimen>
+    <dimen name="px_64">21.33dp</dimen>
+    <dimen name="px_78">26dp</dimen>
+    <dimen name="px_86">28.67dp</dimen>
+    <dimen name="px_90">30dp</dimen>
+    <dimen name="px_100">33.33dp</dimen>
+    <dimen name="px_108">36dp</dimen>
+    <dimen name="px_130">43.33dp</dimen>
+    <dimen name="px_132">44dp</dimen>
+    <dimen name="px_150">50dp</dimen>
+    <dimen name="px_174">58dp</dimen>
+    <dimen name="px_180">60dp</dimen>
+    <dimen name="px_190">63.33dp</dimen>
+    <dimen name="px_244">81.34dp</dimen>
+    <dimen name="px_250">83.33dp</dimen>
+    <dimen name="px_350">116.67dp</dimen>
+    <dimen name="px_450">150dp</dimen>
+
+
+    <dimen name="sp_28">9.3sp</dimen>
+    <dimen name="sp_36">12sp</dimen>
+    <dimen name="sp_40">13.34sp</dimen>
+    <dimen name="sp_46">15.34sp</dimen>
+    <dimen name="sp_50">16.67sp</dimen>
+    <dimen name="sp_60">20sp</dimen>
+    <dimen name="sp_75">25sp</dimen>
+    <dimen name="sp_90">30sp</dimen>
+</resources>
