@@ -114,6 +114,7 @@ public class WelfareAdapter extends RecyclerView.Adapter {
         // 如果是正常的imte，直接设置TextView的值
         if (holder instanceof NormalViewHolder) {
             NormalViewHolder vh = (NormalViewHolder) holder;
+            //设置图片的边距
             if (position % 2 == 0) {
                 DensityUtil.setViewMargin(vh.imageView, false, 12, 6, 12, 0);
             } else {
