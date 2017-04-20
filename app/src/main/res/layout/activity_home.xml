@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ScrollView
+    <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        <!--主内容-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -23,6 +23,19 @@
                 android:layout_height="wrap_content"
                 android:text="Image RecyclerView"
                 android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animation RecyclerView"
+                android:textAllCaps="false"/>
         </LinearLayout>
-    </ScrollView>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"/>
+
+    </android.support.v4.widget.DrawerLayout>
 </layout>

@@ -1,4 +1,4 @@
-package com.coder.guoy.recyclerview.ui.welfare;
+package com.coder.guoy.recyclerview.ui.animation;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import com.coder.guoy.recyclerview.Constants;
 import com.coder.guoy.recyclerview.R;
@@ -27,11 +28,11 @@ import rx.Subscriber;
  * @CreateTime:2017年4月14日
  * @Descrpiton:RecycleView下拉刷新，上拉加载更多
  */
-public class WelfareActivity extends MvvmBaseActivity<ActivityWelfareBinding> {
+public class WelfareAnimationActivity extends MvvmBaseActivity<ActivityWelfareBinding> {
 
     private List<GankIoDataBean.ResultsBean> mList = new ArrayList<GankIoDataBean.ResultsBean>();
     private GridLayoutManager mLayoutManager;
-    private WelfareAdapter adapter;
+    private WelfareAnimationAdapter adapter;
     //页面可见的最后一个条目
     private int lastVisibleItem = 0;
     private Handler mHandler = new Handler(Looper.getMainLooper());
@@ -113,7 +114,7 @@ public class WelfareActivity extends MvvmBaseActivity<ActivityWelfareBinding> {
         // 第一个参数为Context
         // 第二个参数为数据，上拉加载的原理就是分页，所以我设置常量PAGE_COUNT=10，即每次加载10个数据
         // 第三个参数为hasMore，是否有新数据
-        adapter = new WelfareAdapter(this, mList, mList.size() > 0 ? true : false);
+        adapter = new WelfareAnimationAdapter(this, mList, mList.size() > 0 ? true : false);
         mLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
         bindingView.recyclerview.setLayoutManager(mLayoutManager);
         bindingView.recyclerview.setAdapter(adapter);
@@ -132,7 +133,9 @@ public class WelfareActivity extends MvvmBaseActivity<ActivityWelfareBinding> {
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
                 // 在newState为滑到底部时
+                Log.i("newState", newState + "");
                 if (newState == RecyclerView.SCROLL_STATE_IDLE) {
+                    Log.i("newState", newState + "进入后");
                     // 如果没有隐藏footView，那么最后一个条目的位置就比我们的getItemCount少1
                     if (adapter.isFadeTips() == false && lastVisibleItem + 1 == adapter.getItemCount()) {
                         //更新获取数据

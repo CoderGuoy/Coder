@@ -40,10 +40,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.welfare.WelfareActivity">
-        </activity>
-        <activity android:name=".ui.sample.SampleActivity">
-        </activity>
+        <activity android:name=".ui.welfare.WelfareActivity"/>
+        <activity android:name=".ui.sample.SampleActivity"/>
+        <activity android:name=".ui.animation.WelfareAnimationActivity"/>
     </application>
 
 </manifest>

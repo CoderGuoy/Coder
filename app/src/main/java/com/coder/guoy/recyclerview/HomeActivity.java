@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityHomeBinding;
+import com.coder.guoy.recyclerview.ui.animation.WelfareAnimationActivity;
 import com.coder.guoy.recyclerview.ui.sample.SampleActivity;
 import com.coder.guoy.recyclerview.ui.welfare.WelfareActivity;
 
@@ -18,6 +19,7 @@ public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implemen
         showContentView();
         bindingView.button1.setOnClickListener(this);
         bindingView.button2.setOnClickListener(this);
+        bindingView.button3.setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +30,9 @@ public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implemen
                 break;
             case R.id.button2:
                 startActivity(new Intent(HomeActivity.this, WelfareActivity.class));
+                break;
+            case R.id.button3:
+                startActivity(new Intent(HomeActivity.this, WelfareAnimationActivity.class));
                 break;
         }
     }
