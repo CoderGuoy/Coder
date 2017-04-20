@@ -2,6 +2,7 @@ package com.coder.guoy.recyclerview;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.GravityCompat;
 import android.view.View;
 
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
@@ -17,6 +18,7 @@ public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implemen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         showContentView();
+        bindingView.titlebarMenu.setOnClickListener(this);
         bindingView.button1.setOnClickListener(this);
         bindingView.button2.setOnClickListener(this);
         bindingView.button3.setOnClickListener(this);
@@ -25,6 +27,9 @@ public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implemen
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.titlebar_menu:// 开启菜单
+                bindingView.drawerlayout.openDrawer(GravityCompat.START);
+                break;
             case R.id.button1:
                 startActivity(new Intent(HomeActivity.this, SampleActivity.class));
                 break;
@@ -34,6 +39,15 @@ public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implemen
             case R.id.button3:
                 startActivity(new Intent(HomeActivity.this, WelfareAnimationActivity.class));
                 break;
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (bindingView.drawerlayout.isDrawerOpen(GravityCompat.START)) {
+            bindingView.drawerlayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
         }
     }
 }

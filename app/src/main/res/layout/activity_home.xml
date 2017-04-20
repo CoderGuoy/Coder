@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!--主内容-->
@@ -9,6 +10,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:background="@color/colorTheme"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/titlebar_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/titlebar_menu"/>
+            </android.support.v7.widget.Toolbar>
 
             <Button
                 android:id="@+id/button1"
