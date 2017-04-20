@@ -4,9 +4,8 @@
 
 ## Screenshots
 
-![](https://github.com/CoderGuoy/RecyclerView/blob/master/screenshots/sample_recyclerview.gif)
+![](https://github.com/CoderGuoy/RecyclerView/blob/master/screenshots/sample_recyclerview.gif)![](https://github.com/CoderGuoy/RecyclerView/blob/master/screenshots/image_recyclerview.gif)
 
-![](https://github.com/CoderGuoy/RecyclerView/blob/master/screenshots/image_recyclerview.gif)
 
 ### Version
 
