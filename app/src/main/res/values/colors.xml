@@ -11,4 +11,12 @@
     <color name="colorPageBg">#f2f4f5</color>
     <!--tab标签栏文字的颜色-->
     <color name="colorTabText">#585858</color>
+    <!--正文文字颜色-->
+    <color name="colorContent">#ff333333</color>
+    <!--侧边栏分割线-->
+    <color name="colorNavLine">#E0E0E0</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#d9d9d9</color>
+    <!--白色-->
+    <color name="colorWrite">#ffffff</color>
 </resources>

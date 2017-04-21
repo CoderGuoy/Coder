@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawerlayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
         <!--主内容-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -13,14 +15,26 @@
 
             <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
                 android:background="@color/colorTheme"
-                android:layout_height="?attr/actionBarSize">
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-                <ImageView
-                    android:id="@+id/titlebar_menu"
+                <FrameLayout
+                    android:id="@+id/fl_title_menu"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/titlebar_menu"/>
+                    android:layout_height="match_parent"
+                    android:background="?android:selectableItemBackground"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <ImageView
+                        android:id="@+id/iv_title_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/titlebar_menu"/>
+                </FrameLayout>
             </android.support.v7.widget.Toolbar>
 
             <Button
@@ -46,9 +60,11 @@
         </LinearLayout>
 
         <android.support.design.widget.NavigationView
+            android:id="@+id/navigationview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="start"/>
+            android:layout_gravity="start"
+            app:headerLayout="@layout/navigation_header"/>
 
     </android.support.v4.widget.DrawerLayout>
 </layout>

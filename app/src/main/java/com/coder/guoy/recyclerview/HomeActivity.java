@@ -10,6 +10,8 @@ import com.coder.guoy.recyclerview.databinding.ActivityHomeBinding;
 import com.coder.guoy.recyclerview.ui.animation.WelfareAnimationActivity;
 import com.coder.guoy.recyclerview.ui.sample.SampleActivity;
 import com.coder.guoy.recyclerview.ui.welfare.WelfareActivity;
+import com.coder.guoy.recyclerview.utils.CommonUtils;
+import com.coder.guoy.recyclerview.utils.StatusBarUtils;
 
 public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implements View.OnClickListener {
 
@@ -18,7 +20,9 @@ public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implemen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         showContentView();
-        bindingView.titlebarMenu.setOnClickListener(this);
+        // 设置透明状态栏
+        StatusBarUtils.setColor(this, CommonUtils.getColor(R.color.colorTheme), 0);
+        bindingView.flTitleMenu.setOnClickListener(this);
         bindingView.button1.setOnClickListener(this);
         bindingView.button2.setOnClickListener(this);
         bindingView.button3.setOnClickListener(this);
@@ -27,7 +31,7 @@ public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implemen
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.titlebar_menu:// 开启菜单
+            case R.id.fl_title_menu:// 开启菜单
                 bindingView.drawerlayout.openDrawer(GravityCompat.START);
                 break;
             case R.id.button1:
