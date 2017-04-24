@@ -33,6 +33,7 @@ dependencies {
     //ui
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.android.support:support-v4:24.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta3'
     compile 'com.android.support:design:24.0.0'
     //rx
     compile 'io.reactivex:rxjava:1.1.6'
@@ -49,5 +50,4 @@ dependencies {
     compile 'com.android.support:multidex:1.0.0'
     compile files('libs/glide-3.7.0.jar')
     compile files('libs/glide-3.7.0-sources.jar')
-
 }

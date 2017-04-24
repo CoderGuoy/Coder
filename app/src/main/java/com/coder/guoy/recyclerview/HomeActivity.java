@@ -3,36 +3,41 @@ package com.coder.guoy.recyclerview;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
-import com.coder.guoy.recyclerview.databinding.ActivityHomeBinding;
 import com.coder.guoy.recyclerview.ui.animation.WelfareAnimationActivity;
 import com.coder.guoy.recyclerview.ui.sample.SampleActivity;
+import com.coder.guoy.recyclerview.ui.tagcloud.TagCloudActivity;
 import com.coder.guoy.recyclerview.ui.welfare.WelfareActivity;
 import com.coder.guoy.recyclerview.utils.CommonUtils;
-import com.coder.guoy.recyclerview.utils.StatusBarUtils;
+import com.coder.guoy.recyclerview.view.statusbar.StatusBarUtil;
 
-public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implements View.OnClickListener {
+import static com.coder.guoy.recyclerview.R.id.button4;
 
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private DrawerLayout drawerlayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        showContentView();
-        // 设置透明状态栏
-        StatusBarUtils.setColor(this, CommonUtils.getColor(R.color.colorTheme), 0);
-        bindingView.flTitleMenu.setOnClickListener(this);
-        bindingView.button1.setOnClickListener(this);
-        bindingView.button2.setOnClickListener(this);
-        bindingView.button3.setOnClickListener(this);
+        drawerlayout = (DrawerLayout) findViewById(R.id.drawerlayout);
+        StatusBarUtil.setColorNoTranslucentForDrawerLayout(HomeActivity.this, drawerlayout,
+                CommonUtils.getColor(R.color.colorTheme));
+        findViewById(R.id.fl_title_menu).setOnClickListener(this);
+        findViewById(R.id.button1).setOnClickListener(this);
+        findViewById(R.id.button2).setOnClickListener(this);
+        findViewById(R.id.button3).setOnClickListener(this);
+        findViewById(R.id.button4).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.fl_title_menu:// 开启菜单
-                bindingView.drawerlayout.openDrawer(GravityCompat.START);
+                drawerlayout.openDrawer(GravityCompat.START);
                 break;
             case R.id.button1:
                 startActivity(new Intent(HomeActivity.this, SampleActivity.class));
@@ -43,13 +48,15 @@ public class HomeActivity extends MvvmBaseActivity<ActivityHomeBinding> implemen
             case R.id.button3:
                 startActivity(new Intent(HomeActivity.this, WelfareAnimationActivity.class));
                 break;
+            case button4:
+                startActivity(new Intent(HomeActivity.this, TagCloudActivity.class));
         }
     }
 
     @Override
     public void onBackPressed() {
-        if (bindingView.drawerlayout.isDrawerOpen(GravityCompat.START)) {
-            bindingView.drawerlayout.closeDrawer(GravityCompat.START);
+        if (drawerlayout.isDrawerOpen(GravityCompat.START)) {
+            drawerlayout.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }

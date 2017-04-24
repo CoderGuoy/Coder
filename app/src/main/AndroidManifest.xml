@@ -43,6 +43,8 @@
         <activity android:name=".ui.welfare.WelfareActivity"/>
         <activity android:name=".ui.sample.SampleActivity"/>
         <activity android:name=".ui.animation.WelfareAnimationActivity"/>
+        <activity android:name=".ui.tagcloud.TagCloudActivity">
+        </activity>
     </application>
 
 </manifest>
