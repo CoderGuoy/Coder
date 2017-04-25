@@ -57,11 +57,19 @@
                 android:layout_height="wrap_content"
                 android:text="Animation RecyclerView"
                 android:textAllCaps="false"/>
+
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="3D TagCloud"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AppBarLayout"
                 android:textAllCaps="false"/>
         </LinearLayout>
 

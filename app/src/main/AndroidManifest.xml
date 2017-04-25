@@ -45,6 +45,8 @@
         <activity android:name=".ui.animation.WelfareAnimationActivity"/>
         <activity android:name=".ui.tagcloud.TagCloudActivity">
         </activity>
+        <activity android:name=".ui.PlayAppBarLayout">
+        </activity>
     </application>
 
 </manifest>
