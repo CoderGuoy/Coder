@@ -1,42 +1,19 @@
 <resources>
     <string name="app_name">RecyclerView</string>
 
-    <string name="text">前面说了一直反复说“当ScrollView发生滚动时”，那么怎么将AppBarLayout与ScrollView关
-        联起来呢？我们注意到，AppBarLayout与ScrollView之间动作“相互依赖”，这不就是我们上一篇
-        《CoordinateLayout的使用如此简单 》所学的内容吗？把ScrollView和AppBarLayout作为CoordinateLayout的子View
-        ，然后编写一个Behavior，在这个Behavior里面判断当前的操作是应该让ScrollView时刻保持在AppBarLayout之下
-        （即只要改变AppBarLayout的位置就可以一起滑动），还是应该让ScrollView内部滚动而不让AppBarLayout位置发生
-        变化等等这些需求，都是可以在Behavior里面处理的。你可以去针对你的ScrollView编写Behavior。然而，我们看到
-        我们的AppBarLayout事先的功能比较复杂，如果我们自己去定义这样的效果，代码非常复杂，还要考虑很多方面，好
-        在Android帮我们写好啦，我们直接用就是了，这个ScrollView就是NestedScrollView，请注意，它并没有继承Scrol
-        lView，它继承的是FrameLayout，但是它实现的效果把它可以看成是ScrollView。前面说了一直反复说“当ScrollVi
-        ew发生滚动时”，那么怎么将AppBarLayout与ScrollView关联起来呢？我们注意到，AppBarLayout与ScrollView之间
-        动作“相互依赖”，这不就是我们上一篇《CoordinateLayout的使用如此简单 》所学的内容吗？把ScrollView和Ap
-        pBarLayout作为CoordinateLayout的子View，然后编写一个Behavior，在这个Behavior里面判断当前的操作是应该让
-        ScrollView时刻保持在AppBarLayout之下（即只要改变AppBarLayout的位置就可以一起滑动），还是应该让ScrollV
-        iew内部滚动而不让AppBarLayout位置发生变化等等这些需求，都是可以在Behavior里面处理的。你可以去针对你的
-        ScrollView编写Behavior。然而，我们看到我们的AppBarLayout事先的功能比较复杂，如果我们自己去定义这样的
-        效果，代码非常复杂，还要考虑很多方面，好在Android帮我们写好啦，我们直接用就是了，这个ScrollView就是Nes
-        tedScrollView，请注意，它并没有继承ScrollView，它继承的是FrameLayout，但是它实现的效果把它可以看成是
-        ScrollView。前面说了一直反复说“当ScrollView发生滚动时”，那么怎么将AppBarLayout与ScrollView关联起来呢
-        ？我们注意到，AppBarLayout与ScrollView之间动作“相互依赖”，这不就是我们上一篇《CoordinateLayout的使用
-        如此简单 》所学的内容吗？把ScrollView和AppBarLayout作为CoordinateLayout的子View，然后编写一个Behavior，
-        在这个Behavior里面判断当前的操作是应该让ScrollView时刻保持在AppBarLayout之下（即只要改变AppBarLayout的
-        位置就可以一起滑动），还是应该让ScrollView内部滚动而不让AppBarLayout位置发生变化等等这些需求，都是可以
-        在Behavior里面处理的。你可以去针对你的ScrollView编写Behavior。然而，我们看到我们的AppBarLayout事先的功
-        能比较复杂，如果我们自己去定义这样的效果，代码非常复杂，还要考虑很多方面，好在Android帮我们写好啦，我们
-        直接用就是了，这个ScrollView就是NestedScrollView，请注意，它并没有继承ScrollView，它继承的是FrameLayout
-        ，但是它实现的效果把它可以看成是ScrollView。如此简单 》所学的内容吗？把ScrollView和AppBarLayout作为CoordinateLayout的子View，然后编写一个Behavior，
-        在这个Behavior里面判断当前的操作是应该让ScrollView时刻保持在AppBarLayout之下（即只要改变AppBarLayout的
-        位置就可以一起滑动），还是应该让ScrollView内部滚动而不让AppBarLayout位置发生变化等等这些需求，都是可以
-        在Behavior里面处理的。你可以去针对你的ScrollView编写Behavior。然而，我们看到我们的AppBarLayout事先的功
-        能比较复杂，如果我们自己去定义这样的效果，代码非常复杂，还要考虑很多方面，好在Android帮我们写好啦，我们
-        直接用就是了，这个ScrollView就是NestedScrollView，请注意，它并没有继承ScrollView，它继承的是FrameLayout
-        ，但是它实现的效果把它可以看成是ScrollView。如此简单 》所学的内容吗？把ScrollView和AppBarLayout作为CoordinateLayout的子View，然后编写一个Behavior，
-        在这个Behavior里面判断当前的操作是应该让ScrollView时刻保持在AppBarLayout之下（即只要改变AppBarLayout的
-        位置就可以一起滑动），还是应该让ScrollView内部滚动而不让AppBarLayout位置发生变化等等这些需求，都是可以
-        在Behavior里面处理的。你可以去针对你的ScrollView编写Behavior。然而，我们看到我们的AppBarLayout事先的功
-        能比较复杂，如果我们自己去定义这样的效果，代码非常复杂，还要考虑很多方面，好在Android帮我们写好啦，我们
-        直接用就是了，这个ScrollView就是NestedScrollView，请注意，它并没有继承ScrollView，它继承的是FrameLayout
-        ，但是它实现的效果把它可以看成是ScrollView。</string>
+
+    <string name="text">1. Toolbar和ActionBar基本一样,Toolbar是可移动的，ActionBar不可动\n
+2. AppBarLayout是继承自LinearLayout，垂直的，他为了给里面的子View实现动作效果的（子View不一定是Toolbar）,
+        一般在要实现动作效果的子View里面添加`app:layout_scrollFlags=""`属性就好了，里面的属性值按英文翻译
+        很容易理解的\n
+3. CoordinatorLayout是为了协调子View之间的联动的，它的核心是Behavor,一般用系统定义好的Behavor就好了
+        (也可以自定义)，举个例子，比如NestScrollView滑动时想让Toolbar也滑动就是这种联动,我们就在
+        CoordinatorLayout容器布局里面添加Toolbar与NestScrollView,而Toolbar想实现滑动就要用到AppBarLayout，
+        所以在Toolbar外面再加一层AppBarLayout, 一般我们在NestScrollView里面添加属性
+`app:layout_behavior="@string/appbar_scrolling_view_behavior"`，如果不添加这个联动属性导致了Toolbar与
+        NestScrollView重叠。\n
+4. CollapsingToolbarLayout是对Toolbar再次包装的ViewGroup，用来实现折叠或拉伸效果的，他需要放到AppBarLayout里面，
+        并且是直接子View，CollapsingToolbarLayout子View里面要设置属性`app:layout_collapseMode`里面的值
+        pin表示当上滑时该控件保留，其他控件不留\n</string>
+    <string name="MOTTO">刚则易折，柔则长存</string>
 </resources>
