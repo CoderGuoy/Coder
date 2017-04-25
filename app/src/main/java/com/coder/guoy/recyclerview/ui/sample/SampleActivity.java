@@ -34,7 +34,6 @@ public class SampleActivity extends MvvmBaseActivity<ActivitySampleBinding> {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample);
         showContentView();
-
         initView();
         initNetData();
         initRecyclerView();
