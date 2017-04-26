@@ -45,8 +45,8 @@
         <activity android:name=".ui.animation.WelfareAnimationActivity"/>
         <activity android:name=".ui.tagcloud.TagCloudActivity"/>
         <activity android:name=".ui.coordinator.PlayCoordinatorLayout"/>
-        <activity android:name=".ui.PlayStatusBar"/>
-        <activity android:name=".ui.DesignStudy">
+        <activity android:name=".ui.statusbar.PlayStatusBar"/>
+        <activity android:name=".ui.tablayout.PlayTabLayout">
         </activity>
     </application>
 

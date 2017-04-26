@@ -1,4 +1,4 @@
-package com.coder.guoy.recyclerview.ui;
+package com.coder.guoy.recyclerview.ui.statusbar;
 
 import android.graphics.Color;
 import android.os.Build;
