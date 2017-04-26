@@ -1,6 +1,9 @@
 # RecyclerView
 
-> MVVM开发模式中RecyclerView使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
+> MVVM开发模式中Recycler View使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
+> MVVM开发模式中Recycler View为条目添加ObjectAnimator动画效果
+> 继承ViewGroupon实现的 3D球
+> CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局
 
 ## Screenshots
 
