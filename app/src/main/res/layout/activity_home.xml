@@ -62,14 +62,14 @@
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3D TagCloud"
+                android:text="3D TagCloud|3D 球"
                 android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="AppBarLayout"
+                android:text="CoordinatorLayout|折叠头布局"
                 android:textAllCaps="false"/>
         </LinearLayout>
 
