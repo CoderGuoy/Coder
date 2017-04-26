@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
-    android:id="@+id/coordinatorlayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.coder.guoy.recyclerview.ui.PlayAppBarLayout">
+    tools:context="com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorLayout">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbarlayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
+        android:layout_height="wrap_content">
 
         <android.support.design.widget.CollapsingToolbarLayout
-            android:fitsSystemWindows="true"
             android:id="@+id/collapsingtoolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

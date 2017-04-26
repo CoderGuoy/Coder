@@ -71,6 +71,12 @@
                 android:layout_height="wrap_content"
                 android:text="CoordinatorLayout|折叠头布局"
                 android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="StatusBar|状态栏"
+                android:textAllCaps="false"/>
         </LinearLayout>
 
         <android.support.design.widget.NavigationView

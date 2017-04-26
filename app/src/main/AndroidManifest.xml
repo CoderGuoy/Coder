@@ -40,13 +40,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.welfare.WelfareActivity"/>
+        <activity android:name=".ui.welfare.WelfareActivity"
+            />
         <activity android:name=".ui.sample.SampleActivity"/>
         <activity android:name=".ui.animation.WelfareAnimationActivity"/>
-        <activity android:name=".ui.tagcloud.TagCloudActivity">
-        </activity>
-        <activity android:name=".ui.PlayAppBarLayout">
-        </activity>
+        <activity android:name=".ui.tagcloud.TagCloudActivity"/>
+        <activity android:name=".ui.coordinator.PlayCoordinatorLayout"/>
+        <activity android:name=".ui.PlayStatusBar"/>
     </application>
 
 </manifest>
