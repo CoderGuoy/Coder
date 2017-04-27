@@ -25,6 +25,7 @@ public class PlayTabLayout extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setAdapter(new MyFragmentPagerAdapter(getSupportFragmentManager(), mList));
+        //setupWithViewPagerb必须在viewpager之后
         tabLayout.setupWithViewPager(viewPager);
     }
 }
