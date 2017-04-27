@@ -1,6 +1,18 @@
-# RecyclerView
+# Coder
 
 > MVVM开发模式中RecyclerView使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
+
+> MVVM开发模式+RxJava+Retrofit请求网络数据,RecyclerView加载网络图片（图片加载框架Glide）
+
+> MVVM开发模式中RecyclerView为图片添加ObjectAnimator动画效果
+
+> 继承ViewGroupon实现的 3D球
+
+## Android5.0新控件
+
+> Tablayout|横向布局标签 [介绍及使用详情](https://github.com/CoderGuoy/weiget/blob/master/TabLayout.md) 
+
+> CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liuyufeng.tech/post/2017-04-19-toolbar.html)
 
 ## Screenshots
 
@@ -16,15 +28,4 @@
  如果没有新的数据，显示没有更多数据。具体见代码中的注释，比较详细
 
 ## LICENSE
-    Copyright 2017 HugeTerry.
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+ - 项目仅做学习交流，不用做商业用途，接口使用干货集中营的API
