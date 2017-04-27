@@ -13,8 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabMode="scrollable"
-        app:tabIndicatorColor="@color/colorTheme"
-        app:tabSelectedTextColor="@color/colorTheme"
         />
 
     <android.support.v4.view.ViewPager

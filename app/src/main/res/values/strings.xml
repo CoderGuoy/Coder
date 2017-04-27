@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RecyclerView</string>
+    <string name="app_name">Coder</string>
 
 
     <string name="text">1. Toolbar和ActionBar基本一样,Toolbar是可移动的，ActionBar不可动\n
@@ -16,4 +16,5 @@
         并且是直接子View，CollapsingToolbarLayout子View里面要设置属性`app:layout_collapseMode`里面的值
         pin表示当上滑时该控件保留，其他控件不留\n</string>
     <string name="MOTTO">刚则易折，柔则长存</string>
+    <string name="pleasewait">敬请期待</string>
 </resources>

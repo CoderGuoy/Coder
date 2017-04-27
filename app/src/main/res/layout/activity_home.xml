@@ -76,7 +76,7 @@
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="StatusBar|状态栏"
+                android:text="StatusBar|透明状态栏"
                 android:textAllCaps="false"/>
 
             <Button

@@ -56,9 +56,9 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
         RelativeLayout mContainer = (RelativeLayout) mBaseBinding.getRoot().findViewById(R.id.container);
         mContainer.addView(bindingView.getRoot());
         getWindow().setContentView(mBaseBinding.getRoot());
-        overridePendingTransition(R.anim.slide_left_in,R.anim.slide_left_out);
+        overridePendingTransition(R.anim.slide_left_in, R.anim.slide_left_out);
 
-        // 设置透明状态栏
+        // 设置状态栏颜色
         StatusBarUtils.setColor(this, CommonUtils.getColor(R.color.colorTheme), 0);
         llProgressBar = getView(R.id.ll_progress_bar);
         refresh = getView(R.id.ll_error_refresh);
@@ -80,6 +80,7 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
         });
         bindingView.getRoot().setVisibility(View.GONE);
     }
+
     protected <T extends View> T getView(int id) {
         return (T) findViewById(id);
     }
@@ -167,12 +168,13 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
     @Override
     public void finish() {
         super.finish();
-        overridePendingTransition(R.anim.slide_right_in,R.anim.slide_right_out);
+        overridePendingTransition(R.anim.slide_right_in, R.anim.slide_right_out);
     }
 
 
     /**
      * 添加fragment
+     *
      * @param addId
      * @param fragment
      */
@@ -183,6 +185,7 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
     protected void replaceFragment(int addId, MvvmBaseFragment fragment) {
         getSupportFragmentManager().beginTransaction().replace(addId, fragment).commit();
     }
+
     protected void removeFragment(MvvmBaseFragment fragment) {
         getSupportFragmentManager().beginTransaction().remove(fragment).commit();
     }

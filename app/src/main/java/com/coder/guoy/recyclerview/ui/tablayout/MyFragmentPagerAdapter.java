@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import java.util.List;
+
 /**
  * @Version:
  * @Author:
@@ -12,9 +14,11 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
+    private List<String> mList;
 
-    public MyFragmentPagerAdapter(FragmentManager fm) {
+    public MyFragmentPagerAdapter(FragmentManager fm, List<String> list) {
         super(fm);
+        this.mList = list;
     }
 
     @Override
@@ -24,11 +28,11 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 7;
+        return mList.size();
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return super.getPageTitle(position);
+        return mList.get(position);
     }
 }
