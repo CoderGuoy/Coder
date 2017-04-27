@@ -8,7 +8,7 @@
 
 > 继承ViewGroupon实现的 3D球
 
-> CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liuyufeng.tech/)
+> CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liuyufeng.tech/post/2017-04-19-toolbar.html)
 
 ## Screenshots
 
