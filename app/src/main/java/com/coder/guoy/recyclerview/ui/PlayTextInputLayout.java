@@ -84,9 +84,8 @@ public class PlayTextInputLayout extends MvvmBaseActivity<ActivityPlayTextInputL
                 break;
             case R.id.btn_login:
                 if (username() && password()) {
+                    finish();
                     ToastUtil.show("登录成功");
-                } else {
-                    ToastUtil.show("登录失败");
                 }
                 break;
         }
