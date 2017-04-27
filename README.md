@@ -8,6 +8,10 @@
 
 > 继承ViewGroupon实现的 3D球
 
+## Android5.0新控件
+
+> Tablayout|横向布局标签 戳我[Wiki](https://github.com/CoderGuoy/weiget/blob/master/TabLayout.md) 
+
 > CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liuyufeng.tech/post/2017-04-19-toolbar.html)
 
 ## Screenshots
