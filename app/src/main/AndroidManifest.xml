@@ -46,8 +46,8 @@
         <activity android:name=".ui.tagcloud.TagCloudActivity"/>
         <activity android:name=".ui.coordinator.PlayCoordinatorLayout"/>
         <activity android:name=".ui.statusbar.PlayStatusBar"/>
-        <activity android:name=".ui.tablayout.PlayTabLayout">
-        </activity>
+        <activity android:name=".ui.tablayout.PlayTabLayout"/>
+        <activity android:name=".ui.PlayTextInputLayout"/>
     </application>
 
 </manifest>
