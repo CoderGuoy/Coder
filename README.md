@@ -14,6 +14,8 @@
 
 > TextInputLayout|文字输入布局 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/TextInputLayout.md) 
 
+> FloatingActionButton | 悬浮按钮 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/FloatingActionButton.md)
+
 > CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liuyufeng.tech/post/2017-04-19-toolbar.html)
 
 ## Screenshots
