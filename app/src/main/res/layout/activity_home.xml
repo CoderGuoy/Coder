@@ -99,6 +99,12 @@
                 android:layout_height="wrap_content"
                 android:text="TextInputLayout|文字输入布局"
                 android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FloatingActionButton|"
+                android:textAllCaps="false"/>
 
         </LinearLayout>
 
