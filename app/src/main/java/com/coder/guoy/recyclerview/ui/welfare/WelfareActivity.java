@@ -24,8 +24,8 @@ import rx.Subscriber;
 /**
  * @Version:v1.0
  * @Author:Guoy
- * @CreateTime:2017年4月14日
- * @Descrpiton:RecycleView下拉刷新，上拉加载更多
+ * @CreateTime:2017年4月18日
+ * @Descrpiton:RecyclerView+Glide加载图片
  */
 public class WelfareActivity extends MvvmBaseActivity<ActivityWelfareBinding> {
 

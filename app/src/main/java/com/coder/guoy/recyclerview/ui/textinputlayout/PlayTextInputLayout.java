@@ -1,4 +1,4 @@
-package com.coder.guoy.recyclerview.ui;
+package com.coder.guoy.recyclerview.ui.textinputlayout;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -10,7 +10,12 @@ import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityPlayTextInputLayoutBinding;
 import com.coder.guoy.recyclerview.utils.ToastUtil;
-
+/**
+ * @Version:v1.0
+ * @Author:Guoy
+ * @CreateTime:2017年4月27日
+ * @Descrpiton:TextInputLayout|文字输入布局
+ */
 public class PlayTextInputLayout extends MvvmBaseActivity<ActivityPlayTextInputLayoutBinding> implements View.OnClickListener {
 
     @Override
@@ -18,8 +23,9 @@ public class PlayTextInputLayout extends MvvmBaseActivity<ActivityPlayTextInputL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_text_input_layout);
         showContentView();
-        bindingView.back.setOnClickListener(this);
+        bindingView.includeToolbar.toolbarBack.setOnClickListener(this);
         bindingView.btnLogin.setOnClickListener(this);
+        bindingView.includeToolbar.textviewTitle.setText("用户登录");
         bindingView.textUsername.setHint("用户名/Email/手机号");
         bindingView.textPassword.setHint("密码");
         bindingView.edittextUsername.addTextChangedListener(new TextWatcher() {
@@ -79,7 +85,7 @@ public class PlayTextInputLayout extends MvvmBaseActivity<ActivityPlayTextInputL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.back:
+            case R.id.toolbar_back:
                 finish();
                 break;
             case R.id.btn_login:

@@ -7,7 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.coder.guoy.recyclerview.R;
-
+/**
+ * @Version:v1.0
+ * @Author:Guoy
+ * @CreateTime:2017年4月21日
+ * @Descrpiton:StatusBar|透明状态栏
+ */
 public class PlayStatusBar extends AppCompatActivity {
 
     @Override

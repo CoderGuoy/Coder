@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.coder.guoy.recyclerview.ui.tagcloud.TagCloudActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.coder.guoy.recyclerview.view.tagcloud.TagCloudView
-        android:id="@+id/tag_cloud"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:autoScrollMode="uniform"
-        app:darkColor="#ff2c2d41"
-        app:lightColor="#ffff0000"
-        app:radiusPercent="0.8"
-        app:scrollSpeed="3"/>
+        android:layout_height="match_parent">
+        <!--
+        autoScrollMode  自动滚动
+        radiusPercent   半径百分比      float[0,1]
+        scrollSpeed     滚动速度        float[0,1]
+        lightColor      起始颜色
+        darkColor       终止颜色
+        -->
+        <com.coder.guoy.recyclerview.view.tagcloud.TagCloudView
+            android:id="@+id/tag_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoScrollMode="uniform"
+            app:darkColor="#ffffffff"
+            app:lightColor="#ffff0000"
+            app:radiusPercent="0.8"
+            app:scrollSpeed="3"/>
 
-</LinearLayout>
+    </LinearLayout>
+</layout>

@@ -17,9 +17,6 @@ import java.util.List;
  * @Author:
  * @CreateTime:
  * @Descrpiton:
- * @UpDateAuthor:
- * @UpDateTime:
- * @UpDataWhat:
  */
 public class TagCloudAdapter extends TagsAdapter {
     private List<String> mList = new ArrayList<String>();
@@ -29,11 +26,13 @@ public class TagCloudAdapter extends TagsAdapter {
         Collections.addAll(mList, list);
     }
 
+    //返回Tag数量
     @Override
     public int getCount() {
         return mList.size();
     }
 
+    //返回每个Tag实例
     @Override
     public Object getItem(int position) {
         return mList.get(position);
@@ -49,11 +48,13 @@ public class TagCloudAdapter extends TagsAdapter {
         return tv;
     }
 
+    //返回Tag数据
     @Override
     public int getPopularity(int position) {
         return position % 7;
     }
 
+    //针对每个Tag返回一个权重值，该值与ThemeColor和Tag初始大小有关
     @Override
     public void onThemeColorChanged(View view, int themeColor) {
         ((TextView)view).setTextColor(themeColor);

@@ -7,7 +7,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.coder.guoy.recyclerview.ui.PlayTextInputLayout;
+import com.coder.guoy.recyclerview.ui.textinputlayout.PlayTextInputLayout;
 import com.coder.guoy.recyclerview.ui.statusbar.PlayStatusBar;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorLayout;
 import com.coder.guoy.recyclerview.ui.animation.WelfareAnimationActivity;

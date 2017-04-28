@@ -73,17 +73,17 @@
                 android:textAllCaps="false"/>
 
             <Button
-                android:id="@+id/button5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CoordinatorLayout|折叠头布局"
-                android:textAllCaps="false"/>
-
-            <Button
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="StatusBar|透明状态栏"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CoordinatorLayout|折叠头布局"
                 android:textAllCaps="false"/>
 
             <Button
@@ -92,11 +92,12 @@
                 android:layout_height="wrap_content"
                 android:text="TabLayout|横向布局标签"
                 android:textAllCaps="false"/>
+
             <Button
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextInputLayout"
+                android:text="TextInputLayout|文字输入布局"
                 android:textAllCaps="false"/>
 
         </LinearLayout>

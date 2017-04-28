@@ -20,8 +20,8 @@ import rx.Subscriber;
 /**
  * @Version:v1.0
  * @Author:Guoy
- * @CreateTime:2017年4月14日
- * @Descrpiton:
+ * @CreateTime:2017年4月19日
+ * @Descrpiton:RecyclerView给Item添加滑动时动画
  */
 public class WelfareAnimationActivity extends MvvmBaseActivity<ActivityWelfareBinding> {
 

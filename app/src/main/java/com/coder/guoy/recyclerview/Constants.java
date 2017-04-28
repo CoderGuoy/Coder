@@ -4,9 +4,6 @@ import android.os.Environment;
 
 import java.io.File;
 
-/**
- * Created by codeest on 2016/8/3.
- */
 public class Constants {
 
     //================= URL =====================

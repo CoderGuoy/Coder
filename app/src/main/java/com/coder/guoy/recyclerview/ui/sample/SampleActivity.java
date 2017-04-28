@@ -16,7 +16,12 @@ import com.coder.guoy.recyclerview.databinding.ActivitySampleBinding;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * @Version:v1.0
+ * @Author:Guoy
+ * @CreateTime:2017年4月17日
+ * @Descrpiton:RecyclerView实现下拉刷新，上拉加载
+ */
 public class SampleActivity extends MvvmBaseActivity<ActivitySampleBinding> {
 
     private List<String> mList = new ArrayList<String>();
