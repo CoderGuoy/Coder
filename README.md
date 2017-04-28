@@ -18,7 +18,7 @@
 
 ## Screenshots
 
-![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy01.gif)!![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy03.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy05.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/3Dtagcloud.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coordinator.gif)
+![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy01.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy03.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy05.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/3Dtagcloud.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/tablayout00.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/textinputlayout.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coordinator.gif)
 
 ### Version
 
