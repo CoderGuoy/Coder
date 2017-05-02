@@ -39,7 +39,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="加载失败,点击重试"
+                        android:text="@string/FAILE"
                         android:textSize="15sp"/>
                 </LinearLayout>
 
@@ -61,7 +61,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="努力加载中..."
+                        android:text="@string/LOADING"
                         android:textColor="@color/colorTabText"
                         android:textSize="14sp"/>
 

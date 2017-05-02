@@ -8,6 +8,7 @@ import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityPlayCoordinatorLayoutBinding;
 import com.coder.guoy.recyclerview.utils.CommonUtils;
 import com.coder.guoy.recyclerview.view.statusbar.StatusBarUtil;
+
 /**
  * @Version:v1.0
  * @Author:Guoy
@@ -20,7 +21,7 @@ public class PlayCoordinatorLayout extends MvvmBaseActivity<ActivityPlayCoordina
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_coordinator_layout);
-        StatusBarUtil.setColor(PlayCoordinatorLayout.this, CommonUtils.getColor(R.color.colorTheme),0);
+        StatusBarUtil.setColor(PlayCoordinatorLayout.this, CommonUtils.getColor(R.color.colorTheme), 0);
         showContentView();
 
         //设置Collapsing文字颜色

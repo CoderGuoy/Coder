@@ -17,7 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-                app:title="折叠布局的嵌套">
+                app:title="@string/CoordinatorLayout">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -29,6 +29,7 @@
                 <android.support.v7.widget.Toolbar
                     android:layout_width="match_parent"
                     android:layout_height="?android:attr/actionBarSize"
+                    android:contentInsetStart="0dp"
                     app:layout_collapseMode="pin">
 
                 </android.support.v7.widget.Toolbar>

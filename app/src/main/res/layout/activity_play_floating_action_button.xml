@@ -40,12 +40,13 @@
                 android:layout_gravity="bottom|right"
                 android:layout_marginBottom="40dp"
                 android:layout_marginRight="40dp"
+                android:backgroundTint="@color/red"
                 android:src="@drawable/back"
                 app:borderWidth="0dp"
                 app:elevation="10dp"
                 app:fabSize="auto"
-                app:layout_anchorGravity="center"
                 app:pressedTranslationZ="20dp"
+                app:rippleColor="@color/colorWrite"
                 />
 
         </android.support.design.widget.CoordinatorLayout>

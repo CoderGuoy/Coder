@@ -48,7 +48,7 @@
         <activity android:name=".ui.statusbar.PlayStatusBar"/>
         <activity android:name=".ui.tablayout.PlayTabLayout"/>
         <activity android:name=".ui.textinputlayout.PlayTextInputLayout"/>
-        <activity android:name=".ui.PlayFloatingActionButton">
+        <activity android:name=".ui.floatingactionbutton.PlayFloatingActionButton">
         </activity>
     </application>
 

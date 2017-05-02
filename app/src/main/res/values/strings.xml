@@ -17,4 +17,7 @@
         pin表示当上滑时该控件保留，其他控件不留\n</string>
     <string name="MOTTO">刚则易折，柔则长存</string>
     <string name="pleasewait">敬请期待</string>
+    <string name="CoordinatorLayout">折叠布局的嵌套</string>
+    <string name="FAILE">加载失败,点击重试</string>
+    <string name="LOADING">努力加载中...</string>
 </resources>
