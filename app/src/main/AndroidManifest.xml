@@ -44,11 +44,13 @@
         <activity android:name=".ui.sample.SampleActivity"/>
         <activity android:name=".ui.animation.WelfareAnimationActivity"/>
         <activity android:name=".ui.tagcloud.TagCloudActivity"/>
-        <activity android:name=".ui.coordinator.PlayCoordinatorLayout"/>
+        <activity android:name=".ui.coordinator.PlayCoordinatorToolbar"/>
         <activity android:name=".ui.statusbar.PlayStatusBar"/>
         <activity android:name=".ui.tablayout.PlayTabLayout"/>
         <activity android:name=".ui.textinputlayout.PlayTextInputLayout"/>
         <activity android:name=".ui.floatingactionbutton.PlayFloatingActionButton">
+        </activity>
+        <activity android:name=".ui.coordinator.PlayCoordinatorLayout">
         </activity>
     </application>
 

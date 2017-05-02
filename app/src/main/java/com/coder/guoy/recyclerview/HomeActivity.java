@@ -7,10 +7,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorLayout;
 import com.coder.guoy.recyclerview.ui.floatingactionbutton.PlayFloatingActionButton;
 import com.coder.guoy.recyclerview.ui.textinputlayout.PlayTextInputLayout;
 import com.coder.guoy.recyclerview.ui.statusbar.PlayStatusBar;
-import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorLayout;
+import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorToolbar;
 import com.coder.guoy.recyclerview.ui.animation.WelfareAnimationActivity;
 import com.coder.guoy.recyclerview.ui.sample.SampleActivity;
 import com.coder.guoy.recyclerview.ui.tablayout.PlayTabLayout;
@@ -40,6 +41,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button7).setOnClickListener(this);
         findViewById(R.id.button8).setOnClickListener(this);
         findViewById(R.id.button9).setOnClickListener(this);
+        findViewById(R.id.button10).setOnClickListener(this);
     }
 
     @Override
@@ -61,7 +63,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(HomeActivity.this, TagCloudActivity.class));
                 break;
             case R.id.button5:
-                startActivity(new Intent(HomeActivity.this, PlayCoordinatorLayout.class));
+                startActivity(new Intent(HomeActivity.this, PlayCoordinatorToolbar.class));
                 break;
             case R.id.button6:
                 startActivity(new Intent(HomeActivity.this, PlayStatusBar.class));
@@ -74,6 +76,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button9:
                 startActivity(new Intent(HomeActivity.this, PlayFloatingActionButton.class));
+                break;
+            case R.id.button10:
+                startActivity(new Intent(HomeActivity.this, PlayCoordinatorLayout.class));
                 break;
         }
     }
