@@ -10,9 +10,9 @@
 
 ## Android Material Design
 
-> Tablayout|横向布局标签 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/TabLayout.md) 
+> Tablayout | 横向布局标签 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/TabLayout.md) 
 
-> TextInputLayout|文字输入布局 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/TextInputLayout.md) 
+> TextInputLayout | 文字输入布局 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/TextInputLayout.md) 
 
 > FloatingActionButton | 悬浮按钮 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/FloatingActionButton.md)
 
