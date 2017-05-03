@@ -18,6 +18,8 @@
 
 > Coordinatorlayout | 协调布局 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/CoordinatorLayout.md)
 
+> Coordinatorlayout.Behavior | 自定义行为的协调布局 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/CoordinatorLayout.md)
+
 > CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liuyufeng.tech/post/2017-04-19-toolbar.html)
 
 ## Screenshots
