@@ -108,6 +108,13 @@
                 android:textAllCaps="false"/>
 
             <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CoordinatorLayout.Behavior|自定义的协调布局"
+                android:textAllCaps="false"/>
+
+            <Button
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

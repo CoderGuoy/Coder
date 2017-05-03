@@ -7,6 +7,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorBehavior;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorLayout;
 import com.coder.guoy.recyclerview.ui.floatingactionbutton.PlayFloatingActionButton;
 import com.coder.guoy.recyclerview.ui.textinputlayout.PlayTextInputLayout;
@@ -42,6 +43,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button8).setOnClickListener(this);
         findViewById(R.id.button9).setOnClickListener(this);
         findViewById(R.id.button10).setOnClickListener(this);
+        findViewById(R.id.button11).setOnClickListener(this);
     }
 
     @Override
@@ -79,6 +81,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button10:
                 startActivity(new Intent(HomeActivity.this, PlayCoordinatorLayout.class));
+                break;
+            case R.id.button11:
+                startActivity(new Intent(HomeActivity.this, PlayCoordinatorBehavior.class));
                 break;
         }
     }
