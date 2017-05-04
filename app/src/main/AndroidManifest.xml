@@ -51,6 +51,12 @@
         <activity android:name=".ui.coordinator.PlayCoordinatorToolbar"/>
         <activity android:name=".ui.coordinator.PlayCoordinatorBehavior"/>
         <activity android:name=".ui.coordinator.PlayCoordinatorLayout"/>
+        <activity android:name=".ui.animation.ViewAnimation">
+        </activity>
+        <activity android:name=".ui.animation.DrawableAnimation">
+        </activity>
+        <activity android:name=".ui.animation.PropertyAnimation">
+        </activity>
     </application>
 
 </manifest>
