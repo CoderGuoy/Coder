@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+    <item
+        android:drawable="@drawable/loading_kunfu01"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_kunfu02"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_kunfu03"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_kunfu04"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_kunfu05"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_kunfu06"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_kunfu07"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_kunfu01"
+        android:duration="200"/>
+</animation-list>

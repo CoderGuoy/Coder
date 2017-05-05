@@ -7,6 +7,9 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.coder.guoy.recyclerview.ui.animation.DrawableAnimation;
+import com.coder.guoy.recyclerview.ui.animation.PropertyAnimation;
+import com.coder.guoy.recyclerview.ui.animation.ViewAnimation;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorBehavior;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorLayout;
 import com.coder.guoy.recyclerview.ui.floatingactionbutton.PlayFloatingActionButton;
@@ -44,6 +47,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button9).setOnClickListener(this);
         findViewById(R.id.button10).setOnClickListener(this);
         findViewById(R.id.button11).setOnClickListener(this);
+        findViewById(R.id.button12).setOnClickListener(this);
+        findViewById(R.id.button13).setOnClickListener(this);
+        findViewById(R.id.button14).setOnClickListener(this);
     }
 
     @Override
@@ -84,6 +90,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button11:
                 startActivity(new Intent(HomeActivity.this, PlayCoordinatorBehavior.class));
+                break;
+            case R.id.button12:
+                startActivity(new Intent(HomeActivity.this, DrawableAnimation.class));
+                break;
+            case R.id.button13:
+                startActivity(new Intent(HomeActivity.this, ViewAnimation.class));
+                break;
+            case R.id.button14:
+                startActivity(new Intent(HomeActivity.this, PropertyAnimation.class));
                 break;
         }
     }

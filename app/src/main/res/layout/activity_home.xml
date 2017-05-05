@@ -44,83 +44,114 @@
                     android:textSize="18sp"/>
             </android.support.v7.widget.Toolbar>
 
-            <Button
-                android:id="@+id/button1"
+            <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sample RecyclerView"
-                android:textAllCaps="false"/>
+                android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Image RecyclerView"
-                android:textAllCaps="false"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Animation RecyclerView"
-                android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sample RecyclerView"
+                        android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="3D TagCloud|3D 球"
-                android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Image RecyclerView"
+                        android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="StatusBar|透明状态栏"
-                android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Animation RecyclerView"
+                        android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TabLayout|横向布局标签"
-                android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3D TagCloud|3D 球"
+                        android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextInputLayout|文字输入布局"
-                android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="StatusBar|透明状态栏"
+                        android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="FloatingActionButton|悬浮按钮"
-                android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TabLayout|横向布局标签"
+                        android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CoordinatorLayout|协调布局"
-                android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextInputLayout|文字输入布局"
+                        android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CoordinatorLayout.Behavior|自定义的协调布局"
-                android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FloatingActionButton|悬浮按钮"
+                        android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CoordinatorToolbar|折叠头布局"
-                android:textAllCaps="false"/>
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CoordinatorLayout|协调布局"
+                        android:textAllCaps="false"/>
 
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CoordinatorLayout.Behavior|自定义的协调布局"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CoordinatorToolbar|折叠头布局"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/button12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Drawable Animation|逐帧动画|帧动画"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/button13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Animation|视图动画|补间动画"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Property Animation|属性动画"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
         </LinearLayout>
 
         <android.support.design.widget.NavigationView
