@@ -3,6 +3,7 @@ package com.coder.guoy.recyclerview.ui.animation;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
@@ -36,35 +37,38 @@ public class ViewAnimation extends MvvmBaseActivity<ActivityViewAnimationBinding
         bindingView.translate.setOnClickListener(this);
         bindingView.scale.setOnClickListener(this);
         bindingView.set.setOnClickListener(this);
+        initAnimation();
+    }
+
+    private void initAnimation() {
+        alpha = new AlphaAnimation(0, 1);
+        alpha.setDuration(DURATION);
+        rotate = new RotateAnimation(0, 360,
+                RotateAnimation.RELATIVE_TO_SELF, 0.5f,
+                RotateAnimation.RELATIVE_TO_SELF, 0.5f);
+        rotate.setDuration(DURATION);
+        translate = new TranslateAnimation(
+                TranslateAnimation.RELATIVE_TO_SELF, -200,
+                TranslateAnimation.RELATIVE_TO_SELF, 0);
+        translate.setDuration(DURATION);
+        scale = new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f,
+                Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+        scale.setDuration(DURATION);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.alpha:
-                alpha = new AlphaAnimation(0, 1);
-                alpha.setDuration(DURATION);
                 bindingView.imageView.startAnimation(alpha);
                 break;
             case R.id.rotate:
-                rotate = new RotateAnimation(0, 360,
-                        RotateAnimation.RELATIVE_TO_SELF, 0.5f,
-                        RotateAnimation.RELATIVE_TO_SELF, 0.5f);
-                rotate.setDuration(DURATION);
                 bindingView.imageView.startAnimation(rotate);
                 break;
             case R.id.translate:
-                translate = new TranslateAnimation(
-                        TranslateAnimation.RELATIVE_TO_SELF, -200,
-                        TranslateAnimation.RELATIVE_TO_SELF, 0);
-                translate.setDuration(DURATION);
                 bindingView.imageView.startAnimation(translate);
                 break;
             case R.id.scale:
-                scale = new ScaleAnimation(
-                        ScaleAnimation.RELATIVE_TO_SELF, 2f,
-                        ScaleAnimation.RELATIVE_TO_SELF, 2f);
-                scale.setDuration(DURATION);
                 bindingView.imageView.startAnimation(scale);
                 break;
             case R.id.set:
