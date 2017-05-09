@@ -33,27 +33,57 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.welfare.WelfareActivity"/>
-        <activity android:name=".ui.sample.SampleActivity"/>
-        <activity android:name=".ui.animation.WelfareAnimationActivity"/>
-        <activity android:name=".ui.tagcloud.TagCloudActivity"/>
-        <activity android:name=".ui.statusbar.PlayStatusBar"/>
-        <activity android:name=".ui.tablayout.PlayTabLayout"/>
-        <activity android:name=".ui.textinputlayout.PlayTextInputLayout"/>
-        <activity android:name=".ui.floatingactionbutton.PlayFloatingActionButton"/>
-        <activity android:name=".ui.coordinator.PlayCoordinatorToolbar"/>
-        <activity android:name=".ui.coordinator.PlayCoordinatorBehavior"/>
-        <activity android:name=".ui.coordinator.PlayCoordinatorLayout"/>
-        <activity android:name=".ui.animation.ViewAnimation"/>
-        <activity android:name=".ui.animation.DrawableAnimation"/>
-        <activity android:name=".ui.animation.PropertyAnimation"/>
+        <activity
+            android:name=".ui.welfare.WelfareActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.sample.SampleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.animation.WelfareAnimationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.tagcloud.TagCloudActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.statusbar.PlayStatusBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.tablayout.PlayTabLayout"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.textinputlayout.PlayTextInputLayout"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.floatingactionbutton.PlayFloatingActionButton"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.coordinator.PlayCoordinatorToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.coordinator.PlayCoordinatorBehavior"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.coordinator.PlayCoordinatorLayout"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.animation.ViewAnimation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.animation.DrawableAnimation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.animation.PropertyAnimation"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
