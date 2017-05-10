@@ -11,8 +11,9 @@
             android:id="@+id/imageview_move"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/logo"/>
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/balloon"/>
     </RelativeLayout>
 
 </layout>
