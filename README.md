@@ -8,19 +8,19 @@
 
 > 继承ViewGroupon实现的 3D球
 
-> Android 帧动画 视图动画 属性动画 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/AndroidAnimation.md)
+> Android 帧动画 视图动画 属性动画 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71641004)
 
 ## Android Material Design
 
-> Tablayout | 横向布局标签 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/TabLayout.md) 
+> Tablayout | 横向布局标签 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71079546) 
 
-> TextInputLayout | 文字输入布局 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/TextInputLayout.md) 
+> TextInputLayout | 文字输入布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71107229) 
 
-> FloatingActionButton | 悬浮按钮 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/FloatingActionButton.md)
+> FloatingActionButton | 悬浮按钮 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71146380)
 
-> Coordinatorlayout | 协调布局 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/CoordinatorLayout.md)
+> Coordinatorlayout | 协调布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71090247)
 
-> Coordinatorlayout.Behavior | 自定义行为的协调布局 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/CoordinatorLayout.md)
+> Coordinatorlayout.Behavior | 自定义行为的协调布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71090247)
 
 > CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liuyufeng.tech/post/2017-04-19-toolbar.html)
 
