@@ -3,63 +3,73 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_centerInParent="true"
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/motorcycle"/>
+        <include
+            android:id="@+id/view_toolbar"
+            layout="@layout/toolbar"/>
 
-        <LinearLayout
-            android:layout_alignParentBottom="true"
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="4">
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/motorcycle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/alpha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Alpha\n透明度"/>
+
+                <Button
+                    android:id="@+id/rotate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rotate\n旋转"/>
+
+                <Button
+                    android:id="@+id/translate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Translate位移"/>
+
+                <Button
+                    android:id="@+id/scale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Scale\n缩放"/>
+
+            </LinearLayout>
 
             <Button
-                android:id="@+id/alpha"
-                android:layout_width="0dp"
+                android:id="@+id/set"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Alpha\n透明度"/>
-
-            <Button
-                android:id="@+id/rotate"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Rotate\n旋转"/>
-
-            <Button
-                android:id="@+id/translate"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Translate位移"/>
-
-            <Button
-                android:id="@+id/scale"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Scale\n缩放"/>
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/set"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="组合"/>
+                android:text="组合"/>
 
 
-    </RelativeLayout>
+        </RelativeLayout>
 
-
+    </LinearLayout>
 </layout>
 

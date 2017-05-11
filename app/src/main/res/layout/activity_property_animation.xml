@@ -3,17 +3,106 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageview_move"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/balloon"/>
-    </RelativeLayout>
+        <include
+            android:id="@+id/property_toolbar"
+            layout="@layout/toolbar"/>
 
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTheme">
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_alpah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="alpah"/>
+
+                <Button
+                    android:id="@+id/scalex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="scaleX"/>
+
+                <Button
+                    android:id="@+id/scaley"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="scaleY"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearlayout1"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/rotation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rotation"/>
+
+                <Button
+                    android:id="@+id/rotationx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rotationX"/>
+
+                <Button
+                    android:id="@+id/rotationy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rotationY"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearlayout2"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/translatex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="translateX"/>
+
+                <Button
+                    android:id="@+id/translatey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="translateY"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/balloon"/>
+        </RelativeLayout>
+    </LinearLayout>
 </layout>

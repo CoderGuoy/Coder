@@ -32,12 +32,18 @@ public class ViewAnimation extends MvvmBaseActivity<ActivityViewAnimationBinding
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_animation);
         showContentView();
+        initAnimation();
+        initListener();
+        bindingView.viewToolbar.textviewTitle.setText("视图动画");
+    }
+
+    private void initListener() {
+        bindingView.viewToolbar.toolbarBack.setOnClickListener(this);
         bindingView.alpha.setOnClickListener(this);
         bindingView.rotate.setOnClickListener(this);
         bindingView.translate.setOnClickListener(this);
         bindingView.scale.setOnClickListener(this);
         bindingView.set.setOnClickListener(this);
-        initAnimation();
     }
 
     private void initAnimation() {
@@ -59,6 +65,9 @@ public class ViewAnimation extends MvvmBaseActivity<ActivityViewAnimationBinding
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.toolbar_back:
+                finish();
+                break;
             case R.id.alpha:
                 bindingView.imageView.startAnimation(alpha);
                 break;
