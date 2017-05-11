@@ -8,6 +8,8 @@
 
 > 继承ViewGroupon实现的 3D球
 
+> Android 帧动画 视图动画 属性动画 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/AndroidAnimation.md)
+
 ## Android Material Design
 
 > Tablayout | 横向布局标签 [介绍及使用详情](https://github.com/CoderGuoy/Android-Material-Design/blob/master/TabLayout.md) 
