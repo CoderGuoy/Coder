@@ -84,6 +84,10 @@
         <activity
             android:name=".ui.animation.PropertyAnimation"
             android:screenOrientation="portrait"/>
+        <activity android:name=".ui.holder.RecyclerViewHolder">
+        </activity>
+        <activity android:name=".ui.holder.MaterialDesignHolder">
+        </activity>
     </application>
 
 </manifest>

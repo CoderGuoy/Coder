@@ -15,7 +15,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="@drawable/ic_nav_bg_drawerlayout"
+                android:background="@drawable/model03"
                 android:gravity="bottom"
                 android:orientation="vertical"
                 android:paddingBottom="16dp"

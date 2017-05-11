@@ -152,4 +152,5 @@ public class SampleActivity extends MvvmBaseActivity<ActivitySampleBinding> {
         }
         return resList;
     }
+
 }
