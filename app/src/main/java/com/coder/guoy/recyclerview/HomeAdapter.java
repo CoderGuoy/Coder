@@ -12,10 +12,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.coder.guoy.recyclerview.databinding.ItemHomeBinding;
+import com.coder.guoy.recyclerview.ui.cardview.PlayCardView;
 import com.coder.guoy.recyclerview.ui.holder.MaterialDesignHolder;
 import com.coder.guoy.recyclerview.ui.holder.RecyclerViewHolder;
 import com.coder.guoy.recyclerview.ui.tagcloud.TagCloudActivity;
-import com.coder.guoy.recyclerview.utils.ToastUtil;
 
 /**
  * @Version:
@@ -56,7 +56,7 @@ public class HomeAdapter extends RecyclerView.Adapter {
                         mContext.startActivity(new Intent(mContext, RecyclerViewHolder.class));
                         break;
                     case 1://CardView http://www.tuicool.com/articles/zyIbyyj
-                        ToastUtil.show("敬请期待");
+                        mContext.startActivity(new Intent(mContext, PlayCardView.class));
                         break;
                     case 2://Material Design
                         mContext.startActivity(new Intent(mContext, MaterialDesignHolder.class));

@@ -9,7 +9,7 @@
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
         android:stateListAnimator="@drawable/touch_raise"
-        app:cardCornerRadius="4dp"
+        app:cardCornerRadius="2dp"
         app:cardPreventCornerOverlap="false"
         app:cardUseCompatPadding="true">
 
