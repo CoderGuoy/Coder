@@ -14,5 +14,4 @@
             android:valueTo="2dp"
             android:valueType="floatType"/>
     </item>
-
 </selector>

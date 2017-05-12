@@ -32,6 +32,15 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
         setContentView(R.layout.activity_material_design_holder);
         showContentView();
         bindingView.button5.setOnClickListener(this);
+        bindingView.button6.setOnClickListener(this);
+        bindingView.button7.setOnClickListener(this);
+        bindingView.button8.setOnClickListener(this);
+        bindingView.button9.setOnClickListener(this);
+        bindingView.button10.setOnClickListener(this);
+        bindingView.button11.setOnClickListener(this);
+        bindingView.button12.setOnClickListener(this);
+        bindingView.button13.setOnClickListener(this);
+        bindingView.button14.setOnClickListener(this);
     }
 
     @Override

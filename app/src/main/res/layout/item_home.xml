@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        android:stateListAnimator="@drawable/touch_raise"
+        android:stateListAnimator="@drawable/lift_on_touch"
         app:cardCornerRadius="2dp"
         app:cardPreventCornerOverlap="false"
         app:cardUseCompatPadding="true">
@@ -23,7 +23,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="哈哈"
                 android:textSize="16sp"/>
 
             <ImageView
