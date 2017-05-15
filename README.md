@@ -10,6 +10,8 @@
 
 > Android 帧动画 视图动画 属性动画 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71641004)
 
+> 设计模式之策略模式 | Strategy Pattern [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72191041)
+
 ## Android Material Design
 
 > Tablayout | 横向布局标签 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71079546) 
