@@ -17,8 +17,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private RecyclerView recyclerView;
     private HomeAdapter adapter;
     private LinearLayoutManager mLayoutManager;
-    private String[] model = {"RecyclerView", "CardView", "Material Design","3Dtouch"};
-    private int[] image = {R.drawable.model01, R.drawable.model02, R.drawable.model03,R.drawable.model01};
+    private String[] model = {"RecyclerView", "CardView", "Material Design","3Dtouch","Design Pattern"};
+    private int[] image = {R.drawable.model01, R.drawable.model02, R.drawable.model03,R.drawable.model01,R.drawable.model02};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

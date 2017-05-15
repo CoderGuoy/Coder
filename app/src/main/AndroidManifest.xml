@@ -84,12 +84,18 @@
         <activity
             android:name=".ui.animation.PropertyAnimation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ui.holder.RecyclerViewHolder">
-        </activity>
-        <activity android:name=".ui.holder.MaterialDesignHolder">
-        </activity>
-        <activity android:name=".ui.cardview.PlayCardView">
-        </activity>
+        <activity
+            android:name=".ui.holder.RecyclerViewHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.holder.MaterialDesignHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.cardview.PlayCardView"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".designpattern.StrategyDesign"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

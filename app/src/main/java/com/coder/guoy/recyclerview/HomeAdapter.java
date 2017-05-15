@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.coder.guoy.recyclerview.databinding.ItemHomeBinding;
+import com.coder.guoy.recyclerview.designpattern.StrategyDesign;
 import com.coder.guoy.recyclerview.ui.cardview.PlayCardView;
 import com.coder.guoy.recyclerview.ui.holder.MaterialDesignHolder;
 import com.coder.guoy.recyclerview.ui.holder.RecyclerViewHolder;
@@ -63,6 +64,9 @@ public class HomeAdapter extends RecyclerView.Adapter {
                         break;
                     case 3://3Dtouch
                         mContext.startActivity(new Intent(mContext, TagCloudActivity.class));
+                        break;
+                    case 4://Design Pattern
+                        mContext.startActivity(new Intent(mContext, StrategyDesign.class));
                         break;
                 }
             }
