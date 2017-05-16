@@ -1,10 +1,10 @@
 # Coder
 
-> MVVM开发模式中RecyclerView使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
+> RecyclerView使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
 
-> MVVM开发模式+RxJava+Retrofit请求网络数据,RecyclerView加载网络图片（图片加载框架Glide）
+> RxJava+Retrofit请求网络数据,RecyclerView加载网络图片（图片加载框架Glide）
 
-> MVVM开发模式中RecyclerView为图片添加ObjectAnimator动画效果
+> RecyclerView为图片添加ObjectAnimator动画效果
 
 > 继承ViewGroupon实现的 3D球
 
