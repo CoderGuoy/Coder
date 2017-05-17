@@ -22,10 +22,11 @@
     <!--黑色-->
     <color name="colorBlack">#000000</color>
 
-    <color name="red_s">#F03300</color>
-    <color name="yello">#FFEE30</color>
-    <color name="blue">#169bd9</color>
-    <color name="red">#e70012</color>
+    <!--Google-->
+    <color name="blue">#4285f4</color>
+    <color name="green">#34a853</color>
+    <color name="yello">#fbbc05</color>
+    <color name="red">#ea4335</color>
 
 
 </resources>
