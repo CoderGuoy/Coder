@@ -55,16 +55,16 @@
             android:name=".ui.tagcloud.TagCloudActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.statusbar.PlayStatusBar"
+            android:name=".ui.PlayStatusBar"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.tablayout.PlayTabLayout"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.textinputlayout.PlayTextInputLayout"
+            android:name=".ui.PlayTextInputLayout"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.floatingactionbutton.PlayFloatingActionButton"
+            android:name=".ui.PlayFloatingActionButton"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.coordinator.PlayCoordinatorToolbar"
@@ -91,7 +91,7 @@
             android:name=".ui.holder.MaterialDesignHolder"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.cardview.PlayCardView"
+            android:name=".ui.PlayCardView"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".designpattern.StrategyDesign"

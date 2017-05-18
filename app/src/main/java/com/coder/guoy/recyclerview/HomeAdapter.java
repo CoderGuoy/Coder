@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.coder.guoy.recyclerview.databinding.ItemHomeBinding;
 import com.coder.guoy.recyclerview.designpattern.StrategyDesign;
-import com.coder.guoy.recyclerview.ui.cardview.PlayCardView;
+import com.coder.guoy.recyclerview.ui.PlayCardView;
 import com.coder.guoy.recyclerview.ui.holder.MaterialDesignHolder;
 import com.coder.guoy.recyclerview.ui.holder.RecyclerViewHolder;
 import com.coder.guoy.recyclerview.ui.tagcloud.TagCloudActivity;

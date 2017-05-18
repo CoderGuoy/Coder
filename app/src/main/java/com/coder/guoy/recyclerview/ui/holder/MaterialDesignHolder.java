@@ -13,10 +13,10 @@ import com.coder.guoy.recyclerview.ui.animation.ViewAnimation;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorBehavior;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorLayout;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorToolbar;
-import com.coder.guoy.recyclerview.ui.floatingactionbutton.PlayFloatingActionButton;
-import com.coder.guoy.recyclerview.ui.statusbar.PlayStatusBar;
+import com.coder.guoy.recyclerview.ui.PlayFloatingActionButton;
+import com.coder.guoy.recyclerview.ui.PlayStatusBar;
 import com.coder.guoy.recyclerview.ui.tablayout.PlayTabLayout;
-import com.coder.guoy.recyclerview.ui.textinputlayout.PlayTextInputLayout;
+import com.coder.guoy.recyclerview.ui.PlayTextInputLayout;
 
 /**
  * @Version:

@@ -1,4 +1,4 @@
-package com.coder.guoy.recyclerview.ui.textinputlayout;
+package com.coder.guoy.recyclerview.ui;
 
 import android.os.Bundle;
 import android.text.Editable;
