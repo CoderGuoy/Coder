@@ -12,6 +12,8 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayCoordinatorToolbarBin
  * @Author:Guoy
  * @CreateTime:2017年4月24日
  * @Descrpiton:CoordinatorLayout，APPBarLayout，CollapsingTabLayout实现折叠头布局
+ * @updataTime:2017年5月21日
+ * @Description:CollapsingTollBarLayoutUpData
  */
 public class PlayCoordinatorToolbar extends MvvmBaseActivity<ActivityPlayCoordinatorToolbarBinding> {
 
