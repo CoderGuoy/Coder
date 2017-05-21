@@ -28,6 +28,8 @@
 
 > AppBarLayout | 嵌套布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72472367)
 
+> CollapsingToolbarLayout | 折叠工具布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72602767)
+
 > CardView | 卡片控件 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71774554)
 
 ## Screenshots
