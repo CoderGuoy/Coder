@@ -6,8 +6,6 @@ import android.os.Bundle;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityPlayCoordinatorToolbarBinding;
-import com.coder.guoy.recyclerview.utils.CommonUtils;
-import com.coder.guoy.recyclerview.view.statusbar.StatusBarUtil;
 
 /**
  * @Version:v1.0
@@ -21,15 +19,12 @@ public class PlayCoordinatorToolbar extends MvvmBaseActivity<ActivityPlayCoordin
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_coordinator_toolbar);
-        StatusBarUtil.setColor(PlayCoordinatorToolbar.this, CommonUtils.getColor(R.color.colorTheme), 0);
         showContentView();
 
-        //设置Collapsing文字颜色
+        //设置Collapsing折叠后文字颜色
         bindingView.collapsingtoolbar.setCollapsedTitleTextColor(Color.WHITE);
-        //设置达到某一个状态之后的出现的效果
-        bindingView.collapsingtoolbar.setContentScrimColor(CommonUtils.getColor(R.color.colorTheme));
-        //设置达到某一个状态之后的状态栏出现的效果
-        bindingView.collapsingtoolbar.setStatusBarScrimColor(CommonUtils.getColor(R.color.colorTheme));//无效果
+        //设置Collapsing未折叠文字颜色
+        bindingView.collapsingtoolbar.setExpandedTitleColor(Color.BLACK);
     }
 
 }
