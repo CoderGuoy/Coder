@@ -13,5 +13,14 @@
         <attr name="lightColor" format="color"/>
         <attr name="darkColor" format="color"/>
     </declare-styleable>
+
+    <!--分类筛选-->
+    <declare-styleable name="Classification">
+        <attr name="title" format="string"/>
+        <attr name="title_color" format="color"/>
+        <attr name="icon" format="reference"/>
+        <attr name="content_title" format="string"/>
+        <attr name="content_title_color" format="color"/>
+    </declare-styleable>
     
 </resources>
