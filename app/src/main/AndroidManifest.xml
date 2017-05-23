@@ -96,6 +96,9 @@
         <activity
             android:name=".designpattern.StrategyDesign"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ClassificationActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

@@ -22,5 +22,6 @@
         <attr name="content_title" format="string"/>
         <attr name="content_title_color" format="color"/>
     </declare-styleable>
-    
+
+
 </resources>
