@@ -37,21 +37,21 @@ public class Classification extends LinearLayout {
 
     public Classification(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        View view = LayoutInflater.from(context).inflate(R.layout.classification, this, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.classification, this, true);
         icon = (ImageView) view.findViewById(R.id.icon);
         title = (TextView) view.findViewById(R.id.title);
 
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.Classification);
-        ClassIcon = ta.getDrawable(R.styleable.Classification_icon);
-        ClassTitle = ta.getString(R.styleable.Classification_title);
-        ta.recycle();
+        if (ta != null) {
+            //设置icon
+            ClassIcon = ta.getDrawable(R.styleable.Classification_icon);
+            icon.setImageDrawable(ClassIcon);
 
-        initData();
-    }
-
-    private void initData() {
-        icon.setImageDrawable(ClassIcon);
-        title.setText(ClassTitle);
+            //设置title
+            ClassTitle = ta.getString(R.styleable.Classification_title);
+            title.setText(ClassTitle);
+            ta.recycle();
+        }
     }
 
 
