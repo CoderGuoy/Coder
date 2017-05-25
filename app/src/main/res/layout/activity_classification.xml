@@ -9,8 +9,8 @@
     <com.coder.guoy.recyclerview.ui.Classification
         android:id="@+id/classification"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:icon="@drawable/back"
-        app:title="民族宗教"/>
+        android:layout_height="40dp"
+
+        />
 
 </LinearLayout>

@@ -17,8 +17,8 @@
     <!--分类筛选-->
     <declare-styleable name="Classification">
         <attr name="title" format="string"/>
-        <attr name="title_color" format="color"/>
         <attr name="icon" format="reference"/>
+        <attr name="title_color" format="color"/>
         <attr name="content_title" format="string"/>
         <attr name="content_title_color" format="color"/>
     </declare-styleable>
