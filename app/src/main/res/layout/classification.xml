@@ -15,12 +15,15 @@
             android:id="@+id/icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/classjdbs"
             android:padding="5dp"/>
 
         <TextView
+            android:layout_marginTop="2dp"
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="街道办事"
             android:textSize="14sp"/>
     </LinearLayout>
 

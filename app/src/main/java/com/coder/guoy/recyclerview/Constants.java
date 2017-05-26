@@ -9,6 +9,8 @@ public class Constants {
     //================= URL =====================
     //干活集中营
     public static final String GANK_URL = "http://gank.io/api/";
+    //豆瓣
+    public static final String DOUBAN_URL = "Https://api.douban.com/";
 
     //================= TYPE ====================
     //福利
