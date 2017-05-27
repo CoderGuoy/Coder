@@ -21,6 +21,8 @@
     <color name="colorWrite">#ffffff</color>
     <!--黑色-->
     <color name="colorBlack">#000000</color>
+    <!--灰色-->
+    <color name="colorGray">#eeeeee</color>
 
     <!--Google-->
     <color name="blue">#4285f4</color>

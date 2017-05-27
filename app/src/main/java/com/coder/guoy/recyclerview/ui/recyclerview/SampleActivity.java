@@ -1,4 +1,4 @@
-package com.coder.guoy.recyclerview.ui.sample;
+package com.coder.guoy.recyclerview.ui.recyclerview;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;

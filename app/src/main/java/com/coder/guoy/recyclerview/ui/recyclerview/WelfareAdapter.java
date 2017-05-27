@@ -1,4 +1,4 @@
-package com.coder.guoy.recyclerview.ui.welfare;
+package com.coder.guoy.recyclerview.ui.recyclerview;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;

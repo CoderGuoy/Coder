@@ -8,9 +8,9 @@ import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityRecyclerViewHolderBinding;
 import com.coder.guoy.recyclerview.ui.ClassificationActivity;
-import com.coder.guoy.recyclerview.ui.animation.WelfareAnimationActivity;
-import com.coder.guoy.recyclerview.ui.sample.SampleActivity;
-import com.coder.guoy.recyclerview.ui.welfare.WelfareActivity;
+import com.coder.guoy.recyclerview.ui.recyclerview.WelfareAnimationActivity;
+import com.coder.guoy.recyclerview.ui.recyclerview.SampleActivity;
+import com.coder.guoy.recyclerview.ui.recyclerview.WelfareActivity;
 
 /**
  * @Version:

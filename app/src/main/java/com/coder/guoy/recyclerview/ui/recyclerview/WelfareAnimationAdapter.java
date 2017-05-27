@@ -1,4 +1,4 @@
-package com.coder.guoy.recyclerview.ui.animation;
+package com.coder.guoy.recyclerview.ui.recyclerview;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;

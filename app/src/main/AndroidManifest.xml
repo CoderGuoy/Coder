@@ -43,13 +43,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.welfare.WelfareActivity"
+            android:name=".ui.recyclerview.WelfareActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.sample.SampleActivity"
+            android:name=".ui.recyclerview.SampleActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.animation.WelfareAnimationActivity"
+            android:name=".ui.recyclerview.WelfareAnimationActivity"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.tagcloud.TagCloudActivity"

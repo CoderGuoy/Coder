@@ -1,4 +1,4 @@
-package com.coder.guoy.recyclerview.ui;
+package com.coder.guoy.recyclerview.view.classification;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -25,7 +25,7 @@ import static com.coder.guoy.recyclerview.R.id.textview1;
  * @CreateTime:2017/5/23
  * @Descrpiton:
  */
-public class Classification extends LinearLayout {
+public class Classification extends LinearLayout implements View.OnClickListener {
     private String TAG = "Classification";
     private ImageView icon;
     private TextView title;
@@ -36,6 +36,8 @@ public class Classification extends LinearLayout {
     private List<CharSequence> contentList = new ArrayList<CharSequence>();
     private String classTitle;
     private Drawable classIcon;
+
+    private OnContentTextClickListener listener;
 
     //在代码调用的时候使用
     public Classification(Context context) {
@@ -112,6 +114,10 @@ public class Classification extends LinearLayout {
         icon.setImageDrawable(drawable);
     }
 
+    /**
+     * 设置内容标题
+     * @param list
+     */
     public void setList(List<CharSequence> list) {
         //设置内容
         switch (list.size()) {
@@ -181,41 +187,49 @@ public class Classification extends LinearLayout {
     private void showTextOne(List<CharSequence> list) {
         contentText1.setVisibility(VISIBLE);
         contentText1.setText(list.get(0));
+        contentText1.setOnClickListener(this);
     }
 
     private void showTextTwo(List<CharSequence> list) {
         contentText2.setVisibility(VISIBLE);
         contentText2.setText(list.get(1));
+        contentText2.setOnClickListener(this);
     }
 
     private void showTextThree(List<CharSequence> list) {
         contentText3.setVisibility(VISIBLE);
         contentText3.setText(list.get(2));
+        contentText3.setOnClickListener(this);
     }
 
     private void showTextFore(List<CharSequence> list) {
         contentText4.setVisibility(VISIBLE);
         contentText4.setText(list.get(3));
+        contentText4.setOnClickListener(this);
     }
 
     private void showTextFive(List<CharSequence> list) {
         contentText5.setVisibility(VISIBLE);
         contentText5.setText(list.get(4));
+        contentText5.setOnClickListener(this);
     }
 
     private void showTextSix(List<CharSequence> list) {
         contentText6.setVisibility(VISIBLE);
-        contentText7.setText(list.get(5));
+        contentText6.setText(list.get(5));
+        contentText6.setOnClickListener(this);
     }
 
     private void showTextSeven(List<CharSequence> list) {
         contentText7.setVisibility(VISIBLE);
         contentText7.setText(list.get(6));
+        contentText7.setOnClickListener(this);
     }
 
     private void showTextEight(List<CharSequence> list) {
         contentText8.setVisibility(VISIBLE);
         contentText8.setText(list.get(7));
+        contentText8.setOnClickListener(this);
     }
 
     /**
@@ -233,5 +247,41 @@ public class Classification extends LinearLayout {
         contentLayout2.setVisibility(VISIBLE);
     }
 
+    public OnContentTextClickListener getListener() {
+        return listener;
+    }
 
+    public void setListener(OnContentTextClickListener listener) {
+        this.listener = listener;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.textview1:
+                listener.onContentTextClick(contentText1.getText());
+                break;
+            case R.id.textview2:
+                listener.onContentTextClick(contentText2.getText());
+                break;
+            case R.id.textview3:
+                listener.onContentTextClick(contentText3.getText());
+                break;
+            case R.id.textview4:
+                listener.onContentTextClick(contentText4.getText());
+                break;
+            case R.id.textview5:
+                listener.onContentTextClick(contentText5.getText());
+                break;
+            case R.id.textview6:
+                listener.onContentTextClick(contentText6.getText());
+                break;
+            case R.id.textview7:
+                listener.onContentTextClick(contentText7.getText());
+                break;
+            case R.id.textview8:
+                listener.onContentTextClick(contentText8.getText());
+                break;
+        }
+    }
 }

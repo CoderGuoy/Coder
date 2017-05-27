@@ -10,17 +10,59 @@
             type="com.coder.guoy.recyclerview.api.bean.GankIoDataBean"/>
     </data>
 
-    <LinearLayout
-
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorGray">
 
-        <com.coder.guoy.recyclerview.ui.Classification
-            android:id="@+id/classification"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <com.coder.guoy.recyclerview.view.classification.Classification
+                android:id="@+id/classification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <com.coder.guoy.recyclerview.view.classification.Classification
+                android:id="@+id/classification2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <com.coder.guoy.recyclerview.view.classification.Classification
+                android:id="@+id/classification3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.coder.guoy.recyclerview.view.classification.Classification
+                android:id="@+id/classification4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.coder.guoy.recyclerview.view.classification.Classification
+                android:id="@+id/classification5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.coder.guoy.recyclerview.view.classification.Classification
+                android:id="@+id/classification6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.coder.guoy.recyclerview.view.classification.Classification
+                android:id="@+id/classification7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <com.coder.guoy.recyclerview.view.classification.Classification
+                android:id="@+id/classification8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 </layout>
