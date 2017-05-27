@@ -48,17 +48,43 @@
                 android:id="@+id/content_layout1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:orientation="horizontal"
                 android:visibility="gone"
-                >
+                android:weightSum="4">
 
-                <TextView
-                    android:id="@+id/textview1"
-                    style="@style/ContentTitle"
-                    android:layout_marginLeft="0dp"/>
+                <RelativeLayout
+                    style="@style/ContentRelative">
 
-                <TextView
+                    <TextView
+                        android:id="@+id/textview1"
+                        style="@style/ContentTitle"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/ContentRelative">
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        style="@style/ContentTitle"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/ContentRelative">
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        style="@style/ContentTitle"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/ContentRelative">
+
+                    <TextView
+                        android:id="@+id/textview4"
+                        style="@style/ContentTitle"/>
+                </RelativeLayout>
+
+                <!--<TextView
                     android:id="@+id/textview2"
                     style="@style/ContentTitle"/>
 
@@ -68,7 +94,7 @@
 
                 <TextView
                     android:id="@+id/textview4"
-                    style="@style/ContentTitle"/>
+                    style="@style/ContentTitle"/>-->
 
             </LinearLayout>
 
@@ -77,14 +103,41 @@
                 android:id="@+id/content_layout2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:orientation="horizontal"
-                android:visibility="gone">
+                android:visibility="gone"
+                android:weightSum="4">
+                <RelativeLayout
+                    style="@style/ContentRelative">
 
-                <TextView
+                    <TextView
+                        android:id="@+id/textview5"
+                        style="@style/ContentTitle"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/ContentRelative">
+
+                    <TextView
+                        android:id="@+id/textview6"
+                        style="@style/ContentTitle"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/ContentRelative">
+
+                    <TextView
+                        android:id="@+id/textview7"
+                        style="@style/ContentTitle"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/ContentRelative">
+
+                    <TextView
+                        android:id="@+id/textview8"
+                        style="@style/ContentTitle"/>
+                </RelativeLayout>
+
+               <!-- <TextView
                     android:id="@+id/textview5"
-                    style="@style/ContentTitle"
-                    android:layout_marginLeft="0dp"/>
+                    style="@style/ContentTitle"/>
 
                 <TextView
                     android:id="@+id/textview6"
@@ -96,7 +149,7 @@
 
                 <TextView
                     android:id="@+id/textview8"
-                    style="@style/ContentTitle"/>
+                    style="@style/ContentTitle"/>-->
 
             </LinearLayout>
 

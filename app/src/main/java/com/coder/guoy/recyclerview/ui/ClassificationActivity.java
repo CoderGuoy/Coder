@@ -17,6 +17,7 @@ import java.util.List;
 public class ClassificationActivity extends MvvmBaseActivity<ActivityClassificationBinding> implements OnContentTextClickListener {
 
     private List<CharSequence> list = new ArrayList<CharSequence>();
+    private List<CharSequence> list2 = new ArrayList<CharSequence>();
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -25,7 +26,12 @@ public class ClassificationActivity extends MvvmBaseActivity<ActivityClassificat
         setContentView(R.layout.activity_classification);
         showContentView();
 
-        list.add("民族厅");
+        initView();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private void initView() {
+        list.add("民族餐厅");
         bindingView.classification.setIcon(getDrawable(R.drawable.classcyzs));
         bindingView.classification.setTitle("教育");
         bindingView.classification.setList(list);
@@ -50,9 +56,16 @@ public class ClassificationActivity extends MvvmBaseActivity<ActivityClassificat
         bindingView.classification4.setListener(this);
 
         list.add("残疾康复");
+        list2.add("111");
+        list2.add("222");
+        list2.add("333");
+        list2.add("444");
+        list2.add("555");
+        list2.add("666");
+        list2.add("777");
         bindingView.classification5.setIcon(getDrawable(R.drawable.classcsjz));
         bindingView.classification5.setTitle("水电3");
-        bindingView.classification5.setList(list);
+        bindingView.classification5.setList(list2);
         bindingView.classification5.setListener(this);
 
         list.add("供电站");
