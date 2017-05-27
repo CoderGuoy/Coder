@@ -13,23 +13,13 @@
         app:cardPreventCornerOverlap="false"
         app:cardUseCompatPadding="true">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/home_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16sp"/>
 
-            <TextView
-                android:id="@+id/home_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textSize="16sp"/>
-
-            <ImageView
-                android:id="@+id/home_imageview"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"/>
-        </LinearLayout>
     </android.support.v7.widget.CardView>
 </layout>

@@ -8,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.coder.guoy.recyclerview.databinding.ItemHomeBinding;
@@ -26,15 +25,13 @@ import com.coder.guoy.recyclerview.ui.tagcloud.TagCloudActivity;
  */
 public class HomeAdapter extends RecyclerView.Adapter {
     private String[] model;
-    private int[] image;
     private LayoutInflater mInflater;
     private Context mContext;
     private ItemHomeBinding bindingView;
 
-    public HomeAdapter(Context context, String[] model, int[] image) {
+    public HomeAdapter(Context context, String[] model) {
         mInflater = LayoutInflater.from(context);
         this.model = model;
-        this.image = image;
         mContext = context;
     }
 
@@ -48,24 +45,25 @@ public class HomeAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         ViewHolder vh = (ViewHolder) holder;
         vh.textView.setText(model[position]);
-        vh.imageView.setImageResource(image[position]);
         bindingView.getRoot().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (position) {
-                    case 0://RecyclerView
+                    case 0://Material Design
+                        mContext.startActivity(new Intent(mContext, MaterialDesignHolder.class));
+                        break;
+                    case 1://RecyclerView
                         mContext.startActivity(new Intent(mContext, RecyclerViewHolder.class));
                         break;
-                    case 1://CardView http://www.tuicool.com/articles/zyIbyyj
+                    case 2://CardView http://www.tuicool.com/articles/zyIbyyj
                         mContext.startActivity(new Intent(mContext, PlayCardView.class));
-                        break;
-                    case 2://Material Design
-                        mContext.startActivity(new Intent(mContext, MaterialDesignHolder.class));
                         break;
                     case 3://3Dtouch
                         mContext.startActivity(new Intent(mContext, TagCloudActivity.class));
                         break;
-                    case 4://Design Pattern
+                    case 4://Animation
+                        break;
+                    case 5://Design Pattern
                         mContext.startActivity(new Intent(mContext, StrategyDesign.class));
                         break;
                 }
@@ -79,13 +77,11 @@ public class HomeAdapter extends RecyclerView.Adapter {
     }
 
     private class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView imageView;
         public CardView cardView;
         public TextView textView;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            imageView = bindingView.homeImageview;
             cardView = bindingView.homeCardview;
             textView = bindingView.homeText;
         }

@@ -17,8 +17,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private RecyclerView recyclerView;
     private HomeAdapter adapter;
     private LinearLayoutManager mLayoutManager;
-    private String[] model = {"RecyclerView", "CardView", "Material Design","3Dtouch","Design Pattern"};
-    private int[] image = {R.drawable.model01, R.drawable.model02, R.drawable.model03,R.drawable.model01,R.drawable.model02};
+    private String[] model = {"Material Design","RecyclerView", "CardView", "3Dtouch","Animation","Design Pattern"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +40,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
      * 初始化RecyclerView
      */
     private void initRecyclerView() {
-        adapter = new HomeAdapter(this, model, image);
+        adapter = new HomeAdapter(this, model);
         mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setAdapter(adapter);
