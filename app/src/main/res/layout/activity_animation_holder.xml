@@ -9,48 +9,41 @@
         android:orientation="vertical">
 
         <include
-            android:id="@+id/recyclerviewholder"
+            android:id="@+id/animationholder"
             layout="@layout/toolbar"/>
-
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/button12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sample RecyclerView"
+                    android:text="Drawable Animation|逐帧动画|帧动画"
                     android:textAllCaps="false"/>
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/button13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Image RecyclerView"
+                    android:text="View Animation|视图动画|补间动画"
                     android:textAllCaps="false"/>
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/button14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Animation RecyclerView"
+                    android:text="Property Animation|属性动画"
                     android:textAllCaps="false"/>
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="分类筛选"
-                    android:textAllCaps="false"/>
-
 
             </LinearLayout>
+
         </android.support.v4.widget.NestedScrollView>
     </LinearLayout>
+
 </layout>

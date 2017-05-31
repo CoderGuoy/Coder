@@ -99,6 +99,10 @@
         <activity
             android:name=".ui.ClassificationActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".ui.holder.AnimationHolder">
+        </activity>
+        <activity android:name=".ui.bottomsheet.PlayBottomSheetDialog">
+        </activity>
     </application>
 
 </manifest>

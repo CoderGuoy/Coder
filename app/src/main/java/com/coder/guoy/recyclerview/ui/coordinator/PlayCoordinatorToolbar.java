@@ -2,6 +2,7 @@ package com.coder.guoy.recyclerview.ui.coordinator;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
@@ -15,7 +16,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayCoordinatorToolbarBin
  * @updataTime:2017年5月21日
  * @Description:CollapsingTollBarLayoutUpData
  */
-public class PlayCoordinatorToolbar extends MvvmBaseActivity<ActivityPlayCoordinatorToolbarBinding> {
+public class PlayCoordinatorToolbar extends MvvmBaseActivity<ActivityPlayCoordinatorToolbarBinding> implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,11 @@ public class PlayCoordinatorToolbar extends MvvmBaseActivity<ActivityPlayCoordin
         bindingView.collapsingtoolbar.setCollapsedTitleTextColor(Color.WHITE);
         //设置Collapsing未折叠文字颜色
         bindingView.collapsingtoolbar.setExpandedTitleColor(Color.BLACK);
+        bindingView.imageviewBack.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View v) {
+        finish();
+    }
 }

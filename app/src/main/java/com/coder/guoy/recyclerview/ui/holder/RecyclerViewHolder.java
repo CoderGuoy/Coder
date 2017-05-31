@@ -25,6 +25,8 @@ public class RecyclerViewHolder extends MvvmBaseActivity<ActivityRecyclerViewHol
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view_holder);
         showContentView();
+        bindingView.recyclerviewholder.textviewTitle.setText("RecyclerView");
+        bindingView.recyclerviewholder.toolbarBack.setOnClickListener(this);
         bindingView.button1.setOnClickListener(this);
         bindingView.button2.setOnClickListener(this);
         bindingView.button3.setOnClickListener(this);
@@ -34,6 +36,9 @@ public class RecyclerViewHolder extends MvvmBaseActivity<ActivityRecyclerViewHol
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.toolbar_back:
+                finish();
+                break;
             case R.id.button1:
                 startActivity(new Intent(RecyclerViewHolder.this, SampleActivity.class));
                 break;

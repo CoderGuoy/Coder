@@ -31,6 +31,8 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_material_design_holder);
         showContentView();
+        bindingView.materialdesignHolder.textviewTitle.setText("Material Design");
+        bindingView.materialdesignHolder.toolbarBack.setOnClickListener(this);
         bindingView.button5.setOnClickListener(this);
         bindingView.button6.setOnClickListener(this);
         bindingView.button7.setOnClickListener(this);
@@ -38,14 +40,14 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
         bindingView.button9.setOnClickListener(this);
         bindingView.button10.setOnClickListener(this);
         bindingView.button11.setOnClickListener(this);
-        bindingView.button12.setOnClickListener(this);
-        bindingView.button13.setOnClickListener(this);
-        bindingView.button14.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.toolbar_back:
+                finish();
+                break;
             case R.id.button5:
                 startActivity(new Intent(MaterialDesignHolder.this, PlayCoordinatorToolbar.class));
                 break;
