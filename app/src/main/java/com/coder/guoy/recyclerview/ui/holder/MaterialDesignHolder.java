@@ -10,6 +10,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityMaterialDesignHolderBindi
 import com.coder.guoy.recyclerview.ui.animation.DrawableAnimation;
 import com.coder.guoy.recyclerview.ui.animation.PropertyAnimation;
 import com.coder.guoy.recyclerview.ui.animation.ViewAnimation;
+import com.coder.guoy.recyclerview.ui.bottomsheet.PlayBottomSheetDialog;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorBehavior;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorLayout;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorToolbar;
@@ -40,6 +41,7 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
         bindingView.button9.setOnClickListener(this);
         bindingView.button10.setOnClickListener(this);
         bindingView.button11.setOnClickListener(this);
+        bindingView.buttonBsd.setOnClickListener(this);
     }
 
     @Override
@@ -77,6 +79,9 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
                 break;
             case R.id.button14:
                 startActivity(new Intent(MaterialDesignHolder.this, PropertyAnimation.class));
+                break;
+            case R.id.button_bsd:
+                startActivity(new Intent(MaterialDesignHolder.this, PlayBottomSheetDialog.class));
                 break;
         }
     }

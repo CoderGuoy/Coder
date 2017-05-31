@@ -71,6 +71,13 @@
                     android:text="CoordinatorToolbar|折叠头布局"
                     android:textAllCaps="false"/>
 
+                <Button
+                    android:id="@+id/button_bsd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BottomSheetDialog|"
+                    android:textAllCaps="false"/>
+
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
