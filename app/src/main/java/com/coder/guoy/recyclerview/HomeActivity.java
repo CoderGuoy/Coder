@@ -17,7 +17,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private RecyclerView recyclerView;
     private HomeAdapter adapter;
     private LinearLayoutManager mLayoutManager;
-    private String[] model = {"Material Design","RecyclerView", "CardView", "3Dtouch","Animation",
+    private String[] model = {"Material Design","RecyclerView", "CardView", "Customize","Animation",
             "Design Pattern"};
 
     @Override

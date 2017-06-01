@@ -9,7 +9,7 @@
         android:orientation="vertical">
 
         <include
-            android:id="@+id/recyclerviewholder"
+            android:id="@+id/customize"
             layout="@layout/toolbar"/>
 
         <android.support.v4.widget.NestedScrollView
@@ -22,27 +22,22 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/btn_tagcloud"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sample RecyclerView"
+                    android:text="3D球"
                     android:textAllCaps="false"/>
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btn_combination"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Image RecyclerView"
-                    android:textAllCaps="false"/>
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Animation RecyclerView"
+                    android:text="组合控件|分类筛选"
                     android:textAllCaps="false"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
+
     </LinearLayout>
 </layout>
+

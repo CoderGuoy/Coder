@@ -7,10 +7,9 @@ import android.view.View;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityRecyclerViewHolderBinding;
-import com.coder.guoy.recyclerview.ui.ClassificationActivity;
-import com.coder.guoy.recyclerview.ui.recyclerview.WelfareAnimationActivity;
 import com.coder.guoy.recyclerview.ui.recyclerview.SampleActivity;
 import com.coder.guoy.recyclerview.ui.recyclerview.WelfareActivity;
+import com.coder.guoy.recyclerview.ui.recyclerview.WelfareAnimationActivity;
 
 /**
  * @Version:
@@ -30,7 +29,6 @@ public class RecyclerViewHolder extends MvvmBaseActivity<ActivityRecyclerViewHol
         bindingView.button1.setOnClickListener(this);
         bindingView.button2.setOnClickListener(this);
         bindingView.button3.setOnClickListener(this);
-        bindingView.button4.setOnClickListener(this);
     }
 
     @Override
@@ -47,9 +45,6 @@ public class RecyclerViewHolder extends MvvmBaseActivity<ActivityRecyclerViewHol
                 break;
             case R.id.button3:
                 startActivity(new Intent(RecyclerViewHolder.this, WelfareAnimationActivity.class));
-                break;
-            case R.id.button4:
-                startActivity(new Intent(RecyclerViewHolder.this, ClassificationActivity.class));
                 break;
         }
     }

@@ -9,7 +9,7 @@
         android:orientation="vertical">
 
         <include
-            android:id="@+id/recyclerviewholder"
+            android:id="@+id/design_pattern"
             layout="@layout/toolbar"/>
 
         <android.support.v4.widget.NestedScrollView
@@ -22,27 +22,14 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/btn_stragegy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sample RecyclerView"
-                    android:textAllCaps="false"/>
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Image RecyclerView"
-                    android:textAllCaps="false"/>
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Animation RecyclerView"
+                    android:text="Stragegy|策略模式"
                     android:textAllCaps="false"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
+
     </LinearLayout>
 </layout>

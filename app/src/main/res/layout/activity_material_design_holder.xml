@@ -75,7 +75,7 @@
                     android:id="@+id/button_bsd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="BottomSheetDialog|"
+                    android:text="BottomSheetDialog|底部对话框"
                     android:textAllCaps="false"/>
 
 

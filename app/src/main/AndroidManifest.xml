@@ -103,6 +103,10 @@
         </activity>
         <activity android:name=".ui.bottomsheet.PlayBottomSheetDialog">
         </activity>
+        <activity android:name=".ui.holder.DesignPatternHolder">
+        </activity>
+        <activity android:name=".ui.holder.CustomizeHolder">
+        </activity>
     </application>
 
 </manifest>
