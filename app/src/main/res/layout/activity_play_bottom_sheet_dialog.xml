@@ -16,13 +16,13 @@
             android:id="@+id/btn_bsd1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Style1"/>
+            android:text="样式一"/>
 
         <Button
             android:id="@+id/btn_bsd2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Style2"/>
+            android:text="样式二"/>
 
     </LinearLayout>
 </layout>
