@@ -99,14 +99,21 @@
         <activity
             android:name=".ui.ClassificationActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ui.holder.AnimationHolder">
-        </activity>
-        <activity android:name=".ui.bottomsheet.PlayBottomSheetDialog">
-        </activity>
-        <activity android:name=".ui.holder.DesignPatternHolder">
-        </activity>
-        <activity android:name=".ui.holder.CustomizeHolder">
-        </activity>
+        <activity
+            android:name=".ui.holder.AnimationHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.bottomsheet.PlayBottomSheetDialog"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.holder.DesignPatternHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.holder.CustomizeHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayTextView"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

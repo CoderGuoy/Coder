@@ -8,13 +8,14 @@ import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityCustomizeHolderBinding;
 import com.coder.guoy.recyclerview.ui.ClassificationActivity;
+import com.coder.guoy.recyclerview.ui.PlayTextView;
 import com.coder.guoy.recyclerview.ui.tagcloud.TagCloudActivity;
 
 /**
  * @Version:
  * @Author:
  * @CreateTime:2017年6月1日
- * @Descrpiton:
+ * @Descrpiton:自定义
  */
 public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBinding> implements View.OnClickListener {
 
@@ -27,6 +28,7 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
         bindingView.customize.toolbarBack.setOnClickListener(this);
         bindingView.btnTagcloud.setOnClickListener(this);
         bindingView.btnCombination.setOnClickListener(this);
+        bindingView.btnRecttextview.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +42,9 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
                 break;
             case R.id.btn_combination:
                 startActivity(new Intent(CustomizeHolder.this, ClassificationActivity.class));
+                break;
+            case R.id.btn_recttextview:
+                startActivity(new Intent(CustomizeHolder.this, PlayTextView.class));
                 break;
         }
     }
