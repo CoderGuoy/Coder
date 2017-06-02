@@ -23,6 +23,7 @@ public class PlayTextView extends MvvmBaseActivity<ActivityPlayTextViewBinding> 
         bindingView.textview.textviewTitle.setText("自定义文本");
         bindingView.textview.toolbarBack.setOnClickListener(this);
         bindingView.textRect.setText("矩形文本");
+        bindingView.textShader.setText("Android Shader Text");
     }
 
     @Override

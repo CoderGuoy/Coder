@@ -16,10 +16,19 @@
             android:id="@+id/text_rect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:gravity="center"
             android:layout_margin="10dp"
-            android:padding="10dp"/>
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+
+        <com.coder.guoy.recyclerview.view.textview.ShaderTextView
+            android:id="@+id/text_shader"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
