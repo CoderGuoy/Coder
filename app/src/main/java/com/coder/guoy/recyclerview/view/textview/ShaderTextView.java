@@ -55,6 +55,8 @@ public class ShaderTextView extends AppCompatTextView {
         if (mViewWidth == 0) {
             mViewWidth = getMeasuredWidth();
             if (mViewWidth > 0) {
+                // 使用getPaint（）方法获取当前绘制TextView的Paint对象，
+                // 并给这个paint对象设置原生TextView没有的LinearGradient属性
                 Paint mPaint = getPaint();
                 mLinearGradient = new LinearGradient(0, 0, getMeasuredWidth(), 0,
                         new int[]{Color.RED, Color.YELLOW, Color.BLUE, Color.GREEN},
