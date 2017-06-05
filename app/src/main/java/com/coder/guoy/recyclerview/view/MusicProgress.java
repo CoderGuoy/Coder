@@ -51,7 +51,6 @@ public class MusicProgress extends View {
                     mRectHeight, Color.RED, Color.YELLOW, Shader.TileMode.MIRROR);
 
             mPaint1.setShader(mLinearGradient);
-
             canvas.drawRect(
                     (float) (mRectWidth * i + offset),
                     mCurrentHeight,
