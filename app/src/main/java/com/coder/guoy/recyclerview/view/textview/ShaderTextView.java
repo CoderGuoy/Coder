@@ -20,7 +20,7 @@ public class ShaderTextView extends AppCompatTextView {
 
     private Matrix mGradientMatrix;
     private LinearGradient mLinearGradient;//渐变渲染器
-    private int mViewWidth;
+    private int mViewWidth = 0;
     private int mTranslate;
 
     public ShaderTextView(Context context) {
@@ -45,18 +45,24 @@ public class ShaderTextView extends AppCompatTextView {
             }
             mGradientMatrix.setTranslate(mTranslate, 0);
             mLinearGradient.setLocalMatrix(mGradientMatrix);
-            postInvalidateDelayed(1000);
+            postInvalidateDelayed(100);
         }
     }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        Paint mPaint = getPaint();
-        mLinearGradient = new LinearGradient(0, 0, getMeasuredWidth(), 0,
-                new int[]{Color.RED, Color.GREEN, Color.BLUE}, null, Shader.TileMode.CLAMP);
-        mPaint.setShader(mLinearGradient);
-        mGradientMatrix = new Matrix();
+        if (mViewWidth == 0) {
+            mViewWidth = getMeasuredWidth();
+            if (mViewWidth > 0) {
+                Paint mPaint = getPaint();
+                mLinearGradient = new LinearGradient(0, 0, getMeasuredWidth(), 0,
+                        new int[]{Color.RED, Color.YELLOW, Color.BLUE, Color.GREEN},
+                        null, Shader.TileMode.MIRROR);
+                mPaint.setShader(mLinearGradient);
+                mGradientMatrix = new Matrix();
+            }
+        }
     }
 
 }
