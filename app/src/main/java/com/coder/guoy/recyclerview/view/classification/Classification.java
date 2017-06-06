@@ -16,8 +16,6 @@ import com.coder.guoy.recyclerview.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.coder.guoy.recyclerview.R.id.textview1;
-
 
 /**
  * @Version:
@@ -63,7 +61,7 @@ public class Classification extends LinearLayout implements View.OnClickListener
         title = (TextView) view.findViewById(R.id.title);
         contentLayout1 = (LinearLayout) view.findViewById(R.id.content_layout1);
         contentLayout2 = (LinearLayout) view.findViewById(R.id.content_layout2);
-        contentText1 = (TextView) view.findViewById(textview1);
+        contentText1 = (TextView) view.findViewById(R.id.textview1);
         contentText2 = (TextView) view.findViewById(R.id.textview2);
         contentText3 = (TextView) view.findViewById(R.id.textview3);
         contentText4 = (TextView) view.findViewById(R.id.textview4);

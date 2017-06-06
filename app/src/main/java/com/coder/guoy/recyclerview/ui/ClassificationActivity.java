@@ -25,7 +25,6 @@ public class ClassificationActivity extends MvvmBaseActivity<ActivityClassificat
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classification);
         showContentView();
-
         initView();
     }
 
