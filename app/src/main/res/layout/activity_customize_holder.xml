@@ -51,7 +51,7 @@
                     android:id="@+id/btn_xml"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="XML 绘图"
+                    android:text="XML绘图之 Shape"
                     android:textAllCaps="false"/>
 
             </LinearLayout>
