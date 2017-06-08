@@ -47,6 +47,12 @@
                     android:layout_height="wrap_content"
                     android:text="自定义条形图"
                     android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XML 绘图"
+                    android:textAllCaps="false"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>

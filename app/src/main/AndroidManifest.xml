@@ -117,6 +117,8 @@
         <activity
             android:name=".ui.PlayMusic"
             android:screenOrientation="portrait"/>
+        <activity android:name=".ui.PlayShape">
+        </activity>
     </application>
 
 </manifest>

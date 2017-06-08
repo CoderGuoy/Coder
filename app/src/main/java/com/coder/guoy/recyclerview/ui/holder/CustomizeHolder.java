@@ -9,6 +9,7 @@ import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityCustomizeHolderBinding;
 import com.coder.guoy.recyclerview.ui.ClassificationActivity;
 import com.coder.guoy.recyclerview.ui.PlayMusic;
+import com.coder.guoy.recyclerview.ui.PlayShape;
 import com.coder.guoy.recyclerview.ui.PlayTextView;
 import com.coder.guoy.recyclerview.ui.tagcloud.TagCloudActivity;
 
@@ -31,6 +32,7 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
         bindingView.btnCombination.setOnClickListener(this);
         bindingView.btnRecttextview.setOnClickListener(this);
         bindingView.btnView.setOnClickListener(this);
+        bindingView.btnXml.setOnClickListener(this);
     }
 
     @Override
@@ -51,6 +53,8 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
             case R.id.btn_view:
                 startActivity(new Intent(CustomizeHolder.this, PlayMusic.class));
                 break;
+            case R.id.btn_xml:
+                startActivity(new Intent(CustomizeHolder.this, PlayShape.class));
         }
     }
 }
