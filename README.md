@@ -12,13 +12,11 @@
 
 > 设计模式之策略模式 | Strategy Pattern [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72191041)
 
+> Android XML绘图之 Shape [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72934634)
+
 ## Android Material Design
 
 > Tablayout | 横向布局标签 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71079546) 
-
-> TextInputLayout | 文字输入布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71107229) 
-
-> FloatingActionButton | 悬浮按钮 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71146380)
 
 > Coordinatorlayout | 协调布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71090247)
 
@@ -26,17 +24,21 @@
 
 > CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liuyufeng.tech/post/2017-04-19-toolbar.html)
 
+> TextInputLayout | 文字输入布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71107229) 
+
+> FloatingActionButton | 悬浮按钮 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71146380)
+
+> CardView | 卡片控件 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71774554)
+
 > AppBarLayout | 嵌套布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72472367)
 
 > CollapsingToolbarLayout | 折叠工具布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72602767)
-
-> CardView | 卡片控件 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71774554)
 
 > BottomSheetDialog | 底部对话框 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72835497)
 
 ## Screenshots
 
-![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy01.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy03.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy05.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/3Dtagcloud.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/tablayout00.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/textinputlayout.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coordinator.gif)
+![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy01.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy03.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy05.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/3Dtagcloud.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/tablayout00.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/textinputlayout.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coordinator.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/cardview.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog2.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/shape.png)
 
 ### Version
 
