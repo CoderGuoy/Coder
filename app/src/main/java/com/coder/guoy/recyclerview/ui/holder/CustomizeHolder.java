@@ -32,7 +32,8 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
         bindingView.btnCombination.setOnClickListener(this);
         bindingView.btnRecttextview.setOnClickListener(this);
         bindingView.btnView.setOnClickListener(this);
-        bindingView.btnXml.setOnClickListener(this);
+        bindingView.btnXmlShape.setOnClickListener(this);
+        bindingView.btnXmlSelector.setOnClickListener(this);
     }
 
     @Override
@@ -53,8 +54,9 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
             case R.id.btn_view:
                 startActivity(new Intent(CustomizeHolder.this, PlayMusic.class));
                 break;
-            case R.id.btn_xml:
+            case R.id.btn_xml_shape:
                 startActivity(new Intent(CustomizeHolder.this, PlayShape.class));
+                break;
         }
     }
 }

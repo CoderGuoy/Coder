@@ -41,17 +41,40 @@
                     android:layout_height="wrap_content"
                     android:text="自定义文本"
                     android:textAllCaps="false"/>
+
                 <Button
                     android:id="@+id/btn_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="自定义条形图"
                     android:textAllCaps="false"/>
+
                 <Button
-                    android:id="@+id/btn_xml"
+                    android:id="@+id/btn_xml_shape"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="XML绘图之 Shape"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/btn_xml_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_selector"
+                    android:gravity="center"
+                    android:text="XML绘图之 Selector"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_selector"/>
+
+                <Button
+                    android:id="@+id/btn_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
                     android:textAllCaps="false"/>
 
             </LinearLayout>
