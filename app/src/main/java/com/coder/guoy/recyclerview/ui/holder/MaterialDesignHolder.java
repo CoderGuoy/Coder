@@ -7,6 +7,7 @@ import android.view.View;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityMaterialDesignHolderBinding;
+import com.coder.guoy.recyclerview.ui.PlayTouchFeedback;
 import com.coder.guoy.recyclerview.ui.animation.DrawableAnimation;
 import com.coder.guoy.recyclerview.ui.animation.PropertyAnimation;
 import com.coder.guoy.recyclerview.ui.animation.ViewAnimation;
@@ -42,6 +43,7 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
         bindingView.button10.setOnClickListener(this);
         bindingView.button11.setOnClickListener(this);
         bindingView.buttonBsd.setOnClickListener(this);
+        bindingView.btnFeedfack.setOnClickListener(this);
     }
 
     @Override
@@ -82,6 +84,9 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
                 break;
             case R.id.button_bsd:
                 startActivity(new Intent(MaterialDesignHolder.this, PlayBottomSheetDialog.class));
+                break;
+            case R.id.btn_feedfack:
+                startActivity(new Intent(MaterialDesignHolder.this, PlayTouchFeedback.class));
                 break;
         }
     }

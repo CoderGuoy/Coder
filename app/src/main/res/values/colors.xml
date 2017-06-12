@@ -7,6 +7,7 @@
     <color name="toast_bg">#dddfe0</color>
     <!--主题颜色-->
     <color name="colorTheme">#2c2d41</color>
+    <color name="colorTheme50">#802c2d41</color>
     <!--页面背景的颜色-->
     <color name="colorPageBg">#f2f4f5</color>
     <!--tab标签栏文字的颜色-->
@@ -26,6 +27,7 @@
 
     <!--Google-->
     <color name="blue">#4285f4</color>
+    <color name="blue50">#804285f4</color>
     <color name="green">#34a853</color>
     <color name="yello">#fbbc05</color>
     <color name="red">#ea4335</color>

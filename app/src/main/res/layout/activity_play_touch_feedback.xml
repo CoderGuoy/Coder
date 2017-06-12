@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPageBg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/image_touch1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="波纹有边界\nselectableItemBackground"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/image_touch2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="波纹超出边界\nselectableItemBackgroundBorderless"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/image_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ripple_touch"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="自定义波纹动画|有边界"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/image_rippleborderless"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ripple_touchborderless"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="自定义波纹动画|无边界"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</layout>

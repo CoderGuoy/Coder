@@ -119,6 +119,8 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".ui.PlayShape">
         </activity>
+        <activity android:name=".ui.PlayTouchFeedback">
+        </activity>
     </application>
 
 </manifest>
