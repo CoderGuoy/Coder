@@ -1,5 +1,7 @@
 # Coder
 
+项目使用MVVM模式进行开发，学习Android知识点
+
 ## Android Material Design
 
 > Tablayout | 横向布局标签 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71079546) 
