@@ -25,6 +25,5 @@
             android:src="@drawable/gank"
             android:visibility="invisible"/>
 
-
     </LinearLayout>
 </layout>

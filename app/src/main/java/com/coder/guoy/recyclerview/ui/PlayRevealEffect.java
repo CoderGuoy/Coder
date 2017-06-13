@@ -99,6 +99,4 @@ public class PlayRevealEffect extends MvvmBaseActivity<ActivityPlayRevealEffectB
                 break;
         }
     }
-
-
 }
