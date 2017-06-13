@@ -1,19 +1,5 @@
 # Coder
 
-> RecyclerView使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
-
-> RxJava+Retrofit请求网络数据,RecyclerView加载网络图片（图片加载框架Glide）
-
-> RecyclerView为图片添加ObjectAnimator动画效果
-
-> 继承ViewGroupon实现的 3D球
-
-> Android 帧动画 视图动画 属性动画 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71641004)
-
-> 设计模式之策略模式 | Strategy Pattern [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72191041)
-
-> Android XML绘图之 Shape [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72934634)
-
 ## Android Material Design
 
 > Tablayout | 横向布局标签 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71079546) 
@@ -39,6 +25,20 @@
 > Touch Feedback| 触摸反馈 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/73166617)
 
 > Reveal Effect| 揭示效果 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/73190003)
+--------------------------------------------------------------------------
+> RecyclerView使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
+
+> RxJava+Retrofit请求网络数据,RecyclerView加载网络图片（图片加载框架Glide）
+
+> RecyclerView为图片添加ObjectAnimator动画效果
+
+> 继承ViewGroupon实现的 3D球
+
+> Android 帧动画 视图动画 属性动画 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71641004)
+
+> 设计模式之策略模式 | Strategy Pattern [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72191041)
+
+> Android XML绘图之 Shape [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72934634)
 
 ## Screenshots
 
