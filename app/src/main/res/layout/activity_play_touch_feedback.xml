@@ -9,6 +9,10 @@
         android:background="@color/colorPageBg"
         android:orientation="vertical">
 
+        <include
+            android:id="@+id/touch_feedback"
+            layout="@layout/toolbar"/>
+
         <TextView
             android:id="@+id/image_touch1"
             android:layout_width="match_parent"

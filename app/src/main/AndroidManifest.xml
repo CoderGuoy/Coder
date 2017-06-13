@@ -117,10 +117,12 @@
         <activity
             android:name=".ui.PlayMusic"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ui.PlayShape">
-        </activity>
-        <activity android:name=".ui.PlayTouchFeedback">
-        </activity>
+        <activity
+            android:name=".ui.PlayShape"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayTouchFeedback"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
