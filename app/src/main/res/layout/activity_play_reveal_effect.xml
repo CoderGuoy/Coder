@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/revealeffect"
+            layout="@layout/toolbar"/>
+
+        <Button
+            android:id="@+id/btn_revealeffect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="展开/收缩"/>
+
+        <ImageView
+            android:id="@+id/view_revealeffect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gank"
+            android:visibility="invisible"/>
+
+
+    </LinearLayout>
+</layout>

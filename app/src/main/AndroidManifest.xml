@@ -123,6 +123,8 @@
         <activity
             android:name=".ui.PlayTouchFeedback"
             android:screenOrientation="portrait"/>
+        <activity android:name=".ui.PlayRevealEffect">
+        </activity>
     </application>
 
 </manifest>

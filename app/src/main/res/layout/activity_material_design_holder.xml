@@ -82,7 +82,13 @@
                     android:id="@+id/btn_feedfack"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="动画|Touch Feedback"
+                    android:text="Touch Feedback|触摸反馈"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_reveal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reveal Effect|揭示效果"
                     android:textAllCaps="false"/>
 
 
