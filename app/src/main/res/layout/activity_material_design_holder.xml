@@ -90,6 +90,12 @@
                     android:layout_height="wrap_content"
                     android:text="Reveal Effect|揭示效果"
                     android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_curved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Curved Motion|曲线运动"
+                    android:textAllCaps="false"/>
 
 
             </LinearLayout>

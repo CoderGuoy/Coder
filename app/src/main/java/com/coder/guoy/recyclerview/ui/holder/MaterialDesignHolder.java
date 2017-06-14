@@ -7,6 +7,7 @@ import android.view.View;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityMaterialDesignHolderBinding;
+import com.coder.guoy.recyclerview.ui.PlayCurvedMotion;
 import com.coder.guoy.recyclerview.ui.PlayRevealEffect;
 import com.coder.guoy.recyclerview.ui.PlayTouchFeedback;
 import com.coder.guoy.recyclerview.ui.animation.DrawableAnimation;
@@ -46,6 +47,7 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
         bindingView.buttonBsd.setOnClickListener(this);
         bindingView.btnFeedfack.setOnClickListener(this);
         bindingView.btnReveal.setOnClickListener(this);
+        bindingView.btnCurved.setOnClickListener(this);
     }
 
     @Override
@@ -92,6 +94,9 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
                 break;
             case R.id.btn_reveal:
                 startActivity(new Intent(MaterialDesignHolder.this, PlayRevealEffect.class));
+                break;
+            case R.id.btn_curved:
+                startActivity(new Intent(MaterialDesignHolder.this, PlayCurvedMotion.class));
                 break;
         }
     }
