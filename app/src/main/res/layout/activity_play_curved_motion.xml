@@ -33,6 +33,9 @@
                     android:id="@+id/linearlayout"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#30585858"
                     android:orientation="horizontal">
 
                     <TextView
@@ -344,7 +347,7 @@
                         android:layout_margin="2dp"
                         android:background="@color/yello"
                         android:padding="2dp"
-                        android:text="16.overshoot"/>
+                        android:text="16.overshoot|向前并超过目标值，最后返回最终值"/>
 
                 </LinearLayout>
             </LinearLayout>
