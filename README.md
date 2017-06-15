@@ -48,15 +48,7 @@
 
 ![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/tablayout00.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/Coordinatorlayout00.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/textinputlayout.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/fab.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog2.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/touchfeedback1.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/RevealEffect.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/curvedmotion.gif)
 
-![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coordinator.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/cardview.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/shape.png)
 
-### Version
-
-#### V1.0.0（4-17）
-
- - 1.RecyclerView设置滑动监听，当前可见页面滑动到底部时(newState == RecyclerView.SCROLL_STATE_IDLE)，
- 根据adapter返回的item类型显示foot（加载更多控件），此时去更新加载数据，如果有新数据，显示正常的item；
- 如果没有新的数据，显示没有更多数据。具体见代码中的注释，比较详细
 
 ## LICENSE
  - 项目仅做学习交流，不用做商业用途，接口使用干货集中营的API
