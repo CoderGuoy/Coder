@@ -29,7 +29,19 @@
 > Reveal Effect| 揭示效果 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/73190003)
 
 > Curved motion | 曲线运动 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/73277147)
-----------------------------
+
+## Android 基础
+
+> Android 帧动画 视图动画 属性动画 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71641004)
+
+> Android XML绘图之 Shape [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72934634)
+
+## Android 设计模式
+
+> 设计模式之策略模式 | Strategy Pattern [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72191041)
+
+## Android Demo
+
 > RecyclerView使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
 
 > RxJava+Retrofit请求网络数据,RecyclerView加载网络图片（图片加载框架Glide）
@@ -38,11 +50,7 @@
 
 > 继承ViewGroupon实现的 3D球
 
-> Android 帧动画 视图动画 属性动画 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71641004)
 
-> 设计模式之策略模式 | Strategy Pattern [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72191041)
-
-> Android XML绘图之 Shape [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/72934634)
 
 ## Screenshots
 
