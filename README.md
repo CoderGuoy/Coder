@@ -54,7 +54,7 @@
 
 ## Screenshots
 
-![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/tablayout00.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/Coordinatorlayout00.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/textinputlayout.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/fab.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog2.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/touchfeedback1.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/RevealEffect.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/curvedmotion.gif)
+![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/tablayout00.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/Coordinatorlayout00.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/textinputlayout.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/fab.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog2.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/touchfeedback1.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/RevealEffect.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/curvedmotion.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/ball3D.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/customize_textview.gif)
 
 
 
