@@ -10,6 +10,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityMaterialDesignHolderBindi
 import com.coder.guoy.recyclerview.ui.PlayCurvedMotion;
 import com.coder.guoy.recyclerview.ui.PlayRevealEffect;
 import com.coder.guoy.recyclerview.ui.PlayTouchFeedback;
+import com.coder.guoy.recyclerview.ui.PlayViewStateChange;
 import com.coder.guoy.recyclerview.ui.animation.DrawableAnimation;
 import com.coder.guoy.recyclerview.ui.animation.PropertyAnimation;
 import com.coder.guoy.recyclerview.ui.animation.ViewAnimation;
@@ -48,6 +49,7 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
         bindingView.btnFeedfack.setOnClickListener(this);
         bindingView.btnReveal.setOnClickListener(this);
         bindingView.btnCurved.setOnClickListener(this);
+        bindingView.btnViewstate.setOnClickListener(this);
     }
 
     @Override
@@ -97,6 +99,9 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
                 break;
             case R.id.btn_curved:
                 startActivity(new Intent(MaterialDesignHolder.this, PlayCurvedMotion.class));
+                break;
+            case R.id.btn_viewstate:
+                startActivity(new Intent(MaterialDesignHolder.this, PlayViewStateChange.class));
                 break;
         }
     }

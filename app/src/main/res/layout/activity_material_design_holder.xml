@@ -84,12 +84,14 @@
                     android:layout_height="wrap_content"
                     android:text="Touch Feedback|触摸反馈"
                     android:textAllCaps="false"/>
+
                 <Button
                     android:id="@+id/btn_reveal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Reveal Effect|揭示效果"
                     android:textAllCaps="false"/>
+
                 <Button
                     android:id="@+id/btn_curved"
                     android:layout_width="match_parent"
@@ -97,6 +99,12 @@
                     android:text="Curved Motion|曲线运动"
                     android:textAllCaps="false"/>
 
+                <Button
+                    android:id="@+id/btn_viewstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View State Changes|视图状态改变"
+                    android:textAllCaps="false"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>

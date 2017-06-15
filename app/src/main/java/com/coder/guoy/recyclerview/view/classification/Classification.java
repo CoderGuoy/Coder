@@ -21,7 +21,7 @@ import java.util.List;
  * @Version:
  * @Author:Guoy
  * @CreateTime:2017/5/23
- * @Descrpiton:
+ * @Descrpiton:自定义组合控件效果类似于百度地图搜索下的更多页面
  */
 public class Classification extends LinearLayout implements View.OnClickListener {
     private String TAG = "Classification";
