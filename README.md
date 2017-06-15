@@ -27,6 +27,8 @@
 > Touch Feedback| 触摸反馈 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/73166617)
 
 > Reveal Effect| 揭示效果 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/73190003)
+
+> Curved motion | 曲线运动 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/73277147)
 --------------------------------------------------------------------------
 > RecyclerView使用SwipRefreshLayout实现下拉刷新，自定义上拉加载更多
 
@@ -44,7 +46,7 @@
 
 ## Screenshots
 
-![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy01.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy03.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy05.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/3Dtagcloud.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/tablayout00.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/textinputlayout.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coordinator.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/cardview.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog2.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/shape.png)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/touchfeedback1.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/RevealEffect.gif)
+![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy01.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy03.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coderguoy05.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/3Dtagcloud.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/tablayout00.gif)![](https://github.com/CoderGuoy/Android-Material-Design/blob/master/screenshots/textinputlayout.gif)![](https://github.com/CoderGuoy/Coder/blob/master/screenshots/coordinator.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/cardview.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/bottomsheetdialog2.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/shape.png)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/touchfeedback1.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/RevealEffect.gif)![](https://github.com/CoderGuoy/AndroidNote/blob/master/screenshots/curvedmotion.gif)
 
 ### Version
 
