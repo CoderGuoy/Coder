@@ -3,17 +3,94 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_centerInParent="true"
-            android:clickable="true"
-            android:stateListAnimator="@drawable/selector_viewstate1"
-            android:scaleType="centerCrop"
-            android:src="@drawable/gank"/>
-    </RelativeLayout>
+        <include
+            android:id="@+id/viewstatechange"
+            layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate1"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate3"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate5"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate6"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </layout>

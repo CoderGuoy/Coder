@@ -3,10 +3,6 @@
     <item android:state_pressed="true">
         <set>
             <objectAnimator android:duration="@android:integer/config_shortAnimTime"
-                            android:propertyName="rotationX"
-                            android:valueTo="-30"
-                            android:valueType="floatType"/>
-            <objectAnimator android:duration="@android:integer/config_shortAnimTime"
                             android:propertyName="rotationY"
                             android:valueTo="30"
                             android:valueType="floatType"/>
@@ -14,10 +10,6 @@
     </item>
     <item android:state_pressed="false">
         <set>
-            <objectAnimator android:duration="@android:integer/config_shortAnimTime"
-                            android:propertyName="rotationX"
-                            android:valueTo="0"
-                            android:valueType="floatType"/>
             <objectAnimator android:duration="@android:integer/config_shortAnimTime"
                             android:propertyName="rotationY"
                             android:valueTo="0"

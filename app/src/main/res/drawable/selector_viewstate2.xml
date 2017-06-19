@@ -8,7 +8,7 @@
                             android:valueType="floatType"/>
             <objectAnimator android:duration="@android:integer/config_shortAnimTime"
                             android:propertyName="rotationY"
-                            android:valueTo="30"
+                            android:valueTo="-30"
                             android:valueType="floatType"/>
         </set>
     </item>
