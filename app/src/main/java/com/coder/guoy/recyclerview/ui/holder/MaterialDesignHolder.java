@@ -7,8 +7,12 @@ import android.view.View;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityMaterialDesignHolderBinding;
+import com.coder.guoy.recyclerview.ui.PlayActivityTransitions;
 import com.coder.guoy.recyclerview.ui.PlayCurvedMotion;
+import com.coder.guoy.recyclerview.ui.PlayFloatingActionButton;
 import com.coder.guoy.recyclerview.ui.PlayRevealEffect;
+import com.coder.guoy.recyclerview.ui.PlayStatusBar;
+import com.coder.guoy.recyclerview.ui.PlayTextInputLayout;
 import com.coder.guoy.recyclerview.ui.PlayTouchFeedback;
 import com.coder.guoy.recyclerview.ui.PlayViewStateChange;
 import com.coder.guoy.recyclerview.ui.animation.DrawableAnimation;
@@ -18,10 +22,7 @@ import com.coder.guoy.recyclerview.ui.bottomsheet.PlayBottomSheetDialog;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorBehavior;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorLayout;
 import com.coder.guoy.recyclerview.ui.coordinator.PlayCoordinatorToolbar;
-import com.coder.guoy.recyclerview.ui.PlayFloatingActionButton;
-import com.coder.guoy.recyclerview.ui.PlayStatusBar;
 import com.coder.guoy.recyclerview.ui.tablayout.PlayTabLayout;
-import com.coder.guoy.recyclerview.ui.PlayTextInputLayout;
 
 /**
  * @Version:
@@ -50,6 +51,7 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
         bindingView.btnReveal.setOnClickListener(this);
         bindingView.btnCurved.setOnClickListener(this);
         bindingView.btnViewstate.setOnClickListener(this);
+        bindingView.btnActivitytransition.setOnClickListener(this);
     }
 
     @Override
@@ -102,6 +104,9 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
                 break;
             case R.id.btn_viewstate:
                 startActivity(new Intent(MaterialDesignHolder.this, PlayViewStateChange.class));
+                break;
+            case R.id.btn_activitytransition:
+                startActivity(new Intent(MaterialDesignHolder.this, PlayActivityTransitions.class));
                 break;
         }
     }

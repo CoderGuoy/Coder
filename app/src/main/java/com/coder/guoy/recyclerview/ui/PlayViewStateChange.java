@@ -6,6 +6,7 @@ import android.view.View;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityPlayViewStateChangeBinding;
+
 /**
  * @Version:v1.0
  * @Author:Guoy

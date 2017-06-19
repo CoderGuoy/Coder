@@ -105,6 +105,12 @@
                     android:layout_height="wrap_content"
                     android:text="View State Changes|视图状态改变"
                     android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_activitytransition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Activity Transitions|转场动画"
+                    android:textAllCaps="false"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>

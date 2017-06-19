@@ -126,12 +126,12 @@
         <activity
             android:name=".ui.PlayRevealEffect"
             android:screenOrientation="portrait"/>
-        <activity
-            android:name=".ui.PlayCurvedMotion"
-            />
+        <activity android:name=".ui.PlayCurvedMotion"/>
         <activity
             android:name=".ui.PlayViewStateChange"
             android:screenOrientation="portrait"/>
+        <activity android:name=".ui.PlayActivityTransitions">
+        </activity>
     </application>
 
 </manifest>
