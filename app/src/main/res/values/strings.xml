@@ -20,4 +20,13 @@
     <string name="CoordinatorLayout">折叠布局的嵌套</string>
     <string name="FAILE">加载失败,点击重试</string>
     <string name="LOADING">努力加载中...</string>
+
+    <string name="path_face_mouth_sad">
+    M 30,75
+    Q 50,55 70,75
+  </string>
+    <string name="path_face_mouth_happy">
+    M 30,65
+    Q 50,85 70,65
+  </string>
 </resources>

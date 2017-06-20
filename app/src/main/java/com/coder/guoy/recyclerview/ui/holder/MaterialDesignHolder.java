@@ -8,6 +8,7 @@ import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityMaterialDesignHolderBinding;
 import com.coder.guoy.recyclerview.ui.PlayActivityTransitions;
+import com.coder.guoy.recyclerview.ui.PlayAnimateVectorDrawables;
 import com.coder.guoy.recyclerview.ui.PlayCurvedMotion;
 import com.coder.guoy.recyclerview.ui.PlayFloatingActionButton;
 import com.coder.guoy.recyclerview.ui.PlayRevealEffect;
@@ -52,6 +53,7 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
         bindingView.btnCurved.setOnClickListener(this);
         bindingView.btnViewstate.setOnClickListener(this);
         bindingView.btnActivitytransition.setOnClickListener(this);
+        bindingView.btnVectordrawable.setOnClickListener(this);
     }
 
     @Override
@@ -107,6 +109,9 @@ public class MaterialDesignHolder extends MvvmBaseActivity<ActivityMaterialDesig
                 break;
             case R.id.btn_activitytransition:
                 startActivity(new Intent(MaterialDesignHolder.this, PlayActivityTransitions.class));
+                break;
+            case R.id.btn_vectordrawable:
+                startActivity(new Intent(MaterialDesignHolder.this, PlayAnimateVectorDrawables.class));
                 break;
         }
     }

@@ -135,6 +135,8 @@
         <activity
             android:name=".ui.PlayActivityTransitions"
             android:screenOrientation="portrait"/>
+        <activity android:name=".ui.PlayAnimateVectorDrawables">
+        </activity>
     </application>
 
 </manifest>

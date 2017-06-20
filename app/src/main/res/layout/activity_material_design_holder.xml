@@ -111,6 +111,12 @@
                     android:layout_height="wrap_content"
                     android:text="Activity Transitions|转场动画"
                     android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_vectordrawable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Animate Vector Drawables|矢量图片动画"
+                    android:textAllCaps="false"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
