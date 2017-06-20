@@ -21,12 +21,13 @@
     <string name="FAILE">加载失败,点击重试</string>
     <string name="LOADING">努力加载中...</string>
 
-    <string name="path_face_mouth_sad">
-    M 30,75
-    Q 50,55 70,75
-  </string>
-    <string name="path_face_mouth_happy">
-    M 30,65
-    Q 50,85 70,65
-  </string>
+    <string name="path_face_mouth_sad">M 30,75 Q 50,55 70,75 </string>
+    <string name="path_face_mouth_happy">M 30,65 Q 50,85 70,65 </string>
+    <string name="path_face_left_eye_black">M 35 ,40 m -7,0 a 7,7 0 1,0 14,0 a 7,7 0 1,0 -14 ,0</string>
+    <string name="path_face_right_eye_black">M 65 ,40 m -7,0 a 7,7 0 1,0 14,0 a 7,7 0 1,0 -14 ,0</string>
+    <string name="path_right_eye_sad">M 58,40 Q 66,50 73,40</string>
+    <string name="path_left_eye_sad">M 28,40 Q 36,50 43,40</string>
+    <string name="path_right_eye_happy">M 58,40 Q 66,30 73,40</string>
+    <string name="path_left_eye_happy">M 28,40 Q 36,30 43,40</string>
+
 </resources>
