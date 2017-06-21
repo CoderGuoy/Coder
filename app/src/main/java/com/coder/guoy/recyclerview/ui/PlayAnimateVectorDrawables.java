@@ -1,5 +1,6 @@
 package com.coder.guoy.recyclerview.ui;
 
+import android.animation.ObjectAnimator;
 import android.graphics.drawable.Animatable;
 import android.os.Bundle;
 import android.view.View;
@@ -34,6 +35,8 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 bindingView.imageHeart.setVisibility(View.VISIBLE);
                 Animatable animatable = (Animatable) bindingView.imageHeart.getDrawable();
                 animatable.start();
+                ObjectAnimator rotation = ObjectAnimator.ofFloat(bindingView.imageHeart, "rotation", 0, -45);
+                rotation.start();
         }
     }
 }
