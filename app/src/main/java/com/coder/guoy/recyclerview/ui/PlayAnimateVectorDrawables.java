@@ -18,6 +18,7 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
         bindingView.animatevectordrawable.textviewTitle.setText("Animate Vector Drawables|矢量图片动画");
         bindingView.animatevectordrawable.toolbarBack.setOnClickListener(this);
         bindingView.imageSmile.setOnClickListener(this);
+        bindingView.btnGiveheart.setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +29,11 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 break;
             case R.id.image_smile:
                 ((Animatable) bindingView.imageSmile.getDrawable()).start();
+                break;
+            case R.id.btn_giveheart:
+                bindingView.imageHeart.setVisibility(View.VISIBLE);
+                Animatable animatable = (Animatable) bindingView.imageHeart.getDrawable();
+                animatable.start();
         }
     }
 }

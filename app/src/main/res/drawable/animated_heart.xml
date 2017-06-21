@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:drawable="@drawable/vector_heart">
+
+    <target
+        android:name="line1"
+        android:animation="@animator/animator_heart_line"/>
+
+<!--    <target
+        android:name="ring1"
+        android:animation="@animator/animator_heart_ring"/>
+
+    <target
+        android:name="ring2"
+        android:animation="@animator/animator_heart_ring"/>-->
+
+<!--    <target
+        android:name="ring1"
+        android:animation="@animator/animator_heart_ring2"/>
+
+    <target
+        android:name="ring2"
+        android:animation="@animator/animator_heart_ring3"/>-->
+
+</animated-vector>

@@ -23,11 +23,19 @@
 
     <string name="path_face_mouth_sad">M 30,75 Q 50,55 70,75 </string>
     <string name="path_face_mouth_happy">M 30,65 Q 50,85 70,65 </string>
-    <string name="path_face_left_eye_black">M 35 ,40 m -7,0 a 7,7 0 1,0 14,0 a 7,7 0 1,0 -14 ,0</string>
-    <string name="path_face_right_eye_black">M 65 ,40 m -7,0 a 7,7 0 1,0 14,0 a 7,7 0 1,0 -14 ,0</string>
     <string name="path_right_eye_sad">M 58,40 Q 66,50 73,40</string>
     <string name="path_left_eye_sad">M 28,40 Q 36,50 43,40</string>
     <string name="path_right_eye_happy">M 58,40 Q 66,30 73,40</string>
     <string name="path_left_eye_happy">M 28,40 Q 36,30 43,40</string>
+    <string name="path_heart_lin1">M 40,40
+        L 40,90 L 90,90 L 90,65
+        A 25,25 0,1,1,40,65 A 25,25 0,0,1,90,65
+        L 90,40 L 40,40
+        A 25,25 0,0,1,90,40
+        A 25,25 0,0,1,115,65
+    </string>
+    <string name="path_heart_ring1">M 90,65  A 25,25 0,1,1,40,65 A 25,25 0,0,1,90,65</string>
+    <string name="path_heart_ring2">M 90,40  A 25,25 0,1,1,40,40 A 25,25 0,0,1,90,40</string>
+    <string name="path_heart_ring3">M 115,65 A 25,25 0,1,1,65,65 A 25,25 0,0,1,115,65</string>
 
 </resources>

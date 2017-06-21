@@ -5,5 +5,6 @@
                 android:propertyName="pathData"
                 android:valueFrom="@string/path_left_eye_sad"
                 android:valueTo="@string/path_left_eye_happy"
-                android:valueType="pathType"/>
+                android:valueType="pathType">
+</objectAnimator>
 

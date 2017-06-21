@@ -19,6 +19,20 @@
             android:layout_gravity="center"
             android:src="@drawable/animated_smile"/>
 
+        <ImageView
+            android:id="@+id/image_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_heart"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn_giveheart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点我有惊喜^_^"/>
+
     </LinearLayout>
 
 </layout>

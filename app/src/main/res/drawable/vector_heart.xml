@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="300dp"
+        android:height="300dp"
+        android:viewportHeight="150"
+        android:viewportWidth="150">
+    <path
+        android:name="line1"
+        android:pathData="M 40,40
+        L 40,90 L 90,90 L 90,65
+        A 25,25 0,1,1,40,65 A 25,25 0,0,1,90,65
+        L 90,40 L 40,40
+        A 25,25 0,0,1,90,40
+        A 25,25 0,0,1,90,90"
+        android:strokeColor="@color/colorTabText"
+        android:strokeLineCap="round"
+        android:strokeWidth="1"/>
+   <!-- <path
+        android:name="ring1"
+        android:pathData="@string/path_heart_ring1"
+        android:strokeColor="@color/colorTabText"
+        android:strokeLineCap="round"
+        android:strokeWidth="1"/>
+    <path
+        android:name="ring2"
+        android:pathData="@string/path_heart_ring1"
+        android:strokeColor="@color/colorTabText"
+        android:strokeLineCap="round"
+        android:strokeWidth="1"/>-->
+</vector>
