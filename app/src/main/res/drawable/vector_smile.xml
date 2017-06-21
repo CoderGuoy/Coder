@@ -4,30 +4,25 @@
         android:height="200dp"
         android:viewportHeight="100"
         android:viewportWidth="100">
-
     <path
         android:fillColor="@color/yello"
         android:pathData="M 50,50 m -48 ,0 a 48,48 0 1,0 96,0 a 48,48 0 1,0 -96,0"/>
-
     <path
         android:name="eye_left"
         android:pathData="M 28,40 Q 36,50 43,40"
         android:strokeColor="@color/colorBlack"
         android:strokeLineCap="round"
         android:strokeWidth="4"/>
-
     <path
         android:name="eye_right"
         android:pathData="M 58,40 Q 66,50 73,40"
         android:strokeColor="@color/colorBlack"
         android:strokeLineCap="round"
         android:strokeWidth="4"/>
-
     <path
         android:name="smile"
         android:pathData="@string/path_face_mouth_sad"
         android:strokeColor="@color/colorBlack"
         android:strokeLineCap="round"
         android:strokeWidth="4"/>
-
 </vector>

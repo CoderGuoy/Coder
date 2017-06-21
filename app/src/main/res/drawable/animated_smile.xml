@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
                  android:drawable="@drawable/vector_smile">
-
     <target
         android:name="eye_left"
-        android:animation="@animator/eye_left"/>
+        android:animation="@animator/animator_eye_left"/>
     <target
         android:name="eye_right"
-        android:animation="@animator/eye_right"/>
-
+        android:animation="@animator/animator_eye_right"/>
     <target
         android:name="smile"
-        android:animation="@animator/smile"/>
-
+        android:animation="@animator/animator_mouth_smile"/>
 </animated-vector>
