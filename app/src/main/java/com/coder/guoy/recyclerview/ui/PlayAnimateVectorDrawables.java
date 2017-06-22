@@ -15,7 +15,6 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayAnimateVectorDrawable
  * @Descrpiton:AnimateVectorDrawables|矢量图片动画
  */
 public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAnimateVectorDrawablesBinding> implements View.OnClickListener {
-    private boolean isFirst = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +23,7 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
         showContentView();
         bindingView.animatevectordrawable.textviewTitle.setText("Animate Vector Drawables|矢量图片动画");
         bindingView.animatevectordrawable.toolbarBack.setOnClickListener(this);
-        bindingView.imageSmile.setOnClickListener(this);
-        bindingView.btnGiveheart.setOnClickListener(this);
-        bindingView.imageRedheart.setOnClickListener(this);
+        bindingView.btnSuprise.setOnClickListener(this);
     }
 
     @Override
@@ -35,16 +32,17 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
             case R.id.toolbar_back:
                 finish();
                 break;
-            case R.id.image_smile://笑脸
+            case R.id.btn_suprise:
+                //笑脸
                 ((Animatable) bindingView.imageSmile.getDrawable()).start();
-                break;
-            case R.id.image_redheart://红心
+                //红心
                 ((Animatable) bindingView.imageRedheart.getDrawable()).start();
-                break;
-            case R.id.btn_giveheart:
+                //bonc
+                bindingView.imageBonc.setVisibility(View.VISIBLE);
+                ((Animatable) bindingView.imageBonc.getDrawable()).start();
+                //线性心
                 bindingView.imageHeart.setVisibility(View.VISIBLE);
-                Animatable animatable = (Animatable) bindingView.imageHeart.getDrawable();
-                animatable.start();
+                ((Animatable) bindingView.imageHeart.getDrawable()).start();
                 break;
         }
     }
