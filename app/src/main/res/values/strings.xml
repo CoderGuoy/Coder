@@ -20,22 +20,29 @@
     <string name="CoordinatorLayout">折叠布局的嵌套</string>
     <string name="FAILE">加载失败,点击重试</string>
     <string name="LOADING">努力加载中...</string>
-
+    <!--微笑-->
+    <string name="path_face">M 50,50 m -48 ,0 a 48,48 0 1,0 96,0 a 48,48 0 1,0 -96,0</string>
     <string name="path_face_mouth_sad">M 30,75 Q 50,55 70,75 </string>
     <string name="path_face_mouth_happy">M 30,65 Q 50,85 70,65 </string>
     <string name="path_right_eye_sad">M 58,40 Q 66,50 73,40</string>
     <string name="path_left_eye_sad">M 28,40 Q 36,50 43,40</string>
     <string name="path_right_eye_happy">M 58,40 Q 66,30 73,40</string>
     <string name="path_left_eye_happy">M 28,40 Q 36,30 43,40</string>
-    <string name="path_heart_lin1">M 40,40
-        L 40,90 L 90,90 L 90,65
-        A 25,25 0,1,1,40,65 A 25,25 0,0,1,90,65
-        L 90,40 L 40,40
-        A 25,25 0,0,1,90,40
-        A 25,25 0,0,1,115,65
+    <!--线性心-->
+    <string name="path_heart_lin1">M 15,50
+        L 50,85 L 85,50 L 67.5,32.5
+        A 17.5,17.5 0,1,1,32.5,67.5
+        A 17.5,17.5 0,0,1,67.5,32.5
+        L 50,15 L 15,50
+        A 17.5,17.5 0,0,1,50,15
+        A 17.5,17.5 0,0,1,85,50
     </string>
-    <string name="path_heart_ring1">M 90,65  A 25,25 0,1,1,40,65 A 25,25 0,0,1,90,65</string>
-    <string name="path_heart_ring2">M 90,40  A 25,25 0,1,1,40,40 A 25,25 0,0,1,90,40</string>
-    <string name="path_heart_ring3">M 115,65 A 25,25 0,1,1,65,65 A 25,25 0,0,1,115,65</string>
+    <!--红心-->
+    <string name="path_red_heart_line">
+        M 50,15
+        A 17.5,17.5,0,1,1,85,50
+        L 50,85 L 15,50
+        A 17.5,17.5,0,1,1,50,15
+    </string>
 
 </resources>

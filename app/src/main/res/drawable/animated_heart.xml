@@ -6,20 +6,4 @@
         android:name="line1"
         android:animation="@animator/animator_heart_line"/>
 
-<!--    <target
-        android:name="ring1"
-        android:animation="@animator/animator_heart_ring"/>
-
-    <target
-        android:name="ring2"
-        android:animation="@animator/animator_heart_ring"/>-->
-
-<!--    <target
-        android:name="ring1"
-        android:animation="@animator/animator_heart_ring2"/>
-
-    <target
-        android:name="ring2"
-        android:animation="@animator/animator_heart_ring3"/>-->
-
 </animated-vector>

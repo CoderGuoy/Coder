@@ -7,4 +7,3 @@
                 android:valueTo="@string/path_left_eye_happy"
                 android:valueType="pathType">
 </objectAnimator>
-

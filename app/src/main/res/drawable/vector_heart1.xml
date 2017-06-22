@@ -10,16 +10,4 @@
         android:strokeColor="@color/colorTabText"
         android:strokeLineCap="round"
         android:strokeWidth="1"/>
-    <path
-        android:name="ring1"
-        android:pathData="@string/path_heart_ring1"
-        android:strokeColor="@color/colorTabText"
-        android:strokeLineCap="round"
-        android:strokeWidth="1"/>
-    <path
-        android:name="ring2"
-        android:pathData="@string/path_heart_ring1"
-        android:strokeColor="@color/colorTabText"
-        android:strokeLineCap="round"
-        android:strokeWidth="1"/>
 </vector>

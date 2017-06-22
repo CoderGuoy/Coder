@@ -4,10 +4,12 @@
         android:height="200dp"
         android:viewportHeight="100"
         android:viewportWidth="100">
+
     <path
-        android:name="line1"
-        android:pathData="@string/path_heart_lin1"
-        android:strokeColor="@color/colorTabText"
+        android:name="red_heart"
+        android:pathData="@string/path_red_heart_line"
+        android:strokeColor="@color/red"
         android:strokeLineCap="round"
         android:strokeWidth="1"/>
+
 </vector>
