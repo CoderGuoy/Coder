@@ -10,7 +10,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayTransitionsBinding;
 /**
  * @Version:v1.0
  * @Author:Guoy
- * @CreateTime:2017年6月19日
+ * @CreateTime:
  * @Descrpiton:ActivityTransitions|转场动画
  */
 public class PlayActivityTransitions extends MvvmBaseActivity<ActivityPlayTransitionsBinding> implements View.OnClickListener {

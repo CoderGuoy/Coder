@@ -13,7 +13,12 @@ import com.coder.guoy.recyclerview.view.classification.OnContentTextClickListene
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * @Version:v1.0
+ * @Author:Guoy
+ * @CreateTime:
+ * @Descrpiton:自定义组合控件
+ */
 public class ClassificationActivity extends MvvmBaseActivity<ActivityClassificationBinding> implements OnContentTextClickListener {
 
     private List<CharSequence> list = new ArrayList<CharSequence>();
