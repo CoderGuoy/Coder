@@ -11,7 +11,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayTouchFeedbackBinding;
  * @Version:v1.0
  * @Author:Guoy
  * @CreateTime:2017年6月12日
- * @Descrpiton:
+ * @Descrpiton:TouchFeedback|触摸反馈
  */
 public class PlayTouchFeedback extends MvvmBaseActivity<ActivityPlayTouchFeedbackBinding> implements View.OnClickListener {
 

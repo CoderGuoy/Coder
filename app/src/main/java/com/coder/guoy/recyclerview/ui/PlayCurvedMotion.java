@@ -17,7 +17,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayCurvedMotionBinding;
  * @Version:
  * @Author:
  * @CreateTime:2017年6月14日
- * @Descrpiton:
+ * @Descrpiton:CurvedMotion|曲线运动
  */
 public class PlayCurvedMotion extends MvvmBaseActivity<ActivityPlayCurvedMotionBinding> implements View.OnClickListener {
     private ObjectAnimator animator;

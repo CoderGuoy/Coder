@@ -10,7 +10,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayShapeBinding;
  * @Version:v1.0
  * @Author:Guoy
  * @CreateTime:2017年6月8日
- * @Descrpiton:
+ * @Descrpiton:自定义图形
  */
 public class PlayShape extends MvvmBaseActivity<ActivityPlayShapeBinding> {
 

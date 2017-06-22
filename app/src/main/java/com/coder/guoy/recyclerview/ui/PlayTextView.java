@@ -11,7 +11,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayTextViewBinding;
  * @Version:v1.0
  * @Author:Guoy
  * @CreateTime:2017年6月2日
- * @Descrpiton:
+ * @Descrpiton:自定义文本
  */
 public class PlayTextView extends MvvmBaseActivity<ActivityPlayTextViewBinding> implements View.OnClickListener {
 

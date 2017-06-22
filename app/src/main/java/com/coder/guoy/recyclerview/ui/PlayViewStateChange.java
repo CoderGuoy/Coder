@@ -11,7 +11,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayViewStateChangeBindin
  * @Version:v1.0
  * @Author:Guoy
  * @CreateTime:2017年6月19日
- * @Descrpiton:
+ * @Descrpiton:ViewstateChanges|视图状态改变
  */
 public class PlayViewStateChange extends MvvmBaseActivity<ActivityPlayViewStateChangeBinding> implements View.OnClickListener {
 

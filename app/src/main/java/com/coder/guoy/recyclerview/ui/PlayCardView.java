@@ -10,7 +10,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayCardViewBinding;
  * @Version:
  * @Author:
  * @CreateTime:2017年5月12日
- * @Descrpiton:
+ * @Descrpiton:CardView
  */
 public class PlayCardView extends MvvmBaseActivity<ActivityPlayCardViewBinding> implements View.OnClickListener {
 

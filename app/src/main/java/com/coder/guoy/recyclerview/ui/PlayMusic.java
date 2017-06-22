@@ -9,7 +9,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayMusicBinding;
  * @Version:v1.0
  * @Author:Guoy
  * @CreateTime:2017年6月5日
- * @Descrpiton:
+ * @Descrpiton:自定义条形图
  */
 public class PlayMusic extends MvvmBaseActivity<ActivityPlayMusicBinding> {
 

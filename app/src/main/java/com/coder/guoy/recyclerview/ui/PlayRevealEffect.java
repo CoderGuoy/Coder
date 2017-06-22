@@ -14,7 +14,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayRevealEffectBinding;
  * @Version:v1.0
  * @Author:Guoy
  * @CreateTime:2017年6月13日
- * @Descrpiton:
+ * @Descrpiton:RevealEffect|揭示效果
  */
 public class PlayRevealEffect extends MvvmBaseActivity<ActivityPlayRevealEffectBinding> implements View.OnClickListener {
 
