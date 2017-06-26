@@ -45,23 +45,36 @@
                     android:src="@drawable/animated_heart"
                     android:visibility="invisible"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+
+                <ImageView
+                    android:id="@+id/image_smile"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_gravity="center"
+                    android:src="@drawable/animated_to_smile"/>
 
-                    <ImageView
-                        android:id="@+id/image_smile"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/animated_to_smile"/>
+                <ImageView
+                    android:id="@+id/image_redheart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/animated_red_heartfull"/>
 
-                    <ImageView
-                        android:id="@+id/image_redheart"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/animated_red_heartfull"/>
-                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_moto"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/animated_motorcycle_show"/>
+
+                <ImageView
+                    android:id="@+id/image_rotate"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/animated_refresh_rote"/>
+
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
     </LinearLayout>

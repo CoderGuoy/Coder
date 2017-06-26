@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:drawable="@drawable/vector_autorenew_black_24dp">
+
+    <target
+        android:name="rotate"
+        android:animation="@animator/animator_refresh_rote"/>
+
+</animated-vector>

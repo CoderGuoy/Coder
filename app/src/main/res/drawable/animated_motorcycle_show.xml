@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:drawable="@drawable/vector_motorcycle_black_24dp">
+
+    <target
+        android:name="moto"
+        android:animation="@animator/animator_motorcycle_show"/>
+</animated-vector>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
-                android:duration="1000"
-                android:propertyName="fillColor"
-                android:valueFrom="@color/colorWrite"
-                android:valueTo="@color/red"
-                android:valueType="colorType"/>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="fillColor"
+        android:valueFrom="@color/colorWrite"
+        android:valueTo="@color/red"
+        android:valueType="colorType"/>
+</set>

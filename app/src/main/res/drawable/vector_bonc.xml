@@ -3,7 +3,7 @@
         android:width="400dp"
         android:height="200dp"
         android:viewportHeight="100"
-        android:viewportWidth="200"    >
+        android:viewportWidth="200">
 
     <path
         android:name="rect"
