@@ -60,7 +60,7 @@
                         android:id="@+id/image_redheart"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/animated_red_heart"/>
+                        android:src="@drawable/animated_red_heartfull"/>
                 </LinearLayout>
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>

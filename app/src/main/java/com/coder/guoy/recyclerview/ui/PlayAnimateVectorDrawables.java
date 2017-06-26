@@ -3,7 +3,9 @@ package com.coder.guoy.recyclerview.ui;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Bundle;
+import android.support.annotation.DrawableRes;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
@@ -16,7 +18,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayAnimateVectorDrawable
  * @Descrpiton:AnimateVectorDrawables|矢量图片动画
  */
 public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAnimateVectorDrawablesBinding> implements View.OnClickListener {
-    private boolean isClick = false;
+    private boolean isClick = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
         bindingView.animatevectordrawable.toolbarBack.setOnClickListener(this);
         bindingView.btnSuprise.setOnClickListener(this);
         bindingView.imageSmile.setOnClickListener(this);
+        bindingView.imageRedheart.setOnClickListener(this);
     }
 
     @Override
@@ -36,8 +39,6 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 finish();
                 break;
             case R.id.btn_suprise:
-                //红心
-                ((Animatable) bindingView.imageRedheart.getDrawable()).start();
                 //bonc
                 bindingView.imageBonc.setVisibility(View.VISIBLE);
                 ((Animatable) bindingView.imageBonc.getDrawable()).start();
@@ -45,16 +46,34 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 bindingView.imageHeart.setVisibility(View.VISIBLE);
                 ((Animatable) bindingView.imageHeart.getDrawable()).start();
                 break;
-            case R.id.image_smile:
-                AnimatedVectorDrawable Smilehappy = (AnimatedVectorDrawable) getDrawable(R.drawable.animated_to_smile);
-                AnimatedVectorDrawable Smilesad = (AnimatedVectorDrawable) getDrawable(R.drawable.animated_to_sad);
-                AnimatedVectorDrawable vectorDrawable = isClick ? Smilesad : Smilehappy;
-                bindingView.imageSmile.setImageDrawable(vectorDrawable);
-                if (vectorDrawable != null) {
-                    vectorDrawable.start();
-                }
-                isClick = !isClick;
+            case R.id.image_smile://笑脸
+                VectorDrawableClick(R.drawable.animated_to_smile, R.drawable.animated_to_sad,
+                        bindingView.imageSmile);
+                break;
+            case R.id.image_redheart://红心
+                VectorDrawableClick(R.drawable.animated_red_heartfull, R.drawable.animated_red_heartempty,
+                        bindingView.imageRedheart);
                 break;
         }
+    }
+
+    /**
+     * 点击启动SVG动画
+     * 点击状态公用(待解决)
+     *
+     * @param drawablestart 开始效果
+     * @param drawableend   结束效果
+     * @param view          需要操作的View
+     */
+    private void VectorDrawableClick(@DrawableRes int drawablestart, @DrawableRes int drawableend,
+                                     ImageView view) {
+        AnimatedVectorDrawable heartFull = (AnimatedVectorDrawable) getDrawable(drawablestart);
+        AnimatedVectorDrawable heartEmpty = (AnimatedVectorDrawable) getDrawable(drawableend);
+        AnimatedVectorDrawable heartAnimated = isClick ? heartFull : heartEmpty;
+        view.setImageDrawable(heartAnimated);
+        if (heartAnimated != null) {
+            heartAnimated.start();
+        }
+        isClick = !isClick;
     }
 }

@@ -4,6 +4,6 @@
 
     <target
         android:name="red_heart"
-        android:animation="@animator/animator_red_heart_color"/>
+        android:animation="@animator/animator_red_heart_colorfull"/>
 
 </animated-vector>
