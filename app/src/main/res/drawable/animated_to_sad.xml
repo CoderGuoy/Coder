@@ -3,11 +3,11 @@
                  android:drawable="@drawable/vector_smile">
     <target
         android:name="eye_left"
-        android:animation="@animator/animator_eye_left"/>
+        android:animation="@animator/animator_eye_left_to_sad"/>
     <target
         android:name="eye_right"
-        android:animation="@animator/animator_eye_right"/>
+        android:animation="@animator/animator_eye_right_to_sad"/>
     <target
         android:name="smile"
-        android:animation="@animator/animator_mouth_smile"/>
+        android:animation="@animator/animator_mouth_smile_to_sad"/>
 </animated-vector>

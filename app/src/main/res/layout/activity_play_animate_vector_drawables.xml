@@ -3,6 +3,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,46 +14,55 @@
             android:id="@+id/animatevectordrawable"
             layout="@layout/toolbar"/>
 
-        <Button
-            android:id="@+id/btn_suprise"
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="点我有惊喜^_^"/>
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/image_smile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/animated_smile"/>
+                <Button
+                    android:id="@+id/btn_suprise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="点我有惊喜^_^"/>
 
-            <ImageView
-                android:id="@+id/image_redheart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/animated_red_heart"/>
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/image_bonc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/animated_bonc"
+                    android:visibility="invisible"/>
 
-        <ImageView
-            android:id="@+id/image_bonc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/animated_bonc"
-            android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/image_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/animated_heart"
+                    android:visibility="invisible"/>
 
-        <ImageView
-            android:id="@+id/image_heart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/animated_heart"
-            android:visibility="invisible"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
+                    <ImageView
+                        android:id="@+id/image_smile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/animated_to_smile"/>
+
+                    <ImageView
+                        android:id="@+id/image_redheart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/animated_red_heart"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
     </LinearLayout>
-
 </layout>

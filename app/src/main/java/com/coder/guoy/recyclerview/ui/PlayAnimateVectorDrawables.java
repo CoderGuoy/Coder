@@ -1,6 +1,7 @@
 package com.coder.guoy.recyclerview.ui;
 
 import android.graphics.drawable.Animatable;
+import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Bundle;
 import android.view.View;
 
@@ -15,6 +16,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayAnimateVectorDrawable
  * @Descrpiton:AnimateVectorDrawables|矢量图片动画
  */
 public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAnimateVectorDrawablesBinding> implements View.OnClickListener {
+    private boolean isClick = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
         bindingView.animatevectordrawable.textviewTitle.setText("Animate Vector Drawables|矢量图片动画");
         bindingView.animatevectordrawable.toolbarBack.setOnClickListener(this);
         bindingView.btnSuprise.setOnClickListener(this);
+        bindingView.imageSmile.setOnClickListener(this);
     }
 
     @Override
@@ -33,8 +36,6 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 finish();
                 break;
             case R.id.btn_suprise:
-                //笑脸
-                ((Animatable) bindingView.imageSmile.getDrawable()).start();
                 //红心
                 ((Animatable) bindingView.imageRedheart.getDrawable()).start();
                 //bonc
@@ -43,6 +44,16 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 //线性心
                 bindingView.imageHeart.setVisibility(View.VISIBLE);
                 ((Animatable) bindingView.imageHeart.getDrawable()).start();
+                break;
+            case R.id.image_smile:
+                AnimatedVectorDrawable Smilehappy = (AnimatedVectorDrawable) getDrawable(R.drawable.animated_to_smile);
+                AnimatedVectorDrawable Smilesad = (AnimatedVectorDrawable) getDrawable(R.drawable.animated_to_sad);
+                AnimatedVectorDrawable vectorDrawable = isClick ? Smilesad : Smilehappy;
+                bindingView.imageSmile.setImageDrawable(vectorDrawable);
+                if (vectorDrawable != null) {
+                    vectorDrawable.start();
+                }
+                isClick = !isClick;
                 break;
         }
     }

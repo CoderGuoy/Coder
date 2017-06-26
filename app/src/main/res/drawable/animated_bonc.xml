@@ -2,7 +2,7 @@
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
                  android:drawable="@drawable/vector_bonc">
     <target
-        android:animation="@animator/animator_heart_line"
-        android:name="bonc"/>
+        android:name="bonc"
+        android:animation="@animator/animator_heart_line"/>
 
 </animated-vector>
