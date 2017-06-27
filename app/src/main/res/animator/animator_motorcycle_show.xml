@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android">
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:ordering="sequentially">
     <objectAnimator
-        android:duration="300"
-        android:propertyName="fillColor"
-        android:repeatCount="infinite"
-        android:repeatMode="reverse"
-        android:valueFrom="#FF000000"
-        android:valueTo="@color/red"
-        android:valueType="colorType"/>
+        android:duration="1000"
+        android:propertyName="translateX"
+        android:valueFrom="0"
+        android:valueTo="24"
+        android:valueType="floatType"/>
+
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="translateX"
+        android:valueFrom="-24"
+        android:valueTo="0"
+        android:valueType="floatType"/>
+
 </set>

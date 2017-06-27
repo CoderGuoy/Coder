@@ -100,12 +100,33 @@
                     android:layout_gravity="center"
                     android:src="@drawable/animated_refresh_rote"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="translate位移动画"
+                    android:textSize="18sp"/>
+
                 <ImageView
                     android:id="@+id/image_moto"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:src="@drawable/animated_motorcycle_show"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="scaleXY缩放动画"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/image_android"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/animated_android"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>

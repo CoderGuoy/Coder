@@ -32,6 +32,7 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
         bindingView.imageRedheart.setOnClickListener(this);
         bindingView.imageRotate.setOnClickListener(this);
         bindingView.imageMoto.setOnClickListener(this);
+        bindingView.imageAndroid.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +62,9 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 break;
             case R.id.image_moto://摩托车
                 ((AnimatedVectorDrawable) bindingView.imageMoto.getDrawable()).start();
+                break;
+            case R.id.image_android://电池
+                ((AnimatedVectorDrawable) bindingView.imageAndroid.getDrawable()).start();
                 break;
         }
     }
