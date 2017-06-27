@@ -3,6 +3,6 @@
                  android:drawable="@drawable/vector_bonc">
     <target
         android:name="bonc"
-        android:animation="@animator/animator_heart_line"/>
+        android:animation="@animator/animator_line_heart"/>
 
 </animated-vector>

@@ -4,6 +4,6 @@
 
     <target
         android:name="line1"
-        android:animation="@animator/animator_heart_line"/>
+        android:animation="@animator/animator_line_heart"/>
 
 </animated-vector>

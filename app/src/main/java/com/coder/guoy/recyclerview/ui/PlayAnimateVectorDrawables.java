@@ -30,9 +30,10 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
         bindingView.btnSuprise.setOnClickListener(this);
         bindingView.imageSmile.setOnClickListener(this);
         bindingView.imageRedheart.setOnClickListener(this);
-        bindingView.imageRotate.setOnClickListener(this);
+        bindingView.imageWindmill.setOnClickListener(this);
         bindingView.imageMoto.setOnClickListener(this);
         bindingView.imageAndroid.setOnClickListener(this);
+        bindingView.imageFingerprint.setOnClickListener(this);
     }
 
     @Override
@@ -50,21 +51,24 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 ((Animatable) bindingView.imageHeart.getDrawable()).start();
                 break;
             case R.id.image_smile://笑脸
-                VectorDrawableClick(R.drawable.animated_to_smile, R.drawable.animated_to_sad,
+                VectorDrawableClick(R.drawable.animated_face_to_happy, R.drawable.animated_face_to_sad,
                         bindingView.imageSmile);
                 break;
             case R.id.image_redheart://红心
-                VectorDrawableClick(R.drawable.animated_red_heartfull, R.drawable.animated_red_heartempty,
+                VectorDrawableClick(R.drawable.animated_red_heart_full, R.drawable.animated_red_heart_empty,
                         bindingView.imageRedheart);
                 break;
-            case R.id.image_rotate://旋转
-                ((AnimatedVectorDrawable) bindingView.imageRotate.getDrawable()).start();
+            case R.id.image_windmill://风车 旋转动画 需要group 指定pivotXY
+                ((AnimatedVectorDrawable) bindingView.imageWindmill.getDrawable()).start();
                 break;
-            case R.id.image_moto://摩托车
+            case R.id.image_moto://摩托车 位移动画 需要group
                 ((AnimatedVectorDrawable) bindingView.imageMoto.getDrawable()).start();
                 break;
-            case R.id.image_android://电池
+            case R.id.image_android://机器人 缩放动画 需要group 指定pivotXY
                 ((AnimatedVectorDrawable) bindingView.imageAndroid.getDrawable()).start();
+                break;
+            case R.id.image_fingerprint://指纹 透明动画 需要ObjectAnimator的porpertyName="fillAlpha"
+                ((AnimatedVectorDrawable) bindingView.imageFingerprint.getDrawable()).start();
                 break;
         }
     }
