@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityPlayAnimateVectorDrawablesBinding;
-import com.coder.guoy.recyclerview.utils.ToastUtil;
 
 /**
  * @Version:v1.0
@@ -31,8 +30,8 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
         bindingView.btnSuprise.setOnClickListener(this);
         bindingView.imageSmile.setOnClickListener(this);
         bindingView.imageRedheart.setOnClickListener(this);
-        bindingView.imageMoto.setOnClickListener(this);
         bindingView.imageRotate.setOnClickListener(this);
+        bindingView.imageMoto.setOnClickListener(this);
     }
 
     @Override
@@ -57,12 +56,11 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 VectorDrawableClick(R.drawable.animated_red_heartfull, R.drawable.animated_red_heartempty,
                         bindingView.imageRedheart);
                 break;
-            case R.id.image_moto:
-                ((AnimatedVectorDrawable) bindingView.imageMoto.getDrawable()).start();
-                break;
-            case R.id.image_rotate:
-                ToastUtil.show("rotate");
+            case R.id.image_rotate://旋转
                 ((AnimatedVectorDrawable) bindingView.imageRotate.getDrawable()).start();
+                break;
+            case R.id.image_moto://摩托车
+                ((AnimatedVectorDrawable) bindingView.imageMoto.getDrawable()).start();
                 break;
         }
     }

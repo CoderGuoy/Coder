@@ -29,6 +29,13 @@
                     android:layout_height="wrap_content"
                     android:text="点我有惊喜^_^"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="trimPathEnd"
+                    android:textSize="18sp"/>
+
                 <ImageView
                     android:id="@+id/image_bonc"
                     android:layout_width="wrap_content"
@@ -37,14 +44,26 @@
                     android:src="@drawable/animated_bonc"
                     android:visibility="invisible"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="trimPathStart"
+                    android:textSize="18sp"/>
+
                 <ImageView
                     android:id="@+id/image_heart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:src="@drawable/animated_heart"
-                    android:visibility="invisible"/>
+                    android:src="@drawable/animated_heart"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="pathData形状变化"
+                    android:textSize="18sp"/>
 
                 <ImageView
                     android:id="@+id/image_smile"
@@ -53,6 +72,13 @@
                     android:layout_gravity="center"
                     android:src="@drawable/animated_to_smile"/>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="fillColor颜色变化"
+                    android:textSize="18sp"/>
+
                 <ImageView
                     android:id="@+id/image_redheart"
                     android:layout_width="wrap_content"
@@ -60,13 +86,12 @@
                     android:layout_gravity="center"
                     android:src="@drawable/animated_red_heartfull"/>
 
-
-                <ImageView
-                    android:id="@+id/image_moto"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/animated_motorcycle_show"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="rotation旋转动画"
+                    android:textSize="18sp"/>
 
                 <ImageView
                     android:id="@+id/image_rotate"
@@ -74,6 +99,13 @@
                     android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:src="@drawable/animated_refresh_rote"/>
+
+                <ImageView
+                    android:id="@+id/image_moto"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/animated_motorcycle_show"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
