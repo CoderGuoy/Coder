@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="600dp"
+        android:height="800dp"
+        android:viewportHeight="800"
+        android:viewportWidth="600">
+    <!--背景颜色-->
+    <path
+        android:fillColor="@color/ast_background"
+        android:pathData="M 0,0 L 0,800,L 600,800,L 600,0 Z"/>
+    <!--流星-->
+    <group android:name="shower2">
+        <path
+            android:pathData="M 470,150 L 470,330"
+            android:strokeColor="@color/ast_gray"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+        <path
+            android:pathData="M 50,200 L 50,400"
+            android:strokeColor="@color/ast_gray"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+        <path
+            android:pathData="M 550,50 L 550,300"
+            android:strokeColor="@color/ast_gray"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+    </group>
+    <group android:name="shower1">
+        <path
+            android:name="shower8"
+            android:pathData="M 120,100 L 120,102"
+            android:strokeColor="@color/ast_gray"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+        <path
+            android:name="shower9"
+            android:pathData="M 520,200 L 520,202"
+            android:strokeColor="@color/ast_gray"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+    </group>
+    <group android:name="shower">
+        <path
+            android:pathData="M 150,720 L 150,770"
+            android:strokeColor="@color/ast_gray"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+        <path
+            android:pathData="M 370,550 L 370,630"
+            android:strokeColor="@color/ast_gray"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+        <path
+            android:pathData="M 230,520 L 230,600"
+            android:strokeColor="@color/ast_gray"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+        <path
+            android:pathData="M 300,700 L 300,720"
+            android:strokeColor="@color/ast_gray"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+    </group>
+    <!--彩色动力-->
+    <group android:name="power">
+        <path
+            android:pathData="M 300,495 L 300,620"
+            android:strokeColor="@color/ast_green"
+            android:strokeWidth="15"/>
+        <path
+            android:pathData="M 286,495 L 286,620"
+            android:strokeColor="@color/ast_yellow"
+            android:strokeWidth="15"/>
+        <path
+            android:pathData="M 272,495 L 272,620"
+            android:strokeColor="@color/ast_red"
+            android:strokeWidth="15"/>
+        <path
+            android:pathData="M 314,495 L 314,620"
+            android:strokeColor="@color/ast_blue"
+            android:strokeWidth="15"/>
+        <path
+            android:pathData="M 328,495 L 328,620"
+            android:strokeColor="@color/ast_perple"
+            android:strokeWidth="15"/>
+    </group>
+    <!--彩色动力气泡-->
+    <group android:name="buble">
+        <!--PivotXY 330,660-->
+        <group
+            android:name="buble1"
+            android:pivotX="330"
+            android:pivotY="660">
+            <path
+                android:fillColor="@color/ast_gray"
+                android:pathData="M 330,630
+        A 30,30,0,1,0,330,690
+        A 30,30,0,1,0,330,630"/>
+        </group>
+        <!--PivotXY 260,660-->
+        <group
+            android:name="buble2"
+            android:pivotX="260"
+            android:pivotY="660">
+            <path
+                android:fillColor="@color/ast_gray"
+                android:pathData="M 260,630
+        A 30,30,0,1,0,260,690
+        A 30,30,0,1,0,260,630"/>
+        </group>
+        <!--PivotXY 290,670-->
+        <group
+            android:name="buble3"
+            android:pivotX="290"
+            android:pivotY="670">
+            <path
+                android:fillColor="@color/ast_gray"
+                android:pathData="M 290,630
+        A 40,40,0,1,0,290,710
+        A 40,40,0,1,0,290,630"/>
+        </group>
+        <!--PivotXY 286,655-->
+        <group
+            android:name="buble4"
+            android:pivotX="286"
+            android:pivotY="655">
+            <path
+                android:fillColor="@color/ast_yellow"
+                android:pathData="M 286,620
+        A 35,35,0,1,0,286,690
+        A 35,35,0,1,0,286,620"/>
+        </group>
+        <!--PivotXY 335,630-->
+        <group
+            android:name="buble5"
+            android:pivotX="335"
+            android:pivotY="630">
+            <path
+                android:fillColor="@color/ast_yellow"
+                android:pathData="M 335,610
+        A 20,20,0,1,0,335,650
+        A 20,20,0,1,0,335,610"/>
+        </group>
+        <!--PivotXY 250,635-->
+        <group
+            android:name="buble6"
+            android:pivotX="250"
+            android:pivotY="635">
+            <path
+                android:fillColor="@color/ast_perple"
+                android:pathData="M 250,620
+        A 15,15,0,1,0,250,650
+        A 15,15,0,1,0,250,620"/>
+        </group>
+        <!--PivotXY 328,660-->
+        <group
+            android:name="buble7"
+            android:pivotX="328"
+            android:pivotY="660">
+            <path
+                android:fillColor="@color/ast_perple"
+                android:pathData="M 328,640
+        A 20,20,0,1,0,328,680
+        A 20,20,0,1,0,328,640"/>
+        </group>
+        <!--PivotXY 286,630-->
+        <group
+            android:name="buble8"
+            android:pivotX="286"
+            android:pivotY="630">
+            <path
+                android:fillColor="@color/ast_red"
+                android:pathData="M 286,600
+        A 30,30,0,1,0,286,660
+        A 30,30,0,1,0,286,600"/>
+        </group>
+        <!--PivotXY 260,622.5-->
+        <group
+            android:name="buble9"
+            android:pivotX="260"
+            android:pivotY="622.5">
+            <path
+                android:fillColor="@color/ast_blue"
+                android:pathData="M 260,610
+        A 12.5,12.5,0,1,0,260,635
+        A 12.5,12.5,0,1,0,260,610"/>
+        </group>
+        <!--PivotXY 314,635-->
+        <group
+            android:name="buble10"
+            android:pivotX="314"
+            android:pivotY="635">
+            <path
+                android:fillColor="@color/ast_green"
+                android:pathData="M 314,610
+        A 25,25,0,1,0,314,660
+        A 25,25,0,1,0,314,610"/>
+        </group>
+    </group>
+    <!--宇航员-->
+    <group
+        android:name="astronaut"
+        android:pivotX="300"
+        android:pivotY="400">
+
+        <path
+            android:pathData="M 300,292
+            A 3,3,0,1,1,300,277
+            A 3,3,0,1,1,300,292"
+            android:fillColor="@color/ast_gray"
+            android:strokeWidth="4"/>
+        <path
+            android:pathData="M 300,300 L 300,290"
+            android:strokeColor="@color/ast_gray"
+            android:strokeWidth="5"/>
+
+        <!--头-->
+        <path
+            android:fillColor="@color/colorWrite"
+            android:pathData="M 300,400
+        A 50,50,-90,1,1,300,300
+        A 50,50,-90 1,1,300,400"
+            android:strokeColor="@color/ast_line"
+            android:strokeWidth="4"/>
+
+        <!--墨镜-->
+        <path
+            android:fillColor="@color/ast_glasses"
+            android:pathData="M 250,350
+        A 55,55,0,0,0,350,350
+        L 340,330
+        L 260,330
+        L 250,350"
+            android:strokeColor="@color/ast_line"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+
+        <!--墨镜中的反光-->
+        <path
+            android:pathData="M 330,340
+            A 15,15,90,0,1,330,360"
+            android:strokeColor="@color/colorWrite"
+            android:strokeLineCap="round"
+            android:strokeWidth="5"/>
+
+        <path
+            android:pathData="M 270,340
+            A 15,15,90,0,0,270,360"
+            android:strokeColor="@color/colorWrite"
+            android:strokeLineCap="round"
+            android:strokeWidth="5"/>
+
+        <!--身体-->
+        <path
+            android:fillColor="@color/colorWrite"
+            android:pathData="M 346,370
+            A 25,25,45,0,1,370,395
+            L 370,445
+            A 25,25,90,0,1,345,470
+            L 345,405
+            M 370,445 L 345,445
+            M 345,470 L 345,495
+            A 25,25,0,0,1,300,495
+            A 25,25,0,0,1,255,495
+            L 255,405
+            L 255,470
+            A 25,25,0,0,1,230,445
+            L 255,445
+            L 230,445
+            L 230,395
+            A 25,25,0,0,1,254,370
+            A 50,50,0,0,0,346,370"
+            android:strokeColor="@color/ast_line"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+        <!--领带-->
+        <path
+            android:pathData="M 300,400
+            L 300,450"
+            android:strokeColor="@color/ast_line"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+        <!--T-->
+        <path
+            android:pathData="M 300,493
+            L 300,470 L 285,470
+            M 300,470 L 315,470"
+            android:strokeColor="@color/ast_line"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+
+        <!--飞行器左-->
+        <path
+            android:fillColor="@color/colorWrite"
+            android:pathData="M 240,372
+        L 240,353
+        A 35,35,0,0,1,260,320
+        A 48,48,0,0,0,253,368"
+            android:strokeColor="@color/ast_line"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+        <!--飞行器右-->
+        <path
+            android:fillColor="@color/colorWrite"
+            android:pathData="M 360,372
+        L 360,353
+        A 35,35,0,0,0,340,320
+        A 48,48,0,0,1,347,368"
+            android:strokeColor="@color/ast_line"
+            android:strokeLineCap="round"
+            android:strokeWidth="4"/>
+
+        <!--胸章-->
+        <path
+            android:fillColor="@color/blue"
+            android:pathData="M 325,405
+        A 5,5,90,1,1,325,415
+        A 5,5,90,0,1,325,405"
+            android:strokeColor="@color/red"
+            android:strokeLineCap="round"
+            android:strokeWidth="1"/>
+        <path
+            android:pathData="M 325,408
+        L 327,412 L 323,412 z"
+            android:strokeColor="@color/colorWrite"
+            android:strokeWidth="1"/>
+    </group>
+
+</vector>

@@ -32,5 +32,17 @@
     <color name="yello">#fbbc05</color>
     <color name="red">#ea4335</color>
 
+    <!--astronaut-->
+    <color name="ast_glasses">#7592A0</color>
+    <color name="ast_line">#292929</color>
+    <color name="ast_red">#CC583F</color>
+    <color name="ast_yellow">#ECB447</color>
+    <color name="ast_blue">#5991AA</color>
+    <color name="ast_green">#75C095</color>
+    <color name="ast_perple">#7D6AAD</color>
+    <color name="ast_gray">#2D2D2D</color>
+    <color name="ast_background">#1D1D1D</color>
+
+
 
 </resources>

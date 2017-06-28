@@ -34,6 +34,7 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
         bindingView.imageMoto.setOnClickListener(this);
         bindingView.imageAndroid.setOnClickListener(this);
         bindingView.imageFingerprint.setOnClickListener(this);
+        bindingView.imageAstronaut.setOnClickListener(this);
     }
 
     @Override
@@ -69,6 +70,9 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
                 break;
             case R.id.image_fingerprint://指纹 透明动画 需要ObjectAnimator的porpertyName="fillAlpha"
                 ((AnimatedVectorDrawable) bindingView.imageFingerprint.getDrawable()).start();
+                break;
+            case R.id.image_astronaut://宇航员
+                ((AnimatedVectorDrawable) bindingView.imageAstronaut.getDrawable()).start();
                 break;
         }
     }
