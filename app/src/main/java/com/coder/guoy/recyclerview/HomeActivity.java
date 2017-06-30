@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private HomeAdapter adapter;
     private LinearLayoutManager mLayoutManager;
     private String[] model = {"Material Design","RecyclerView", "CardView", "Customize|自定义","Animation",
-            "Design Pattern|设计模式"};
+            "Design Pattern|设计模式","待添加"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

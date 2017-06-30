@@ -68,6 +68,8 @@ public class HomeAdapter extends RecyclerView.Adapter {
                     case 5://Design Pattern
                         mContext.startActivity(new Intent(mContext, DesignPatternHolder.class));
                         break;
+                    case 6://
+                        break;
                 }
             }
         });
