@@ -5,8 +5,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.LayoutAnimationController;
+import android.widget.LinearLayout;
 
 import com.coder.guoy.recyclerview.R;
+
 /**
  * @Version:v1.0
  * @Author:Guoy
@@ -27,5 +31,16 @@ public class PlayStatusBar extends AppCompatActivity {
             decorView.setSystemUiVisibility(option);
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
+        setLayoutAnimation();
+    }
+
+
+    private void setLayoutAnimation() {
+        LinearLayout layout = (LinearLayout) findViewById(R.id.activity_play_status_bar);
+        AlphaAnimation alpha = new AlphaAnimation(0, 1);
+        alpha.setDuration(300);
+        LayoutAnimationController controller = new LayoutAnimationController(alpha, 0.3f);
+        controller.setOrder(LayoutAnimationController.ORDER_NORMAL);
+        layout.setLayoutAnimation(controller);
     }
 }

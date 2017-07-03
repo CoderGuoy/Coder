@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activitytransition"
+        layout="@layout/toolbar"/>
 
     <LinearLayout
+        android:id="@+id/layout_go"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <include
-            android:id="@+id/activitytransition"
-            layout="@layout/toolbar"/>
+        <ImageView
+            android:id="@+id/image_go"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/head"
+            android:transitionName="shareimage"/>
 
-        <Button
-            android:id="@+id/btn_transition_explode"
+        <TextView
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-
+            android:layout_height="100dp"
+            android:text="@string/text2"/>
     </LinearLayout>
-</layout>
+</LinearLayout>

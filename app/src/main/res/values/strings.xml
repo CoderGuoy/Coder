@@ -15,6 +15,7 @@
 4. CollapsingToolbarLayout是对Toolbar再次包装的ViewGroup，用来实现折叠或拉伸效果的，他需要放到AppBarLayout里面，
         并且是直接子View，CollapsingToolbarLayout子View里面要设置属性`app:layout_collapseMode`里面的值
         pin表示当上滑时该控件保留，其他控件不留\n</string>
+    <string name="text2">Android Material Design 风格控件的学习及遇到的问题；Tablayout | 横向布局标签，TextInputLayout | 文字输入布局 ，FloatingActionButton | 悬浮按钮， CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局,BottomSheetDialog | 底部对话框,Touch Feedback| 触摸反馈，Reveal Effect| 揭示效果,Curved motion | 曲线运动,Animated Vector Drawables | 矢量图片动画</string>
     <string name="MOTTO">刚则易折，柔则长存</string>
     <string name="pleasewait">敬请期待</string>
     <string name="CoordinatorLayout">折叠布局的嵌套</string>
