@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.coder.guoy.recyclerview.R;
-import com.coder.guoy.recyclerview.databinding.ActivityBaseMvvmBinding;
+import com.coder.guoy.recyclerview.databinding.ActivityBaseMvvmNotitleBinding;
 import com.coder.guoy.recyclerview.linstener.PerfectClickListener;
 import com.coder.guoy.recyclerview.utils.CommonUtils;
 import com.coder.guoy.recyclerview.utils.StatusBarUtils;
@@ -34,7 +34,7 @@ public class MvvmBaseActivityNoTitle<SV extends ViewDataBinding> extends AppComp
     protected SV bindingView;// 布局view
     private LinearLayout llProgressBar;//努力加载中...
     private View refresh;//加载失败
-    private ActivityBaseMvvmBinding mBaseBinding;
+    private ActivityBaseMvvmNotitleBinding mBaseBinding;
     private AnimationDrawable mAnimationDrawable;
 
     @Override

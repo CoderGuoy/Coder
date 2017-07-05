@@ -15,36 +15,6 @@
             android:background="@color/colorPageBg"
             android:orientation="vertical">
 
-            <android.support.v7.widget.Toolbar
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorTheme"
-                app:contentInsetStart="0dp">
-
-                <FrameLayout
-                    android:id="@+id/toolbar_back"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="?android:selectableItemBackground"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/back"/>
-                </FrameLayout>
-
-                <TextView
-                    android:id="@+id/textview_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorWrite"
-                    android:textSize="18sp"/>
-
-            </android.support.v7.widget.Toolbar>
-
             <RelativeLayout
                 android:id="@+id/container"
                 android:layout_width="match_parent"
