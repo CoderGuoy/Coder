@@ -8,10 +8,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            android:id="@+id/textview"
-            layout="@layout/toolbar"/>
-
         <com.coder.guoy.recyclerview.view.textview.RectTextView
             android:id="@+id/text_rect"
             android:layout_width="match_parent"

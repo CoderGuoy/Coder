@@ -21,17 +21,13 @@ public class DesignPatternHolder extends MvvmBaseActivity<ActivityDesignPatternH
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_design_pattern_holder);
         showContentView();
-        bindingView.designPattern.textviewTitle.setText("Design Pattern|设计模式");
-        bindingView.designPattern.toolbarBack.setOnClickListener(this);
+        setTitle("Design Pattern|设计模式");
         bindingView.btnStragegy.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
             case R.id.btn_stragegy:
                 startActivity(new Intent(DesignPatternHolder.this, StrategyDesign.class));
                 break;

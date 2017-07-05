@@ -47,8 +47,7 @@ public class PlayCurvedMotion extends MvvmBaseActivity<ActivityPlayCurvedMotionB
         setContentView(R.layout.activity_play_curved_motion);
         showContentView();
         GetPiexels();
-        bindingView.curvedmotion.textviewTitle.setText("Curved Motion|曲线运动");
-        bindingView.curvedmotion.toolbarBack.setOnClickListener(this);
+        setTitle("Curved Motion|曲线运动");
         bindingView.btnCurvedMotion.setOnClickListener(this);
     }
 
@@ -64,9 +63,6 @@ public class PlayCurvedMotion extends MvvmBaseActivity<ActivityPlayCurvedMotionB
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
             case R.id.btn_curved_motion:
                 setCurvedMotion(bindingView.imageCurved1, accelerate_cubic);
                 setCurvedMotion(bindingView.imageCurved2, accelerate_decelerate);

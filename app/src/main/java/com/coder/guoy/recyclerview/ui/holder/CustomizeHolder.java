@@ -26,8 +26,7 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customize_holder);
         showContentView();
-        bindingView.customize.textviewTitle.setText("Customize|自定义");
-        bindingView.customize.toolbarBack.setOnClickListener(this);
+        setTitle("Customize|自定义");
         bindingView.btnTagcloud.setOnClickListener(this);
         bindingView.btnCombination.setOnClickListener(this);
         bindingView.btnRecttextview.setOnClickListener(this);
@@ -39,9 +38,6 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
             case R.id.btn_tagcloud:
                 startActivity(new Intent(CustomizeHolder.this, TagCloudActivity.class));
                 break;

@@ -18,6 +18,7 @@ public class PlayMusic extends MvvmBaseActivity<ActivityPlayMusicBinding> {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_music);
         showContentView();
+        setTitle("自定义条形图");
 
     }
 }

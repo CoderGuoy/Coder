@@ -29,8 +29,7 @@ public class PlayRevealEffect extends MvvmBaseActivity<ActivityPlayRevealEffectB
         setContentView(R.layout.activity_play_reveal_effect);
         showContentView();
         GetPiexels();
-        bindingView.revealeffect.textviewTitle.setText("Reveal Effect|揭示效果");
-        bindingView.revealeffect.toolbarBack.setOnClickListener(this);
+        setTitle("Reveal Effect|揭示效果");
         bindingView.btnRevealeffect.setOnClickListener(this);
     }
 
@@ -46,9 +45,6 @@ public class PlayRevealEffect extends MvvmBaseActivity<ActivityPlayRevealEffectB
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
             case R.id.btn_revealeffect:
                 if (isFirst) {
                     animator = ViewAnimationUtils.createCircularReveal(

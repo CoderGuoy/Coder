@@ -20,6 +20,7 @@ public class PlayShape extends MvvmBaseActivity<ActivityPlayShapeBinding> {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_shape);
         showContentView();
+        setTitle("Shape");
     }
 
 }

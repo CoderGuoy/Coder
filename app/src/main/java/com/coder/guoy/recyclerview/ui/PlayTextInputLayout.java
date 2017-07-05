@@ -23,9 +23,8 @@ public class PlayTextInputLayout extends MvvmBaseActivity<ActivityPlayTextInputL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_text_input_layout);
         showContentView();
-        bindingView.includeToolbar.toolbarBack.setOnClickListener(this);
+        setTitle("用户登录");
         bindingView.btnLogin.setOnClickListener(this);
-        bindingView.includeToolbar.textviewTitle.setText("用户登录");
         bindingView.textUsername.setHint("用户名/Email/手机号");
         bindingView.textPassword.setHint("密码");
         bindingView.edittextUsername.addTextChangedListener(new TextWatcher() {
@@ -85,9 +84,6 @@ public class PlayTextInputLayout extends MvvmBaseActivity<ActivityPlayTextInputL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
             case R.id.btn_login:
                 if (username() && password()) {
                     finish();

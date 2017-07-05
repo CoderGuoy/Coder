@@ -10,10 +10,6 @@
         android:background="@color/colorWrite"
         android:orientation="vertical">
 
-        <include
-            android:id="@+id/animatevectordrawable"
-            layout="@layout/toolbar"/>
-
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">

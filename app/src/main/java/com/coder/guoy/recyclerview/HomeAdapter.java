@@ -26,13 +26,15 @@ import com.coder.guoy.recyclerview.ui.holder.RecyclerViewHolder;
  */
 public class HomeAdapter extends RecyclerView.Adapter {
     private String[] model;
+    private String[] describe;
     private LayoutInflater mInflater;
     private Context mContext;
     private ItemHomeBinding bindingView;
 
-    public HomeAdapter(Context context, String[] model) {
+    public HomeAdapter(Context context, String[] model, String[] describe) {
         mInflater = LayoutInflater.from(context);
         this.model = model;
+        this.describe = describe;
         mContext = context;
     }
 
@@ -45,7 +47,8 @@ public class HomeAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         ViewHolder vh = (ViewHolder) holder;
-        vh.textView.setText(model[position]);
+        vh.title.setText(model[position]);
+        vh.describe.setText(describe[position]);
         bindingView.getRoot().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,12 +85,14 @@ public class HomeAdapter extends RecyclerView.Adapter {
 
     private class ViewHolder extends RecyclerView.ViewHolder {
         public CardView cardView;
-        public TextView textView;
+        public TextView title;
+        public TextView describe;
 
         public ViewHolder(View itemView) {
             super(itemView);
             cardView = bindingView.homeCardview;
-            textView = bindingView.homeText;
+            title = bindingView.homeText;
+            describe = bindingView.textDescribe;
         }
     }
 }

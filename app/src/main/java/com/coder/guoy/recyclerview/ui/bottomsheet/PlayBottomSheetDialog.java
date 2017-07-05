@@ -28,8 +28,7 @@ public class PlayBottomSheetDialog extends MvvmBaseActivity<ActivityPlayBottomSh
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_bottom_sheet_dialog);
         showContentView();
-        bindingView.bottomsheet.textviewTitle.setText("BottomSheetDialog");
-        bindingView.bottomsheet.toolbarBack.setOnClickListener(this);
+        setTitle("BottomSheetDialog");
         bindingView.btnBsd1.setOnClickListener(this);
         bindingView.btnBsd2.setOnClickListener(this);
         initView();
@@ -64,9 +63,6 @@ public class PlayBottomSheetDialog extends MvvmBaseActivity<ActivityPlayBottomSh
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
             case R.id.btn_bsd1:
                 bsd1.show();
                 break;

@@ -30,7 +30,7 @@ import com.coder.guoy.recyclerview.utils.StatusBarUtils;
  * @UpDataWhat:
  */
 
-public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActivity {
+public class MvvmBaseActivityNoTitle<SV extends ViewDataBinding> extends AppCompatActivity {
     protected SV bindingView;// 布局view
     private LinearLayout llProgressBar;//努力加载中...
     private View refresh;//加载失败
@@ -44,7 +44,7 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
 
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
-        mBaseBinding = DataBindingUtil.inflate(LayoutInflater.from(this), R.layout.activity_base_mvvm, null, false);
+        mBaseBinding = DataBindingUtil.inflate(LayoutInflater.from(this), R.layout.activity_base_mvvm_notitle, null, false);
         bindingView = DataBindingUtil.inflate(getLayoutInflater(), layoutResID, null, false);
         //content
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
@@ -65,7 +65,6 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
         if (!mAnimationDrawable.isRunning()) {
             mAnimationDrawable.start();
         }
-        setToolBar();
         // 点击加载失败布局
         refresh.setOnClickListener(new PerfectClickListener() {
             @Override
@@ -75,22 +74,6 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
             }
         });
         bindingView.getRoot().setVisibility(View.GONE);
-    }
-
-    /**
-     * 设置titlebar
-     */
-    private void setToolBar() {
-        mBaseBinding.toolbarBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-    }
-
-    public void setTitle(String title) {
-        mBaseBinding.textviewTitle.setText(title);
     }
 
     protected <T extends View> T getView(int id) {

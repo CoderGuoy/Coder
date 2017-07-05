@@ -17,7 +17,7 @@ import com.coder.guoy.recyclerview.databinding.ActivityPropertyAnimationBinding;
  * @Version:v1.0
  * @Author:Guoy
  * @CreateTime:2017年5月10日
- * @Descrpiton:
+ * @Descrpiton:属性动画
  */
 public class PropertyAnimation extends MvvmBaseActivity<ActivityPropertyAnimationBinding> implements View.OnClickListener {
 
@@ -49,11 +49,10 @@ public class PropertyAnimation extends MvvmBaseActivity<ActivityPropertyAnimatio
         //获取屏幕宽高
         width = manager.getDefaultDisplay().getWidth();
         height = manager.getDefaultDisplay().getHeight();
-        bindingView.propertyToolbar.textviewTitle.setText("Property Animation");
+        setTitle("Property Animation");
     }
 
     private void initListener() {
-        bindingView.propertyToolbar.toolbarBack.setOnClickListener(this);
         bindingView.btnAlpah.setOnClickListener(this);
         bindingView.scalex.setOnClickListener(this);
         bindingView.scaley.setOnClickListener(this);
@@ -103,9 +102,6 @@ public class PropertyAnimation extends MvvmBaseActivity<ActivityPropertyAnimatio
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
             case R.id.btn_alpah:
                 alpha.setDuration(TIME);
                 alpha.start();

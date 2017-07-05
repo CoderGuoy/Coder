@@ -1,7 +1,6 @@
 package com.coder.guoy.recyclerview.ui;
 
 import android.os.Bundle;
-import android.view.View;
 
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
@@ -13,25 +12,15 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayTextViewBinding;
  * @CreateTime:2017年6月2日
  * @Descrpiton:自定义文本
  */
-public class PlayTextView extends MvvmBaseActivity<ActivityPlayTextViewBinding> implements View.OnClickListener {
+public class PlayTextView extends MvvmBaseActivity<ActivityPlayTextViewBinding> {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_text_view);
         showContentView();
-        bindingView.textview.textviewTitle.setText("自定义文本");
-        bindingView.textview.toolbarBack.setOnClickListener(this);
+        setTitle("自定义文本");
         bindingView.textRect.setText("矩形文本");
         bindingView.textShader.setText("Android Shader Text");
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
-        }
     }
 }

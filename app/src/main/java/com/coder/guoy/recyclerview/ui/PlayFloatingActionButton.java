@@ -21,8 +21,7 @@ public class PlayFloatingActionButton extends MvvmBaseActivity<ActivityPlayFloat
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_floating_action_button);
         showContentView();
-        bindingView.fabToolbar.textviewTitle.setText("FloatingActionButton");
-        bindingView.fabToolbar.toolbarBack.setOnClickListener(this);
+        setTitle("FloatingActionButton");
         bindingView.fab.setOnClickListener(this);
     }
 
@@ -31,9 +30,6 @@ public class PlayFloatingActionButton extends MvvmBaseActivity<ActivityPlayFloat
         switch (v.getId()) {
             case R.id.fab:
                 ToastUtil.show("FAB被点击");
-                break;
-            case R.id.toolbar_back:
-                finish();
                 break;
         }
     }

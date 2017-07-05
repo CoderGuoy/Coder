@@ -17,8 +17,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private RecyclerView recyclerView;
     private HomeAdapter adapter;
     private LinearLayoutManager mLayoutManager;
-    private String[] model = {"Material Design","RecyclerView", "CardView", "Customize|自定义","Animation",
-            "Design Pattern|设计模式","待添加"};
+    private String[] model = {"Material Design", "RecyclerView", "CardView", "Customize", "Animation",
+            "Design Pattern", "待添加"};
+    private String[] describe = {"材料设计", "", "卡片控件", "自定义", "动画", "设计模式", ""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
      * 初始化RecyclerView
      */
     private void initRecyclerView() {
-        adapter = new HomeAdapter(this, model);
+        adapter = new HomeAdapter(this, model,describe);
         mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setAdapter(adapter);

@@ -25,8 +25,7 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_animate_vector_drawables);
         showContentView();
-        bindingView.animatevectordrawable.textviewTitle.setText("Animate Vector Drawables|矢量图片动画");
-        bindingView.animatevectordrawable.toolbarBack.setOnClickListener(this);
+        setTitle("Animate Vector Drawables|矢量图片动画");
         bindingView.btnSuprise.setOnClickListener(this);
         bindingView.imageSmile.setOnClickListener(this);
         bindingView.imageRedheart.setOnClickListener(this);
@@ -40,9 +39,6 @@ public class PlayAnimateVectorDrawables extends MvvmBaseActivity<ActivityPlayAni
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
             case R.id.btn_suprise:
                 //bonc
                 bindingView.imageBonc.setVisibility(View.VISIBLE);

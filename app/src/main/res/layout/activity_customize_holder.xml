@@ -3,83 +3,73 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <include
-            android:id="@+id/customize"
-            layout="@layout/toolbar"/>
-
-        <android.support.v4.widget.NestedScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <Button
+                android:id="@+id/btn_tagcloud"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:text="3D球"
+                android:textAllCaps="false"/>
 
-                <Button
-                    android:id="@+id/btn_tagcloud"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="3D球"
-                    android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_combination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="组合控件|分类筛选"
+                android:textAllCaps="false"/>
 
-                <Button
-                    android:id="@+id/btn_combination"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="组合控件|分类筛选"
-                    android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_recttextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义文本"
+                android:textAllCaps="false"/>
 
-                <Button
-                    android:id="@+id/btn_recttextview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="自定义文本"
-                    android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义条形图"
+                android:textAllCaps="false"/>
 
-                <Button
-                    android:id="@+id/btn_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="自定义条形图"
-                    android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_xml_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="XML绘图之 Shape"
+                android:textAllCaps="false"/>
 
-                <Button
-                    android:id="@+id/btn_xml_shape"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="XML绘图之 Shape"
-                    android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_xml_selector"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_selector"
+                android:gravity="center"
+                android:text="XML绘图之 Selector"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_selector"/>
 
-                <Button
-                    android:id="@+id/btn_xml_selector"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginRight="4dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/btn_selector"
-                    android:gravity="center"
-                    android:text="XML绘图之 Selector"
-                    android:textAllCaps="false"
-                    android:textColor="@color/btn_selector"/>
+            <Button
+                android:id="@+id/btn_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="false"/>
 
-                <Button
-                    android:id="@+id/btn_"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textAllCaps="false"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
-            </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
-
-    </LinearLayout>
 </layout>
 

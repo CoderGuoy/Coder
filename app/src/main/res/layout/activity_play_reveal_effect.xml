@@ -8,10 +8,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            android:id="@+id/revealeffect"
-            layout="@layout/toolbar"/>
-
         <Button
             android:id="@+id/btn_revealeffect"
             android:layout_width="match_parent"

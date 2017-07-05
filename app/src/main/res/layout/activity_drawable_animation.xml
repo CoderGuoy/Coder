@@ -3,29 +3,19 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <include
-            android:id="@+id/drawable_toolbar"
-            layout="@layout/toolbar"/>
+        <ImageView
+            android:id="@+id/drawable_animation"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kungfu_loading"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/drawable_animation"
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:layout_centerInParent="true"
-                android:background="@android:color/white"
-                android:scaleType="fitCenter"
-                android:src="@drawable/kungfu_loading"/>
-
-        </RelativeLayout>
-    </LinearLayout>
+    </RelativeLayout>
 </layout>
 

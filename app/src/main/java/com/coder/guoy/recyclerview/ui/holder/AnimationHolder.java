@@ -24,8 +24,7 @@ public class AnimationHolder extends MvvmBaseActivity<ActivityAnimationHolderBin
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animation_holder);
         showContentView();
-        bindingView.animationholder.textviewTitle.setText("Animation");
-        bindingView.animationholder.toolbarBack.setOnClickListener(this);
+        setTitle("Animation");
         bindingView.button12.setOnClickListener(this);
         bindingView.button13.setOnClickListener(this);
         bindingView.button14.setOnClickListener(this);
@@ -35,9 +34,6 @@ public class AnimationHolder extends MvvmBaseActivity<ActivityAnimationHolderBin
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.toolbar_back:
-                finish();
-                break;
             case R.id.button12:
                 startActivity(new Intent(AnimationHolder.this, DrawableAnimation.class));
                 break;

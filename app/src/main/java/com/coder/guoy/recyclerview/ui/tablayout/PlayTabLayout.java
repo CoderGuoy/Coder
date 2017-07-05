@@ -24,8 +24,7 @@ public class PlayTabLayout extends MvvmBaseActivity<ActivityTabLayoutBinding> im
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_layout);
         showContentView();
-        bindingView.includeToolbar.textviewTitle.setText("TabLayout");
-        bindingView.includeToolbar.toolbarBack.setOnClickListener(this);
+        setTitle("TabLayout");
         List<String> mList = new ArrayList<String>();
         for (int i = 1; i <= 8; i++) {
             mList.add("Tab" + i);

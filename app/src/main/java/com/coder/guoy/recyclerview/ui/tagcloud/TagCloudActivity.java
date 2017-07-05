@@ -19,6 +19,7 @@ public class TagCloudActivity extends MvvmBaseActivity<ActivityTagCloudBinding> 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tag_cloud);
         showContentView();
+        setTitle("3D球");
         bindingView.tagCloud.setBackgroundColor(CommonUtils.getColor(R.color.colorTheme));
         TagCloudAdapter adapter = new TagCloudAdapter(new String[100]);
         bindingView.tagCloud.setAdapter(adapter);

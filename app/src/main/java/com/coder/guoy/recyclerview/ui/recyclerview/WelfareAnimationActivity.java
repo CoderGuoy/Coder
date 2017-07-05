@@ -9,7 +9,7 @@ import com.coder.guoy.recyclerview.Constants;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.api.ApiHelper;
 import com.coder.guoy.recyclerview.api.bean.GankIoDataBean;
-import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
+import com.coder.guoy.recyclerview.base.MvvmBaseActivityNoTitle;
 import com.coder.guoy.recyclerview.databinding.ActivityWelfareBinding;
 
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ import rx.Subscriber;
  * @CreateTime:2017年4月19日
  * @Descrpiton:RecyclerView给Item添加滑动时动画
  */
-public class WelfareAnimationActivity extends MvvmBaseActivity<ActivityWelfareBinding> {
+public class WelfareAnimationActivity extends MvvmBaseActivityNoTitle<ActivityWelfareBinding> {
 
     private List<GankIoDataBean.ResultsBean> mList = new ArrayList<GankIoDataBean.ResultsBean>();
     private GridLayoutManager mLayoutManager;
