@@ -9,9 +9,10 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 
 import com.coder.guoy.recyclerview.R;
-import com.coder.guoy.recyclerview.base.MvvmBaseActivityNoTitle;
+import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivitySampleBinding;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ import java.util.List;
  * @CreateTime:2017年4月17日
  * @Descrpiton:RecyclerView实现下拉刷新，上拉加载
  */
-public class SampleActivity extends MvvmBaseActivityNoTitle<ActivitySampleBinding> {
+public class SampleActivity extends MvvmBaseActivity<ActivitySampleBinding> {
 
     private List<String> mList = new ArrayList<String>();
     private LinearLayoutManager mLayoutManager;
@@ -39,6 +40,7 @@ public class SampleActivity extends MvvmBaseActivityNoTitle<ActivitySampleBindin
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample);
         showContentView();
+        setToolbarVisible(View.GONE);
         initView();
         initNetData();
         initRecyclerView();

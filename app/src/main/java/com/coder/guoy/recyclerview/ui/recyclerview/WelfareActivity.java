@@ -8,12 +8,13 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.coder.guoy.recyclerview.Constants;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.api.ApiHelper;
 import com.coder.guoy.recyclerview.api.bean.GankIoDataBean;
-import com.coder.guoy.recyclerview.base.MvvmBaseActivityNoTitle;
+import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityWelfareBinding;
 
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ import rx.Subscriber;
  * @CreateTime:2017年4月18日
  * @Descrpiton:RecyclerView+Glide加载图片
  */
-public class WelfareActivity extends MvvmBaseActivityNoTitle<ActivityWelfareBinding> {
+public class WelfareActivity extends MvvmBaseActivity<ActivityWelfareBinding> {
 
     private List<GankIoDataBean.ResultsBean> mList = new ArrayList<GankIoDataBean.ResultsBean>();
     private GridLayoutManager mLayoutManager;
@@ -45,6 +46,7 @@ public class WelfareActivity extends MvvmBaseActivityNoTitle<ActivityWelfareBind
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welfare);
+        setToolbarVisible(View.GONE);
         initView();
         initNetData();
     }

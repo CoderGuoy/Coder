@@ -5,7 +5,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 
 import com.coder.guoy.recyclerview.R;
-import com.coder.guoy.recyclerview.base.MvvmBaseActivityNoTitle;
+import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityPlayCoordinatorLayoutBinding;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import java.util.List;
  * @CreateTime:2017年5月2日
  * @Descrpiton:CoordinatorLayout协调布局
  */
-public class PlayCoordinatorLayout extends MvvmBaseActivityNoTitle<ActivityPlayCoordinatorLayoutBinding> implements View.OnClickListener {
+public class PlayCoordinatorLayout extends MvvmBaseActivity<ActivityPlayCoordinatorLayoutBinding> implements View.OnClickListener {
     private List<String> mList = new ArrayList<String>();
     private LinearLayoutManager mLayoutManager;
     private RecyclerViewAdapter adapter;
@@ -26,8 +26,9 @@ public class PlayCoordinatorLayout extends MvvmBaseActivityNoTitle<ActivityPlayC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_coordinator_layout);
-        bindingView.imageviewBack.setOnClickListener(this);
         showContentView();
+        setToolbarVisible(View.GONE);
+        bindingView.imageviewBack.setOnClickListener(this);
         for (int i = 1; i <= 20; i++) {
             mList.add("Recycler条目:" + i);
         }

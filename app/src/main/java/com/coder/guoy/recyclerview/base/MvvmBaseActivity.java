@@ -78,7 +78,7 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
     }
 
     /**
-     * 设置titlebar
+     * 设置ToolBar的返回
      */
     private void setToolBar() {
         mBaseBinding.toolbarBack.setOnClickListener(new View.OnClickListener() {
@@ -89,14 +89,25 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
         });
     }
 
+    /**
+     * 设置标题
+     * @param title
+     */
     public void setTitle(String title) {
         mBaseBinding.textviewTitle.setText(title);
+    }
+
+    /**
+     * 设置整个ToolBar是否显示
+     * @param visible
+     */
+    public void setToolbarVisible(int visible){
+        mBaseBinding.toolbar.setVisibility(visible);
     }
 
     protected <T extends View> T getView(int id) {
         return (T) findViewById(id);
     }
-
 
     /**
      * 失败后点击刷新

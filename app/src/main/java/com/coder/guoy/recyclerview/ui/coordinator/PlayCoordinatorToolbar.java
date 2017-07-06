@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.coder.guoy.recyclerview.R;
-import com.coder.guoy.recyclerview.base.MvvmBaseActivityNoTitle;
+import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityPlayCoordinatorToolbarBinding;
 
 /**
@@ -16,14 +16,14 @@ import com.coder.guoy.recyclerview.databinding.ActivityPlayCoordinatorToolbarBin
  * @updataTime:2017年5月21日
  * @Description:CollapsingTollBarLayoutUpData
  */
-public class PlayCoordinatorToolbar extends MvvmBaseActivityNoTitle<ActivityPlayCoordinatorToolbarBinding> implements View.OnClickListener {
+public class PlayCoordinatorToolbar extends MvvmBaseActivity<ActivityPlayCoordinatorToolbarBinding> implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_coordinator_toolbar);
         showContentView();
-
+        setToolbarVisible(View.GONE);
         //设置Collapsing折叠后文字颜色
         bindingView.collapsingtoolbar.setCollapsedTitleTextColor(Color.WHITE);
         //设置Collapsing未折叠文字颜色
