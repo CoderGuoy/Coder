@@ -45,6 +45,11 @@
                     android:textSize="18sp"/>
             </android.support.v7.widget.Toolbar>
 
+            <VideoView
+                android:id="@+id/videoview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/home_recyclerview"
                 android:layout_width="match_parent"
