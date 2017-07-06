@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.coder.guoy.recyclerview.databinding.ItemHomeBannerBinding;
 import com.coder.guoy.recyclerview.databinding.ItemHomeBinding;
 import com.coder.guoy.recyclerview.ui.PlayCardView;
 import com.coder.guoy.recyclerview.ui.holder.AnimationHolder;
@@ -29,7 +30,10 @@ public class HomeAdapter extends RecyclerView.Adapter {
     private String[] describe;
     private LayoutInflater mInflater;
     private Context mContext;
-    private ItemHomeBinding bindingView;
+    private ItemHomeBinding normalBindingView;
+    private ItemHomeBannerBinding bannerBindView;
+    private int bannerType = 0; // 第一种ViewType，头部banner
+    private int normalType = 1; // 第二种ViewType，正常的item
 
     public HomeAdapter(Context context, String[] model, String[] describe) {
         mInflater = LayoutInflater.from(context);
@@ -39,43 +43,61 @@ public class HomeAdapter extends RecyclerView.Adapter {
     }
 
     @Override
+    public int getItemViewType(int position) {
+        if ((position == 0)) {
+            return bannerType;
+        } else {
+            return normalType;
+        }
+    }
+
+    @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        bindingView = DataBindingUtil.inflate(mInflater, R.layout.item_home, parent, false);
-        return new ViewHolder(bindingView.getRoot());
+        if (viewType == bannerType) {
+            bannerBindView = DataBindingUtil.inflate(mInflater, R.layout.item_home_banner, parent, false);
+            return new BannerViewHolder(bannerBindView.getRoot());
+        } else {
+            normalBindingView = DataBindingUtil.inflate(mInflater, R.layout.item_home, parent, false);
+            return new NormalViewHolder(normalBindingView.getRoot());
+        }
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
-        ViewHolder vh = (ViewHolder) holder;
-        vh.title.setText(model[position]);
-        vh.describe.setText(describe[position]);
-        bindingView.getRoot().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch (position) {
-                    case 0://Material Design
-                        mContext.startActivity(new Intent(mContext, MaterialDesignHolder.class));
-                        break;
-                    case 1://RecyclerView
-                        mContext.startActivity(new Intent(mContext, RecyclerViewHolder.class));
-                        break;
-                    case 2://CardView http://www.tuicool.com/articles/zyIbyyj
-                        mContext.startActivity(new Intent(mContext, PlayCardView.class));
-                        break;
-                    case 3://Customize
-                        mContext.startActivity(new Intent(mContext, CustomizeHolder.class));
-                        break;
-                    case 4://Animation
-                        mContext.startActivity(new Intent(mContext, AnimationHolder.class));
-                        break;
-                    case 5://Design Pattern
-                        mContext.startActivity(new Intent(mContext, DesignPatternHolder.class));
-                        break;
-                    case 6://
-                        break;
+        if (holder instanceof BannerViewHolder) {//展示banner
+            BannerViewHolder bvh = (BannerViewHolder) holder;
+        } else {
+            final NormalViewHolder vh = (NormalViewHolder) holder;
+            vh.title.setText(model[position - 1]);
+            vh.describe.setText(describe[position - 1]);
+            normalBindingView.getRoot().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    switch (position) {
+                        case 1://Material Design
+                            mContext.startActivity(new Intent(mContext, MaterialDesignHolder.class));
+                            break;
+                        case 2://RecyclerView
+                            mContext.startActivity(new Intent(mContext, RecyclerViewHolder.class));
+                            break;
+                        case 3://CardView http://www.tuicool.com/articles/zyIbyyj
+                            mContext.startActivity(new Intent(mContext, PlayCardView.class));
+                            break;
+                        case 4://Customize
+                            mContext.startActivity(new Intent(mContext, CustomizeHolder.class));
+                            break;
+                        case 5://Animation
+                            mContext.startActivity(new Intent(mContext, AnimationHolder.class));
+                            break;
+                        case 6://Design Pattern
+                            mContext.startActivity(new Intent(mContext, DesignPatternHolder.class));
+                            break;
+                        case 7://
+                            break;
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 
     @Override
@@ -83,16 +105,25 @@ public class HomeAdapter extends RecyclerView.Adapter {
         return model.length;
     }
 
-    private class ViewHolder extends RecyclerView.ViewHolder {
+    private class NormalViewHolder extends RecyclerView.ViewHolder {
         public CardView cardView;
         public TextView title;
         public TextView describe;
 
-        public ViewHolder(View itemView) {
+        public NormalViewHolder(View itemView) {
             super(itemView);
-            cardView = bindingView.homeCardview;
-            title = bindingView.homeText;
-            describe = bindingView.textDescribe;
+            cardView = normalBindingView.homeCardview;
+            title = normalBindingView.homeText;
+            describe = normalBindingView.textDescribe;
+        }
+    }
+
+    private class BannerViewHolder extends RecyclerView.ViewHolder {
+        public CardView banner;
+
+        public BannerViewHolder(View itemView) {
+            super(itemView);
+            banner = bannerBindView.viewBanner;
         }
     }
 }
