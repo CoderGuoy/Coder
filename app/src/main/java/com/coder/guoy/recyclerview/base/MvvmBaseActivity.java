@@ -17,8 +17,6 @@ import android.widget.RelativeLayout;
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.databinding.ActivityBaseMvvmBinding;
 import com.coder.guoy.recyclerview.linstener.PerfectClickListener;
-import com.coder.guoy.recyclerview.utils.CommonUtils;
-import com.coder.guoy.recyclerview.utils.StatusBarUtils;
 
 /**
  * @Version:1.0
@@ -53,8 +51,6 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
         mContainer.addView(bindingView.getRoot());
         getWindow().setContentView(mBaseBinding.getRoot());
 
-        // 设置状态栏颜色
-        StatusBarUtils.setColor(this, CommonUtils.getColor(R.color.colorTheme), 0);
         llProgressBar = getView(R.id.ll_progress_bar);
         refresh = getView(R.id.ll_error_refresh);
         ImageView img = getView(R.id.img_progress);

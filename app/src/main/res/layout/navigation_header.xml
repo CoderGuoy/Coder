@@ -41,7 +41,7 @@
             </LinearLayout>
             <!--菜单布局-->
             <LinearLayout
-                android:id="@+id/ll_nav_1"
+                android:id="@+id/ll_nav_video"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
@@ -53,15 +53,15 @@
                 android:paddingRight="16dp">
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_nav_homepage"/>
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/vector_video_red_24dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:text="@string/pleasewait"
+                    android:text="精选视频"
                     android:textColor="@color/colorContent"
                     android:textSize="15sp"/>
 
@@ -79,15 +79,15 @@
                 android:paddingRight="16dp">
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_nav_scan"/>
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/vector_music_greed_24dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:text="@string/pleasewait"
+                    android:text="轻松音乐"
                     android:textColor="@color/colorContent"
                     android:textSize="15sp"/>
 
@@ -105,9 +105,9 @@
                 android:paddingRight="16dp">
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_nav_deedback"/>
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/vector_android_blue_24dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -131,9 +131,9 @@
                 android:paddingRight="16dp">
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_nav_about"/>
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/vector_android_blue_24dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -163,9 +163,9 @@
                 android:paddingRight="16dp">
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_nav_login"/>
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/vector_android_blue_24dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"

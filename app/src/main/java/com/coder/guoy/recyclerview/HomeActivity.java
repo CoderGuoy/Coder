@@ -1,5 +1,6 @@
 package com.coder.guoy.recyclerview;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
@@ -10,6 +11,7 @@ import android.view.View;
 import com.coder.guoy.recyclerview.databinding.ActivityHomeBinding;
 import com.coder.guoy.recyclerview.databinding.NavigationHeaderBinding;
 import com.coder.guoy.recyclerview.linstener.PerfectClickListener;
+import com.coder.guoy.recyclerview.ui.FreeVideoActivity;
 import com.coder.guoy.recyclerview.utils.CommonUtils;
 import com.coder.guoy.recyclerview.utils.ToastUtil;
 import com.coder.guoy.recyclerview.view.statusbar.StatusBarUtil;
@@ -57,7 +59,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private void initDrawerlayout() {
         View headerView = bindingView.navigationview.getHeaderView(0);
         NavigationHeaderBinding bind = DataBindingUtil.bind(headerView);
-        bind.llNav1.setOnClickListener(listener);
+        bind.llNavVideo.setOnClickListener(listener);
         bind.llNav2.setOnClickListener(listener);
         bind.llNav3.setOnClickListener(listener);
         bind.llNav4.setOnClickListener(listener);
@@ -81,20 +83,20 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 @Override
                 public void run() {
                     switch (v.getId()) {
-                        case R.id.ll_nav_1:
-                            ToastUtil.show("1");
+                        case R.id.ll_nav_video:
+                            startActivity(new Intent(HomeActivity.this, FreeVideoActivity.class));
                             break;
                         case R.id.ll_nav_2:
-                            ToastUtil.show("2");
+                            ToastUtil.show("敬请期待");
                             break;
                         case R.id.ll_nav_3:
-                            ToastUtil.show("3");
+                            ToastUtil.show("敬请期待");
                             break;
                         case R.id.ll_nav_4:
-                            ToastUtil.show("4");
+                            ToastUtil.show("敬请期待");
                             break;
                         case R.id.ll_nav_5:
-                            ToastUtil.show("5");
+                            ToastUtil.show("敬请期待");
                             break;
                     }
                 }
