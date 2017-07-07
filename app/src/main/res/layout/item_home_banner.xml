@@ -13,11 +13,11 @@
         app:cardPreventCornerOverlap="false"
         app:cardUseCompatPadding="true">
 
-        <VideoView
-            android:id="@+id/videoview"
+        <ImageView
+            android:id="@+id/image_banner"
+            android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
-
 
     </android.support.v7.widget.CardView>
 

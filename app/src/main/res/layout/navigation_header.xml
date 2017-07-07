@@ -41,7 +41,7 @@
             </LinearLayout>
             <!--菜单布局-->
             <LinearLayout
-                android:id="@+id/ll_nav_homepage"
+                android:id="@+id/ll_nav_1"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
@@ -68,7 +68,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_nav_scan_download"
+                android:id="@+id/ll_nav_2"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/ripple_one_item_bg"
@@ -94,7 +94,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_nav_deedback"
+                android:id="@+id/ll_nav_3"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/ripple_one_item_bg"
@@ -120,7 +120,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_nav_about"
+                android:id="@+id/ll_nav_4"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/ripple_one_item_bg"
@@ -152,7 +152,7 @@
                 android:background="@color/colorNavLine"/>
 
             <LinearLayout
-                android:id="@+id/ll_nav_login"
+                android:id="@+id/ll_nav_5"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/ripple_one_item_bg"

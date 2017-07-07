@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.coder.guoy.recyclerview.databinding.ItemHomeBannerBinding;
@@ -66,6 +67,7 @@ public class HomeAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         if (holder instanceof BannerViewHolder) {//展示banner
             BannerViewHolder bvh = (BannerViewHolder) holder;
+            bvh.imageBanner.setImageResource(R.drawable.image_banner);
         } else {
             final NormalViewHolder vh = (NormalViewHolder) holder;
             vh.title.setText(model[position - 1]);
@@ -120,10 +122,12 @@ public class HomeAdapter extends RecyclerView.Adapter {
 
     private class BannerViewHolder extends RecyclerView.ViewHolder {
         public CardView banner;
+        public ImageView imageBanner;
 
         public BannerViewHolder(View itemView) {
             super(itemView);
             banner = bannerBindView.viewBanner;
+            imageBanner = bannerBindView.imageBanner;
         }
     }
 }
