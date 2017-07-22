@@ -89,7 +89,6 @@ public class Classification extends LinearLayout implements View.OnClickListener
             } else {
                 setTitle(classTitle);
             }
-
             typedArray.recycle();
         }
     }
