@@ -27,6 +27,13 @@
                 android:textAllCaps="false"/>
 
             <Button
+                android:id="@+id/btn_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="组合控件|分类筛选|适配器模式"
+                android:textAllCaps="false"/>
+
+            <Button
                 android:id="@+id/btn_recttextview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -8,6 +8,7 @@ import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityCustomizeHolderBinding;
 import com.coder.guoy.recyclerview.ui.ClassificationActivity;
+import com.coder.guoy.recyclerview.ui.ClassificationAdapterActivity;
 import com.coder.guoy.recyclerview.ui.PlayMusic;
 import com.coder.guoy.recyclerview.ui.PlayShape;
 import com.coder.guoy.recyclerview.ui.PlayTextView;
@@ -33,6 +34,7 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
         bindingView.btnView.setOnClickListener(this);
         bindingView.btnXmlShape.setOnClickListener(this);
         bindingView.btnXmlSelector.setOnClickListener(this);
+        bindingView.btnAlipay.setOnClickListener(this);
     }
 
     @Override
@@ -43,6 +45,9 @@ public class CustomizeHolder extends MvvmBaseActivity<ActivityCustomizeHolderBin
                 break;
             case R.id.btn_combination:
                 startActivity(new Intent(CustomizeHolder.this, ClassificationActivity.class));
+                break;
+            case R.id.btn_alipay:
+                startActivity(new Intent(CustomizeHolder.this, ClassificationAdapterActivity.class));
                 break;
             case R.id.btn_recttextview:
                 startActivity(new Intent(CustomizeHolder.this, PlayTextView.class));

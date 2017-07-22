@@ -141,6 +141,9 @@
         <activity
             android:name=".ui.FreeVideoActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ClassificationAdapterActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/homedrgll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/beibiimage"
+                android:layout_width="@dimen/px_60"
+                android:layout_height="@dimen/px_60"
+                android:layout_marginTop="@dimen/px_40"
+                android:src="@drawable/home_11"/>
+
+            <TextView
+                android:id="@+id/text"
+                style="@style/Home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_22"
+                android:text="标题"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:padding="@dimen/px_18"
+            android:scaleType="fitXY"
+            android:src="@drawable/hdelete"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+</layout>
