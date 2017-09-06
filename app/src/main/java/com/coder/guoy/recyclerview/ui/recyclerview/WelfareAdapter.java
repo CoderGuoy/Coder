@@ -27,9 +27,6 @@ import java.util.List;
  * @Author:
  * @CreateTime:
  * @Descrpiton:自定义加载更多
- * @UpDateAuthor:
- * @UpDateTime:
- * @UpDataWhat:
  */
 public class WelfareAdapter extends RecyclerView.Adapter {
     private List<GankIoDataBean.ResultsBean> mList;
@@ -57,11 +54,6 @@ public class WelfareAdapter extends RecyclerView.Adapter {
     @Override
     public int getItemCount() {
         return mList.size() + 1;
-    }
-
-    // 自定义方法，获取列表中数据源的最后一个位置，比getItemCount少1，因为不计上footView
-    public int getRealLastPosition() {
-        return mList.size();
     }
 
     // 根据条目位置返回ViewType，以供onCreateViewHolder方法内获取不同的Holder

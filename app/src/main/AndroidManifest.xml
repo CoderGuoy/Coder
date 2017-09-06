@@ -144,6 +144,8 @@
         <activity
             android:name=".ui.ClassificationAdapterActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".TestActivity">
+        </activity>
     </application>
 
 </manifest>

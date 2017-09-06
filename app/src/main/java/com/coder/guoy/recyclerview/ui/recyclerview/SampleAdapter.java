@@ -144,7 +144,7 @@ public class SampleAdapter extends RecyclerView.Adapter {
         }
     }
 
-    //暴露接口，改变fadeTips的方法
+    // 暴露接口，改变fadeTips的方法
     public boolean isFadeTips() {
         return fadeTips;
     }
