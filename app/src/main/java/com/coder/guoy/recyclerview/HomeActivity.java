@@ -22,9 +22,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private HomeAdapter adapter;
     private LinearLayoutManager mLayoutManager;
     private String[] model = {"Material Design", "RecyclerView", "CardView", "Customize", "Animation",
-            "Design Pattern", "目标1", "目标2", "目标3", "目标4"};
+            "Design Pattern", "Cache", "目标2", "目标3", "目标4"};
     private String[] describe = {"材料设计", "", "卡片控件", "自定义", "动画",
-            "设计模式", "", "", "", ""};
+            "设计模式", "三级缓存", "", "", ""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

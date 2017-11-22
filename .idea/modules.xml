@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Coder.iml" filepath="$PROJECT_DIR$/Coder.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RecyclerView.iml" filepath="$PROJECT_DIR$/RecyclerView.iml" />
+      <module fileurl="file://G:\AndroidStudioProjects\Project\Coder\RecyclerView.iml" filepath="G:\AndroidStudioProjects\Project\Coder\RecyclerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

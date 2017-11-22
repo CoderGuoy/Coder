@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.coder.guoy.recyclerview.databinding.ItemHomeBannerBinding;
 import com.coder.guoy.recyclerview.databinding.ItemHomeBinding;
 import com.coder.guoy.recyclerview.ui.PlayCardView;
+import com.coder.guoy.recyclerview.ui.cache.CacheActivity;
 import com.coder.guoy.recyclerview.ui.holder.AnimationHolder;
 import com.coder.guoy.recyclerview.ui.holder.CustomizeHolder;
 import com.coder.guoy.recyclerview.ui.holder.DesignPatternHolder;
@@ -95,6 +96,7 @@ public class HomeAdapter extends RecyclerView.Adapter {
                             mContext.startActivity(new Intent(mContext, DesignPatternHolder.class));
                             break;
                         case 7://
+                            mContext.startActivity(new Intent(mContext, CacheActivity.class));
                             break;
                     }
                 }

@@ -144,8 +144,7 @@
         <activity
             android:name=".ui.ClassificationAdapterActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".TestActivity">
-        </activity>
+        <activity android:name=".ui.cache.CacheActivity"/>
     </application>
 
 </manifest>

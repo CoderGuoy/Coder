@@ -11,7 +11,10 @@ public class Constants {
     public static final String GANK_URL = "http://gank.io/api/";
     //豆瓣
     public static final String DOUBAN_URL = "Https://api.douban.com/";
-
+    //壁纸
+    public static final String BZ_URl = "http://www.win4000.com/";
+    //桌面壁纸
+    public static final String ZMBZ = BZ_URl + "wallpaper.html";
     //================= TYPE ====================
     //福利
     public static final String FULI = "福利";
