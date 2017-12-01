@@ -43,7 +43,8 @@ public class PlayActivityTransitions extends AppCompatActivity implements View.O
                 finish();
                 break;
             case R.id.layout_go:
-                Intent intent = new Intent(PlayActivityTransitions.this, PlayStatusBar.class);
+                Intent intent = new Intent(PlayActivityTransitions.this,
+                        PlayStatusBar.class);
                 Bundle options = ActivityOptions.makeSceneTransitionAnimation(
                         this, imageView, "shareimage").toBundle();
                 startActivity(intent, options);

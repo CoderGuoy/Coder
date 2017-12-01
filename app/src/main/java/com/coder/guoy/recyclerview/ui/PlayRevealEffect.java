@@ -20,8 +20,8 @@ public class PlayRevealEffect extends MvvmBaseActivity<ActivityPlayRevealEffectB
 
     private boolean isFirst = true;
     private Animator animator;
-    private int width;
-    private int height;
+    private float width;
+    private float height;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,10 +47,9 @@ public class PlayRevealEffect extends MvvmBaseActivity<ActivityPlayRevealEffectB
         switch (v.getId()) {
             case R.id.btn_revealeffect:
                 if (isFirst) {
-                    animator = ViewAnimationUtils.createCircularReveal(
-                            bindingView.viewRevealeffect,
-                            width / 2,
-                            height / 2,
+                    animator = ViewAnimationUtils.createCircularReveal(bindingView.viewRevealeffect,
+                            (int)(width / 2),
+                            (int) (height / 2),
                             0,
                             height
                     );
