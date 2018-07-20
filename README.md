@@ -10,7 +10,7 @@
 
 > Coordinatorlayout.Behavior | 自定义行为的协调布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71090247)
 
-> CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liuyufeng.tech/post/2017-04-19-toolbar.html)
+> CoordinatorLayout APPBarLayout CollapsingTabLayout实现折叠头布局 Special thanks [CPUdream刘玉峰](http://blog.liucoder.com)
 
 > TextInputLayout | 文字输入布局 [介绍及使用详情](http://blog.csdn.net/lengxuechiwu1314/article/details/71107229) 
 
