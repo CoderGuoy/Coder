@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.databinding.ItemSampleBinding;
 import com.coder.guoy.recyclerview.databinding.ItemWelfareFooterBinding;
+import com.coder.guoy.recyclerview.utils.ToastUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -107,39 +107,33 @@ public class SampleAdapter extends RecyclerView.Adapter {
         } else {
             final FootViewHolder vh = (FootViewHolder) holder;
             // 只有获取数据为空时，hasMore为false，所以当我们拉到底部时基本都会首先显示“正在加载更多...”
-            if (hasMore == true) {
-                // 不隐藏footView提示
+            if (hasMore) { // 不隐藏footView提示
                 fadeTips = false;
-                if (mList.size() > 0) {
-                    // 如果查询数据发现增加之后，就显示正在加载更多
+                if (mList != null && !mList.isEmpty()) {// 如果查询数据发现增加之后，就显示正在加载更多
+                    vh.footLayout.setVisibility(View.VISIBLE);
                     vh.footText.setText("正在加载更多...");
-                    //显示加载动画
-                    vh.image.setVisibility(View.VISIBLE);
+                    vh.image.setVisibility(View.VISIBLE);//显示加载动画
                     animationDrawable = (AnimationDrawable) vh.image.getDrawable();
                     animationDrawable.start();
-                }
-                //数据不足以显示整个页面，隐藏footView
-                if (mList.size() < 10 & mList.size() > 0) {
-                    //隐藏加载更多控件
+                }else {
                     vh.footLayout.setVisibility(View.GONE);
-                }
-            } else {
-                if (mList.size() > 0) {//请求数据为空（非首次）
-                    // 如果查询数据发现并没有增加时，就显示没有更多数据了
-                    vh.footText.setText("你瞅啥！没了，别扯了！");
-                    //隐藏加载动画
-                    vh.image.setVisibility(View.GONE);
-                    // 将fadeTips设置true
+                    animationDrawable.stop();
+                    ToastUtil.show("服务器暂未提供相关数据");
                     fadeTips = true;
-                    // hasMore设为true是为了让再次拉到底时，会先显示正在加载更多
-                    hasMore = true;
-                } else {//请求数据为空（首次）
-                    //隐藏加载更多控件
-                    vh.footLayout.setVisibility(View.GONE);
-                    // 将fadeTips设置true，隐藏footView提示
-                    fadeTips = true;
-                    Toast.makeText(mContext, "服务器暂未提供相关数据", Toast.LENGTH_SHORT).show();
+                    hasMore = false;
                 }
+                if (mList != null && !mList.isEmpty() && mList.size() < 10) { //数据不足以显示整个页面，隐藏footView
+                    vh.footLayout.setVisibility(View.VISIBLE);
+                    vh.footText.setText("没有更多数据了");  //显示没有更多数据了
+                    vh.image.setVisibility(View.GONE);//隐藏加载动画
+                    fadeTips = true;
+                }
+            } else {// 如果查询数据发现并没有增加时，就显示没有更多数据了
+                vh.footLayout.setVisibility(View.VISIBLE);
+                vh.footText.setText("没有更多数据了");
+                vh.image.setVisibility(View.GONE); //隐藏加载动画
+                fadeTips = true;
+                hasMore = true; // hasMore设为true是为了让再次拉到底时，会先显示正在加载更多
             }
         }
     }

@@ -43,7 +43,7 @@ public class PlayBottomSheetDialog extends MvvmBaseActivity<ActivityPlayBottomSh
 
         bsd1 = new BottomSheetDialog(this);
         bsd1.setContentView(view);
-        bsd1.setCanceledOnTouchOutside(false);
+        bsd1.setCanceledOnTouchOutside(true);
 
         List<String> list = new ArrayList<String>();
         for (int i = 1; i <= 10; i++) {
